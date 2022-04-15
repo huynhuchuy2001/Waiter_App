@@ -3,6 +3,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
+import Ionic from "react-native-vector-icons/Ionicons";
 import Login from "../component/Login/Singin";
 import Register from "../component/Login/SingUp";
 import Loading from "../component/Loading/Loading";
@@ -13,10 +14,10 @@ const Tab = createBottomTabNavigator();
 export default function AppNavigate(){
     return (
         <NavigationContainer>
-          <Stack.Navigator initialRouteName={"Login"}>
+          <Stack.Navigator initialRouteName={"Login"} screenOptions = {{headerShown : false}}>
             <Stack.Screen name="Login" component={Login} />
             <Stack.Screen name="Loading" component={Loading} />
-            <Stack.Screen name="Waiter" component={TabPage}/>
+            <Stack.Screen name="Waiter" component={TabPage} options = {{headerShown : false}}/>
             <Stack.Screen name="Register" component={Register} />
             <Stack.Screen name="Comment" component={Comment} />
           </Stack.Navigator>
@@ -41,7 +42,7 @@ export function TabPage() {
         options={{
           tabBarLabel: "Trang chủ",
           tabBarIcon: ({ color, size }) => (
-            <MaterialCommunityIcons name="home" color = "rgb(248, 248, 242)" size={size} />
+            <Ionic name="home-outline" color = "rgb(248, 248, 242)" size={size} />
           ),
         }}
       />
@@ -51,7 +52,7 @@ export function TabPage() {
         options={{
           tabBarLabel: "Tìm Kiếm",
           tabBarIcon: ({ color, size }) => (
-            <MaterialCommunityIcons name="account-search" color = "rgb(248, 248, 242)" size={size} />
+            <Ionic name="search" color = "rgb(248, 248, 242)" size={size} />
           ),
         }}
       />
@@ -61,7 +62,7 @@ export function TabPage() {
         options={{
           tabBarLabel: "Shortcut",
           tabBarIcon: ({ color, size }) => (
-            <MaterialCommunityIcons name="audio-video" color = "rgb(248, 248, 242)" size={size} />
+            <MaterialCommunityIcons name="video-box" color = "rgb(248, 248, 242)" size={size} />
           ),
         }}
       />
@@ -71,7 +72,7 @@ export function TabPage() {
         options={{
           tabBarLabel: "Status",
           tabBarIcon: ({ color, size }) => (
-            <MaterialCommunityIcons name="heart" color = "rgb(248, 248, 242)" size={size} />
+            <Ionic name="heart-outline" color = "rgb(248, 248, 242)" size={size} />
           ),
         }}
       />
@@ -81,7 +82,7 @@ export function TabPage() {
         options={{
           tabBarLabel: "Tài khoản",
           tabBarIcon: ({ color, size }) => (
-            <MaterialCommunityIcons name="account" color = "rgb(248, 248, 242)" size={size} />
+            <MaterialCommunityIcons name="account-circle-outline" color = "rgb(248, 248, 242)" size={size} />
           ),
         }}
       />

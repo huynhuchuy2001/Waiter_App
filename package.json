@@ -10,6 +10,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@expo/vector-icons": "^12.0.5",
     "@fortawesome/react-fontawesome": "^0.1.18",
     "@react-native-async-storage/async-storage": "^1.17.3",
     "@react-native-community/masked-view": "^0.1.11",

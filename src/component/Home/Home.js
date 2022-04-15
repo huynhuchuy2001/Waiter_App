@@ -1,103 +1,198 @@
 import React, { Fragment } from 'react';
-import Icon from 'react-native-vector-icons/FontAwesome';
+import Icon from 'react-native-vector-icons/Ionicons';
+import FontAwesome from 'react-native-vector-icons/FontAwesome';
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
+import AntDesign from 'react-native-vector-icons/AntDesign';
+import Octicons from 'react-native-vector-icons/Octicons';
 import { Text,Button, View, StyleSheet, TextInput,Image,ScrollView } from 'react-native';
+import { useNavigation } from "@react-navigation/native";
 export default function Home () {
-    var array = [
+    const navigation = useNavigation();
+    var arrayStory = [
         {
             name : 'DucHoan',
             image : 'https://scontent.fsgn8-1.fna.fbcdn.net/v/t1.30497-1/143086968_2856368904622192_1959732218791162458_n.png?stp=cp0_dst-png_p80x80&_nc_cat=1&ccb=1-5&_nc_sid=7206a8&_nc_ohc=iuMIcxiCMkcAX_TVYh4&_nc_oc=AQnCMwFO0ikM1T3PNmT6hLfYsZgH-UFncWKfNhVaUwjq4DeJjL3Zz5o9N1VoxVT46V_F5s1RY-Ndwrkb3kv6fw1r&_nc_ht=scontent.fsgn8-1.fna&oh=00_AT8o3TOeWVcpPpS4Gy7NagZtopzLFPdCkkGCAzsGaaMdEQ&oe=627B5DF8'
         },
         {
             name : 'CamVan',
-            image : 'https://scontent.fsgn13-2.fna.fbcdn.net/v/t39.30808-1/273154334_1123664431736763_6121942889354663811_n.jpg?stp=dst-jpg_p100x100&_nc_cat=108&ccb=1-5&_nc_sid=7206a8&_nc_ohc=UEVWGcpCoMAAX8OO0tw&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.fsgn13-2.fna&oh=00_AT-8xy3baGvi4adrhQbGfE7zQvPeq5H31p_La7ww5tNmWw&oe=625C43EC'
+            image : 'https://scontent.fsgn13-2.fna.fbcdn.net/v/t39.30808-6/273154334_1123664431736763_6121942889354663811_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=BoFOVA5QuwIAX-KiXcQ&tn=98Qe8qL2dr5GlQT0&_nc_ht=scontent.fsgn13-2.fna&oh=00_AT8FeFwFTaLe6n_2eXdstYnWoCRVcEtpZZNsA2y4eGBazw&oe=625CDBAA'
         },
         {
             name : 'DucHung',
-            image : 'https://scontent.xx.fbcdn.net/v/t1.6435-1/52696062_101541554333212_6443151805353295872_n.jpg?stp=dst-jpg_p100x100&_nc_cat=103&ccb=1-5&_nc_sid=dbb9e7&_nc_ohc=iVYxj2aTG4MAX-1yQVt&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=00_AT-tbc7fGJqay212GakzgeXH3Uqrrtl1Dj8h4X4hqHxQcA&oe=627CCAE2'
+            image : 'https://scontent-sin6-4.xx.fbcdn.net/v/t1.6435-9/52696062_101541554333212_6443151805353295872_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=iVYxj2aTG4MAX9KnVR1&_nc_ht=scontent-sin6-4.xx&oh=00_AT91XhpTsxpNb7NguhkEdM6FjBuqzXxj45JWgs4OlLsxbQ&oe=627DBD8C'
         },
         {
             name : 'Tường Vi',
-            image : 'https://scontent.fsgn8-1.fna.fbcdn.net/v/t39.30808-1/272152926_1240913986401147_8867493523089750699_n.jpg?stp=dst-jpg_p100x100&_nc_cat=111&ccb=1-5&_nc_sid=7206a8&_nc_ohc=9Nz4bVKM5joAX85SdaW&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.fsgn8-1.fna&oh=00_AT-vCC-ptARQUreaNTLWEq04xBm8X5cn8DyN2XmnEJrHkw&oe=625CE52A'
+            image : 'https://scontent-sin6-1.xx.fbcdn.net/v/t39.30808-6/272152926_1240913986401147_8867493523089750699_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=9Nz4bVKM5joAX8fhbRi&_nc_ht=scontent-sin6-1.xx&oh=00_AT_PmiSFopbNLfgeXZxQVCC1nETPN56gDmF5MNinf4vlsQ&oe=625C53AC'
         },
         {
             name : 'HuyHuy',
             image : 'https://scontent.fsgn4-1.fna.fbcdn.net/v/t39.30808-6/274876629_2826541607639210_363529317853290439_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=zhn6GxH97wsAX9igMrU&_nc_ht=scontent.fsgn4-1.fna&oh=00_AT8CV-QY77nPfLu8se8Ba5bfAa8KH96jrUmxQJa0CXTW2A&oe=625BCEB5'
         }
     ]
+    var arrayPost = [
+        {
+            name : 'HuyHuy',
+            image : 'https://scontent.fsgn4-1.fna.fbcdn.net/v/t39.30808-6/274876629_2826541607639210_363529317853290439_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=zhn6GxH97wsAX9igMrU&_nc_ht=scontent.fsgn4-1.fna&oh=00_AT8CV-QY77nPfLu8se8Ba5bfAa8KH96jrUmxQJa0CXTW2A&oe=625BCEB5',
+            imagePost : 'https://scontent.fsgn4-1.fna.fbcdn.net/v/t39.30808-6/274876629_2826541607639210_363529317853290439_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=zhn6GxH97wsAX9igMrU&_nc_ht=scontent.fsgn4-1.fna&oh=00_AT8CV-QY77nPfLu8se8Ba5bfAa8KH96jrUmxQJa0CXTW2A&oe=625BCEB5',
+            like : 30,
+            content : 'Hạnh phúc là không phải một người đàn ông bỏ cả thế giới để yêu em, mà là anh ta vì yêu em mà sắp xếp lại thế giới của mình.',
+            comment : 10,
+            time : '1 giờ trước',
+        },
+        {
+            name : 'DucHoan',
+            image : 'https://scontent.fsgn8-1.fna.fbcdn.net/v/t1.30497-1/143086968_2856368904622192_1959732218791162458_n.png?stp=cp0_dst-png_p80x80&_nc_cat=1&ccb=1-5&_nc_sid=7206a8&_nc_ohc=iuMIcxiCMkcAX_TVYh4&_nc_oc=AQnCMwFO0ikM1T3PNmT6hLfYsZgH-UFncWKfNhVaUwjq4DeJjL3Zz5o9N1VoxVT46V_F5s1RY-Ndwrkb3kv6fw1r&_nc_ht=scontent.fsgn8-1.fna&oh=00_AT8o3TOeWVcpPpS4Gy7NagZtopzLFPdCkkGCAzsGaaMdEQ&oe=627B5DF8',
+            imagePost : 'https://scontent-sin6-3.xx.fbcdn.net/v/t1.6435-9/122192711_697566607532271_2285775074524737085_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=e3f864&_nc_ohc=v6Du3sqjqlAAX8KWskq&_nc_ht=scontent-sin6-3.xx&oh=00_AT89ENc9sj_DWyzkJzfnj2X0csGDqb9qHF3d2_s5uubmgw&oe=627CA4C0',
+            like : 300,
+            content : 'Hỡi thế gian có ai hiểu được mình.',
+            comment : 10,
+            time : '2 giờ trước',
+        },
+        {
+            name : 'CamVan',
+            image : 'https://scontent.fsgn13-2.fna.fbcdn.net/v/t39.30808-6/273154334_1123664431736763_6121942889354663811_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=BoFOVA5QuwIAX-KiXcQ&tn=98Qe8qL2dr5GlQT0&_nc_ht=scontent.fsgn13-2.fna&oh=00_AT8FeFwFTaLe6n_2eXdstYnWoCRVcEtpZZNsA2y4eGBazw&oe=625CDBAA',
+            imagePost : 'https://scontent.fsgn13-2.fna.fbcdn.net/v/t39.30808-6/273154334_1123664431736763_6121942889354663811_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=BoFOVA5QuwIAX-KiXcQ&tn=98Qe8qL2dr5GlQT0&_nc_ht=scontent.fsgn13-2.fna&oh=00_AT8FeFwFTaLe6n_2eXdstYnWoCRVcEtpZZNsA2y4eGBazw&oe=625CDBAA',
+            like : 100,
+            content : 'Tình chỉ đẹp khi còn giang dở.',
+            comment : 10,
+            time : '10 giờ trước',
+        },
+        {
+            name : 'Tường Vi',
+            image : 'https://scontent-sin6-1.xx.fbcdn.net/v/t39.30808-6/272152926_1240913986401147_8867493523089750699_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=9Nz4bVKM5joAX8fhbRi&_nc_ht=scontent-sin6-1.xx&oh=00_AT_PmiSFopbNLfgeXZxQVCC1nETPN56gDmF5MNinf4vlsQ&oe=625C53AC',
+            imagePost : 'https://scontent-sin6-1.xx.fbcdn.net/v/t39.30808-6/272152926_1240913986401147_8867493523089750699_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=9Nz4bVKM5joAX8fhbRi&_nc_ht=scontent-sin6-1.xx&oh=00_AT_PmiSFopbNLfgeXZxQVCC1nETPN56gDmF5MNinf4vlsQ&oe=625C53AC',
+            like : 200,
+            content : 'Hạnh phúc là không phải một người đàn ông bỏ cả thế giới để yêu em, mà là anh ta vì yêu em mà sắp xếp lại thế giới của mình.',
+            comment : 10,
+            time : '1 giờ trước',
+        },
+        {
+            name : 'DucHung',
+            image : 'https://scontent-sin6-4.xx.fbcdn.net/v/t1.6435-9/52696062_101541554333212_6443151805353295872_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=iVYxj2aTG4MAX9KnVR1&_nc_ht=scontent-sin6-4.xx&oh=00_AT91XhpTsxpNb7NguhkEdM6FjBuqzXxj45JWgs4OlLsxbQ&oe=627DBD8C',
+            imagePost : 'https://scontent-sin6-4.xx.fbcdn.net/v/t1.6435-9/52696062_101541554333212_6443151805353295872_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=iVYxj2aTG4MAX9KnVR1&_nc_ht=scontent-sin6-4.xx&oh=00_AT91XhpTsxpNb7NguhkEdM6FjBuqzXxj45JWgs4OlLsxbQ&oe=627DBD8C',
+            like : 600,
+            content : 'Hạnh phúc là không phải một người đàn ông bỏ cả thế giới để yêu em, mà là anh ta vì yêu em mà sắp xếp lại thế giới của mình.',
+            comment : 10,
+            time : '1 giờ trước',
+        },
+    ]
+
     return(
-        <ScrollView style = {styles.Home} 
-            showsVerticalScrollIndicator={false}
-            showsHorizontalScrollIndicator={false}
-        >
-            {/* header ScrollView story */}
-            <ScrollView 
-                horizontal showsVerticalScrollIndicator={false}
+        <View style = {styles.Header}>
+            <View style = {styles.HeaderApp}>
+                <Text style = {styles.HeaderAppText}>Waiter</Text>
+                <Octicons style = {styles.HeaderAppActionAdd} name="diff-added" size={30} color="white"/>
+                <AntDesign style = {styles.HeaderAppActionMessage} name="message1" size={30} color="white" />
+            </View>
+            <ScrollView style = {styles.Home} 
+                showsVerticalScrollIndicator={false}
                 showsHorizontalScrollIndicator={false}
             >
-                <View style = {styles.LoadingContainer}>
-                    <View>
-                        <Image style={styles.tinyLogo} source = {{uri: 'https://scontent.fsgn4-1.fna.fbcdn.net/v/t39.30808-6/274876629_2826541607639210_363529317853290439_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=zhn6GxH97wsAX9igMrU&_nc_ht=scontent.fsgn4-1.fna&oh=00_AT8CV-QY77nPfLu8se8Ba5bfAa8KH96jrUmxQJa0CXTW2A&oe=625BCEB5'}}/>
-                        <Text style = {styles.AddStoryText}>Your story</Text>
-                    </View>
-                    {array.map(item=>(
+                {/* header ScrollView story */}
+                <ScrollView 
+                    horizontal showsVerticalScrollIndicator={false}
+                    showsHorizontalScrollIndicator={false}
+                >
+                    <View style = {styles.LoadingContainer}>
                         <View>
-                            <Image style={styles.tinyLogoFriend} source = {{uri: item.image}}/>
-                            <Text style = {styles.NameFriend}>{item.name}</Text>
+                            <Image style={styles.tinyLogo} source = {{uri: 'https://scontent.fsgn4-1.fna.fbcdn.net/v/t39.30808-6/274876629_2826541607639210_363529317853290439_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=zhn6GxH97wsAX9igMrU&_nc_ht=scontent.fsgn4-1.fna&oh=00_AT8CV-QY77nPfLu8se8Ba5bfAa8KH96jrUmxQJa0CXTW2A&oe=625BCEB5'}}/>
+                            <Text style = {styles.AddStoryText}>Your story</Text>
+                        </View>
+                        {arrayStory.map(item=>(
+                            <View>
+                                <Image style={styles.tinyLogoFriend} source = {{uri: item.image}}/>
+                                <Text style = {styles.NameFriend}>{item.name}</Text>
+                            </View>
+                        ))}
+                    </View>
+                </ScrollView>
+                {/* body ScrollView */}
+                {
+                    arrayPost.map(item=>(
+
+                        <View style = {styles.BodyContainer}>
+                            {/* Infor user post */}
+                            <View style = {styles.HeaderPost}>
+                                <View style = {styles.Userpost}>
+                                    <Image style={styles.ImageFriendPost} source = {{uri: item.image}}/>
+                                    <Text style = {styles.NameUserPost}>{item.name}</Text>
+                                </View>
+                                <View style = {styles.SettingPost}>
+                                    <Icon name="ellipsis-vertical" size={25} color="white" />
+                                </View>
+                            </View>
+                            <View style = {styles.ImagePost}>
+                                <Image style = {styles.ImageUserPost} source = {{uri: item.imagePost}}/>
+                            </View>
+                        
+                            {/* Action User  */}
+                            <View style = {styles.ActionContainer}>
+                                <View style = {styles.IconActionLike}>
+                                    <Icon name="heart-outline" size={25} color="white" />
+                                </View>
+                                <View style = {styles.IconAction}>
+                                    <FontAwesome name="comment-o" size={25} color="white" />
+                                </View>
+                                <View style = {styles.IconAction}>
+                                    <Icon name="share-outline" size={25} color="white" />
+                                </View>
+                                <View style = {styles.IconActionSave}>
+                                    <MaterialIcons name="save-alt" size={25} color="white" />
+                                </View>
+                            </View>
+                            {/* Like, Content and SeeMore Comment*/}
+                            <View style = {styles.ContentContainer}>
+                                <Text style = {styles.likeText}>Có {item.like} lượt thích</Text>
+                                    <Text style = {styles.ContentText}>
+                                        {item.name}
+                                        <Text style = {styles.EmptyText}> </Text>
+                                        <Text style = {styles.UsercontentText}>
+                                        {item.content}
+                                        </Text>
+                                    </Text>
+                                    <Text style = {styles.SeeMoreComment} onPress = {(e) =>{
+                                        navigation.navigate('Comment')
+                                    }}>Xem tất cả 
+                                        <Text> {item.comment} </Text>
+                                        bình luận.
+                                    </Text>
+                                    <Text style = {styles.TextTimePost}>{item.time}</Text>
+                            </View>
                         </View>
                     ))}
-                </View>
             </ScrollView>
-            {/* body ScrollView */}
-            <View style = {styles.BodyContainer}>
-                {/* Infor user post */}
-                <View style = {styles.HeaderPost}>
-                    <View style = {styles.Userpost}>
-                        <Image style={styles.ImageFriendPost} source = {{uri: 'https://scontent.fsgn4-1.fna.fbcdn.net/v/t39.30808-6/274876629_2826541607639210_363529317853290439_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=zhn6GxH97wsAX9igMrU&_nc_ht=scontent.fsgn4-1.fna&oh=00_AT8CV-QY77nPfLu8se8Ba5bfAa8KH96jrUmxQJa0CXTW2A&oe=625BCEB5'}}/>
-                        <Text style = {styles.NameUserPost}>HuyHuy</Text>
-                    </View>
-                    <View style = {styles.SettingPost}>
-                        <Icon name="ellipsis-h" size={15} color="white" />
-                    </View>
-                </View>
-                <View style = {styles.ImagePost}>
-                    <Image style = {styles.ImageUserPost} source = {{uri: 'https://scontent.fsgn4-1.fna.fbcdn.net/v/t39.30808-6/274876629_2826541607639210_363529317853290439_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=zhn6GxH97wsAX9igMrU&_nc_ht=scontent.fsgn4-1.fna&oh=00_AT8CV-QY77nPfLu8se8Ba5bfAa8KH96jrUmxQJa0CXTW2A&oe=625BCEB5'}}/>
-                </View>
-            </View>
-            {/* Action User  */}
-            <View style = {styles.ActionContainer}>
-                <View style = {styles.IconActionLike}>
-                    <Icon name="heart" size={25} color="white" />
-                </View>
-                <View style = {styles.IconAction}>
-                    <Icon name="comment" size={25} color="white" />
-                </View>
-                <View style = {styles.IconAction}>
-                    <Icon name="share-alt" size={25} color="white" />
-                </View>
-                <View style = {styles.IconActionSave}>
-                    <Icon name="save" size={25} color="white" />
-                </View>
-            </View>
-            {/* Like, Content and SeeMore Comment*/}
-            <View style = {styles.ContentContainer}>
-                <Text style = {styles.likeText}>Có 200 lượt thích</Text>
-                    <Text style = {styles.ContentText}>
-                        HuyHuy
-                        <Text style = {styles.EmptyText}> </Text>
-                        <Text style = {styles.UsercontentText}>
-                        Hạnh phúc là không phải một người đàn ông bỏ cả thế giới để yêu em, mà là anh ta vì yêu em mà sắp xếp lại thế giới của mình.
-                        </Text>
-                    </Text>
-                    <Text style = {styles.SeeMoreComment}>Xem tất cả 
-                    <Text> 200 </Text>
-                     bình luận.</Text>
-            </View>
-        </ScrollView>
+        </View>
     );
 };
 const styles = StyleSheet.create({
     Home:{
         backgroundColor : '#1F2739',
+    },
+    Header:{
+        flex : 1,
+    },
+    HeaderApp : {
+        backgroundColor : '#1F2739',
+        flexDirection : 'row',
+    },
+    HeaderAppText : {
+        fontSize : 25,
+        color : 'white',
+        marginLeft : 10,
+        marginTop : 10,
+        marginBottom : 10,
+        fontStyle : 'italic',
+        fontFamily : 'times new roman',
+    },
+    HeaderAppActionAdd : {
+        marginLeft : '55%',
+        marginTop : 10,
+    },
+    HeaderAppActionMessage : {
+        marginLeft : 15,
+        marginTop : 10,
+        borderRadius : 5,
     },
     LoadingContainer: {
         paddingTop: 8,
@@ -105,7 +200,7 @@ const styles = StyleSheet.create({
         height : 100,
         flexDirection : 'row',
         borderBottomColor: "#414360",
-        borderBottomWidth: 2,
+        borderBottomWidth: 1,
     },
     tinyLogo: {
         marginLeft: 5,
@@ -131,6 +226,8 @@ const styles = StyleSheet.create({
     },
     BodyContainer: {
         backgroundColor: '#1F2739',
+        borderBottomColor: "#414360",
+        borderBottomWidth: 2,
     },
     HeaderPost: {
         flexDirection : 'row',
@@ -153,7 +250,7 @@ const styles = StyleSheet.create({
     },
     SettingPost: {
         width : '20%',
-        marginTop : 20,
+        marginTop : 10,
         alignItems : 'center',
         marginLeft : 8
     },
@@ -174,6 +271,7 @@ const styles = StyleSheet.create({
     IconActionLike: {
         marginLeft : 15,
         marginTop : 15,
+        marginBottom : 10,
     },
     IconActionSave: {
         marginLeft : '55%',
@@ -181,7 +279,7 @@ const styles = StyleSheet.create({
     },
     ContentContainer: {
         marginLeft : 15,
-        marginTop : 15,
+        marginTop : 10,
     },
     likeText: {
         color: 'white',
@@ -191,12 +289,16 @@ const styles = StyleSheet.create({
         fontWeight : 'normal'
     },
     ContentText: {
-        marginTop : 10,
+        marginTop : 5,
         color: 'white',
         fontWeight: 'bold',
     },
     SeeMoreComment : {
-        color : 'white',
+        color : '#8e8e8e',
         marginTop : 5,
+    },
+    TextTimePost: {
+        color : '#8e8e8e',
+        marginBottom : 10,
     }
 });

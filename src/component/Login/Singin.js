@@ -147,7 +147,7 @@ export default function SingIn ({navigation}) {
 const styles = StyleSheet.create({
   container : {
     flex :1,
-    backgroundColor : '#009387'
+    backgroundColor : '#009387',
   },
   header : {
     flex : 1,
