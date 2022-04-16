@@ -11,6 +11,9 @@ import Home from "../component/Home/Home";
 import Comment from '../component/Comment/Comment';
 import Search from '../component/Search/Search';
 import SearchDetails from '../component/Search/SearchDetails';
+import SearchHistorys from '../component/Search/SearchHistory';
+import SearchResult from '../component/Search/SearchResult';
+import Activitys from '../component/Activity/Activity';
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 export default function AppNavigate(){
@@ -23,6 +26,8 @@ export default function AppNavigate(){
             <Stack.Screen name="Register" component={Register} />
             <Stack.Screen name="Comment" component={Comment} />
             <Stack.Screen name="SearchDetails" component={SearchDetails} />
+            <Stack.Screen name="SearchHistorys" component={SearchHistorys} />
+            <Stack.Screen name="SearchResults" component={SearchResult} />
           </Stack.Navigator>
         </NavigationContainer>
     );
@@ -33,10 +38,10 @@ export function TabPage() {
     screenOptions={{
         headerShown: false,
         tabBarStyle: {
-          backgroundColor : "#1F2739",
+          backgroundColor : "black",
         },
-        tabBarActiveTintColor : 'rgb(255, 255, 255)',
-        tabBarInactiveTintColor : 'rgb(189, 147, 249)',
+        tabBarActiveTintColor : 'rgb(189, 147, 249)',
+        tabBarInactiveTintColor : 'rgb(255, 255, 255)',
       }}
     >
       <Tab.Screen
@@ -45,7 +50,7 @@ export function TabPage() {
         options={{
           tabBarLabel: "Trang chủ",
           tabBarIcon: ({ color, size }) => (
-            <Ionic name="home-outline" color = "rgb(248, 248, 242)" size={size} />
+            <Ionic name="home-outline" color = {color} size={size} />
           ),
         }}
       />
@@ -55,7 +60,7 @@ export function TabPage() {
         options={{
           tabBarLabel: "Tìm Kiếm",
           tabBarIcon: ({ color, size }) => (
-            <Ionic name="search" color = "rgb(248, 248, 242)" size={size} />
+            <Ionic name="search" color = {color} size={size} />
           ),
         }}
       />
@@ -65,17 +70,17 @@ export function TabPage() {
         options={{
           tabBarLabel: "Shortcut",
           tabBarIcon: ({ color, size }) => (
-            <MaterialCommunityIcons name="video-box" color = "rgb(248, 248, 242)" size={size} />
+            <MaterialCommunityIcons name="video-box" color = {color} size={size} />
           ),
         }}
       />
       <Tab.Screen
         name="Status"
-        component={Home}
+        component={Activitys}
         options={{
           tabBarLabel: "Status",
           tabBarIcon: ({ color, size }) => (
-            <Ionic name="heart-outline" color = "rgb(248, 248, 242)" size={size} />
+            <Ionic name="heart-outline" color = {color} size={size} />
           ),
         }}
       />
@@ -85,7 +90,7 @@ export function TabPage() {
         options={{
           tabBarLabel: "Tài khoản",
           tabBarIcon: ({ color, size }) => (
-            <MaterialCommunityIcons name="account-circle-outline" color = "rgb(248, 248, 242)" size={size} />
+            <MaterialCommunityIcons name="account-circle-outline" color = {color} size={size} />
           ),
         }}
       />
