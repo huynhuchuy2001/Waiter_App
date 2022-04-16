@@ -4,7 +4,7 @@ import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import Octicons from 'react-native-vector-icons/Octicons';
-import { Text,Button, View, StyleSheet, TextInput,Image,ScrollView } from 'react-native';
+import { Text,Button, View, StyleSheet, TextInput,Image,ScrollView,ImageBackground } from 'react-native';
 import { useNavigation } from "@react-navigation/native";
 export default function Home () {
     const navigation = useNavigation();
@@ -75,7 +75,7 @@ export default function Home () {
             content : 'Hạnh phúc là không phải một người đàn ông bỏ cả thế giới để yêu em, mà là anh ta vì yêu em mà sắp xếp lại thế giới của mình.',
             comment : 10,
             time : '1 giờ trước',
-        },
+        }
     ]
 
     return(
@@ -91,12 +91,18 @@ export default function Home () {
             >
                 {/* header ScrollView story */}
                 <ScrollView 
-                    horizontal showsVerticalScrollIndicator={false}
+                    horizontal
                     showsHorizontalScrollIndicator={false}
                 >
                     <View style = {styles.LoadingContainer}>
                         <View>
-                            <Image style={styles.tinyLogo} source = {{uri: 'https://scontent.fsgn4-1.fna.fbcdn.net/v/t39.30808-6/274876629_2826541607639210_363529317853290439_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=zhn6GxH97wsAX9igMrU&_nc_ht=scontent.fsgn4-1.fna&oh=00_AT8CV-QY77nPfLu8se8Ba5bfAa8KH96jrUmxQJa0CXTW2A&oe=625BCEB5'}}/>
+                            <ImageBackground style={styles.tinyLogo} source = {{uri: 'https://scontent.fsgn4-1.fna.fbcdn.net/v/t39.30808-6/274876629_2826541607639210_363529317853290439_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=zhn6GxH97wsAX9igMrU&_nc_ht=scontent.fsgn4-1.fna&oh=00_AT8CV-QY77nPfLu8se8Ba5bfAa8KH96jrUmxQJa0CXTW2A&oe=625BCEB5'}} imageStyle={{ borderRadius: 60/2 }}>
+                                <View style = {{width: 18, height: 18, borderRadius: 18/2, backgroundColor: 'black',marginLeft : '70%', marginTop : '70%'}}>
+                                    <View style = {styles.Add}>
+                                        <MaterialIcons name='add' size={15} color='#fff'/>
+                                    </View>
+                                </View>
+                            </ImageBackground>
                             <Text style = {styles.AddStoryText}>Your story</Text>
                         </View>
                         {arrayStory.map(item=>(
@@ -167,13 +173,13 @@ export default function Home () {
 };
 const styles = StyleSheet.create({
     Home:{
-        backgroundColor : '#1F2739',
+        backgroundColor : 'black',
     },
     Header:{
         flex : 1,
     },
     HeaderApp : {
-        backgroundColor : '#1F2739',
+        backgroundColor : 'black',
         flexDirection : 'row',
     },
     HeaderAppText : {
@@ -196,21 +202,29 @@ const styles = StyleSheet.create({
     },
     LoadingContainer: {
         paddingTop: 8,
-        backgroundColor: '#1F2739',
+        backgroundColor: 'black',
         height : 100,
         flexDirection : 'row',
         borderBottomColor: "#414360",
         borderBottomWidth: 1,
     },
+    Add : {
+        backgroundColor : '#5ccfe6',
+        width : 15,
+        height : 15,
+        borderRadius : 15/2,
+        marginLeft : '8%',
+        marginTop : '8%',
+    },
     tinyLogo: {
-        marginLeft: 5,
+        marginLeft: 12,
         width: 60,
         height: 60,
         borderRadius: 60/2,
     },
     AddStoryText: {
         marginTop: 5,
-        marginLeft: 5,
+        marginLeft: 12,
         color: 'white',
     },
     tinyLogoFriend: {
@@ -225,7 +239,7 @@ const styles = StyleSheet.create({
         color: 'white',
     },
     BodyContainer: {
-        backgroundColor: '#1F2739',
+        backgroundColor: 'black',
         borderBottomColor: "#414360",
         borderBottomWidth: 2,
     },
@@ -259,7 +273,7 @@ const styles = StyleSheet.create({
     },
     ImageUserPost: {
         width : '100%',
-        height : 500,
+        height : 350,
     },
     ActionContainer: {
         flexDirection: 'row',
@@ -286,12 +300,14 @@ const styles = StyleSheet.create({
     },
     UsercontentText: {
         color: 'white',
-        fontWeight : 'normal'
+        fontWeight : 'normal',
     },
     ContentText: {
         marginTop : 5,
         color: 'white',
         fontWeight: 'bold',
+        textAlign : 'justify',
+        width : '98%',
     },
     SeeMoreComment : {
         color : '#8e8e8e',

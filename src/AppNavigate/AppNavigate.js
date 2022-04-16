@@ -9,6 +9,8 @@ import Register from "../component/Login/SingUp";
 import Loading from "../component/Loading/Loading";
 import Home from "../component/Home/Home";
 import Comment from '../component/Comment/Comment';
+import Search from '../component/Search/Search';
+import SearchDetails from '../component/Search/SearchDetails';
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 export default function AppNavigate(){
@@ -20,6 +22,7 @@ export default function AppNavigate(){
             <Stack.Screen name="Waiter" component={TabPage} options = {{headerShown : false}}/>
             <Stack.Screen name="Register" component={Register} />
             <Stack.Screen name="Comment" component={Comment} />
+            <Stack.Screen name="SearchDetails" component={SearchDetails} />
           </Stack.Navigator>
         </NavigationContainer>
     );
@@ -48,7 +51,7 @@ export function TabPage() {
       />
       <Tab.Screen
         name="Search"
-        component={Home}
+        component={Search}
         options={{
           tabBarLabel: "Tìm Kiếm",
           tabBarIcon: ({ color, size }) => (
