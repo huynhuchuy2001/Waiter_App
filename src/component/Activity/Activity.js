@@ -12,56 +12,130 @@ export default function Activitys() {
         {
             image : 'https://scontent.fsgn4-1.fna.fbcdn.net/v/t39.30808-6/274876629_2826541607639210_363529317853290439_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=zhn6GxH97wsAX9igMrU&_nc_ht=scontent.fsgn4-1.fna&oh=00_AT8CV-QY77nPfLu8se8Ba5bfAa8KH96jrUmxQJa0CXTW2A&oe=625BCEB5',
             content : 'Hạnh phúc là không phải một người đàn ông bỏ cả thế giới để yêu em.',
-            status : false,
+            status : 'post',
             time : '5m',
         },
         {
             image : 'https://scontent.fsgn8-1.fna.fbcdn.net/v/t1.30497-1/143086968_2856368904622192_1959732218791162458_n.png?stp=cp0_dst-png_p80x80&_nc_cat=1&ccb=1-5&_nc_sid=7206a8&_nc_ohc=iuMIcxiCMkcAX_TVYh4&_nc_oc=AQnCMwFO0ikM1T3PNmT6hLfYsZgH-UFncWKfNhVaUwjq4DeJjL3Zz5o9N1VoxVT46V_F5s1RY-Ndwrkb3kv6fw1r&_nc_ht=scontent.fsgn8-1.fna&oh=00_AT8o3TOeWVcpPpS4Gy7NagZtopzLFPdCkkGCAzsGaaMdEQ&oe=627B5DF8',
             content : 'Phải dị hong hihi.',
-            status : false,
+            status : 'follow',
             time : '2h',
         },
         {
             image : 'https://scontent.fsgn13-2.fna.fbcdn.net/v/t39.30808-6/273154334_1123664431736763_6121942889354663811_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=BoFOVA5QuwIAX-KiXcQ&tn=98Qe8qL2dr5GlQT0&_nc_ht=scontent.fsgn13-2.fna&oh=00_AT8FeFwFTaLe6n_2eXdstYnWoCRVcEtpZZNsA2y4eGBazw&oe=625CDBAA',
             content : 'Cứ văn với thơ thôi kkk.',
-            status : true,
+            status : 'add',
             time : '10h',
         },
         {
             image : 'https://scontent-sin6-1.xx.fbcdn.net/v/t39.30808-6/272152926_1240913986401147_8867493523089750699_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=9Nz4bVKM5joAX8fhbRi&_nc_ht=scontent-sin6-1.xx&oh=00_AT_PmiSFopbNLfgeXZxQVCC1nETPN56gDmF5MNinf4vlsQ&oe=625C53AC',
             content : 'Quào quá đỉnh em ơi.',
-            status : false,
+            status : 'post',
             time : '1h',
         },
         {
             image : 'https://scontent-sin6-4.xx.fbcdn.net/v/t1.6435-9/52696062_101541554333212_6443151805353295872_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=iVYxj2aTG4MAX9KnVR1&_nc_ht=scontent-sin6-4.xx&oh=00_AT91XhpTsxpNb7NguhkEdM6FjBuqzXxj45JWgs4OlLsxbQ&oe=627DBD8C',
             content : 'Hạnh phúc là không phải một người đàn ông bỏ cả thế giới để yêu em.',
-            status : false,
+            status : 'add',
             time : '1h',
         },
         {
             image : 'https://scontent.fsgn4-1.fna.fbcdn.net/v/t39.30808-6/274876629_2826541607639210_363529317853290439_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=zhn6GxH97wsAX9igMrU&_nc_ht=scontent.fsgn4-1.fna&oh=00_AT8CV-QY77nPfLu8se8Ba5bfAa8KH96jrUmxQJa0CXTW2A&oe=625BCEB5',
             content : 'Hay quá bạn ơi.',
-            status : false,
+            status : 'follow',
             time : '5h',
         },
         {
             image : 'https://scontent.fsgn8-1.fna.fbcdn.net/v/t1.30497-1/143086968_2856368904622192_1959732218791162458_n.png?stp=cp0_dst-png_p80x80&_nc_cat=1&ccb=1-5&_nc_sid=7206a8&_nc_ohc=iuMIcxiCMkcAX_TVYh4&_nc_oc=AQnCMwFO0ikM1T3PNmT6hLfYsZgH-UFncWKfNhVaUwjq4DeJjL3Zz5o9N1VoxVT46V_F5s1RY-Ndwrkb3kv6fw1r&_nc_ht=scontent.fsgn8-1.fna&oh=00_AT8o3TOeWVcpPpS4Gy7NagZtopzLFPdCkkGCAzsGaaMdEQ&oe=627B5DF8',
             content : 'Phải dị hong hihi.',
-            reply : true,
+            reply : 'post',
             time : '2h',
         },
         {
             image : 'https://scontent.fsgn4-1.fna.fbcdn.net/v/t39.30808-6/274876629_2826541607639210_363529317853290439_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=zhn6GxH97wsAX9igMrU&_nc_ht=scontent.fsgn4-1.fna&oh=00_AT8CV-QY77nPfLu8se8Ba5bfAa8KH96jrUmxQJa0CXTW2A&oe=625BCEB5',
             content : 'Bỏ cả thế giới để yêu em.',
-            status : true,
+            status : 'follow',
             time : '5m',
         },
         {
             image : 'https://scontent.fsgn13-2.fna.fbcdn.net/v/t39.30808-6/273154334_1123664431736763_6121942889354663811_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=BoFOVA5QuwIAX-KiXcQ&tn=98Qe8qL2dr5GlQT0&_nc_ht=scontent.fsgn13-2.fna&oh=00_AT8FeFwFTaLe6n_2eXdstYnWoCRVcEtpZZNsA2y4eGBazw&oe=625CDBAA',
             content : 'Cứ văn với thơ thôi kkk.',
-            status : false,
+            status : 'add',
             time : '10h',
+        }
+    ]
+    var arraySuggestion = [
+        {
+            name : 'HuyHuy',
+            nameFB : 'Huy Huỳnh',
+            image : 'https://scontent.fsgn4-1.fna.fbcdn.net/v/t39.30808-6/274876629_2826541607639210_363529317853290439_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=zhn6GxH97wsAX9igMrU&_nc_ht=scontent.fsgn4-1.fna&oh=00_AT8CV-QY77nPfLu8se8Ba5bfAa8KH96jrUmxQJa0CXTW2A&oe=625BCEB5',
+            follower : '1.2k'
+        },
+        {
+            name : 'DucHoan',
+            nameFB : 'Huỳnh Đức Hoan',
+            image : 'https://scontent.fsgn8-1.fna.fbcdn.net/v/t1.30497-1/143086968_2856368904622192_1959732218791162458_n.png?stp=cp0_dst-png_p80x80&_nc_cat=1&ccb=1-5&_nc_sid=7206a8&_nc_ohc=iuMIcxiCMkcAX_TVYh4&_nc_oc=AQnCMwFO0ikM1T3PNmT6hLfYsZgH-UFncWKfNhVaUwjq4DeJjL3Zz5o9N1VoxVT46V_F5s1RY-Ndwrkb3kv6fw1r&_nc_ht=scontent.fsgn8-1.fna&oh=00_AT8o3TOeWVcpPpS4Gy7NagZtopzLFPdCkkGCAzsGaaMdEQ&oe=627B5DF8',
+            follower : '108'
+        },
+        {
+            name : 'CamVan',
+            nameFB : 'Phan Thị Cẩm Vân',
+            image : 'https://scontent.fsgn13-2.fna.fbcdn.net/v/t39.30808-6/273154334_1123664431736763_6121942889354663811_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=BoFOVA5QuwIAX-KiXcQ&tn=98Qe8qL2dr5GlQT0&_nc_ht=scontent.fsgn13-2.fna&oh=00_AT8FeFwFTaLe6n_2eXdstYnWoCRVcEtpZZNsA2y4eGBazw&oe=625CDBAA',
+            follower : '145'
+        },
+        {
+            name : 'Tường Vi',
+            nameFB : 'Tường Vi',
+            image : 'https://scontent-sin6-1.xx.fbcdn.net/v/t39.30808-6/272152926_1240913986401147_8867493523089750699_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=9Nz4bVKM5joAX8fhbRi&_nc_ht=scontent-sin6-1.xx&oh=00_AT_PmiSFopbNLfgeXZxQVCC1nETPN56gDmF5MNinf4vlsQ&oe=625C53AC',
+            follower : '1.5k'
+        },
+        {
+            name : 'DucHung',
+            nameFB : 'Huỳnh Đức Hùng',
+            image : 'https://scontent-sin6-4.xx.fbcdn.net/v/t1.6435-9/52696062_101541554333212_6443151805353295872_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=iVYxj2aTG4MAX9KnVR1&_nc_ht=scontent-sin6-4.xx&oh=00_AT91XhpTsxpNb7NguhkEdM6FjBuqzXxj45JWgs4OlLsxbQ&oe=627DBD8C',
+            follower : '500'
+        },
+        {
+            name : 'HuyHuy',
+            nameFB : 'Huy Huỳnh',
+            image : 'https://scontent.fsgn4-1.fna.fbcdn.net/v/t39.30808-6/274876629_2826541607639210_363529317853290439_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=zhn6GxH97wsAX9igMrU&_nc_ht=scontent.fsgn4-1.fna&oh=00_AT8CV-QY77nPfLu8se8Ba5bfAa8KH96jrUmxQJa0CXTW2A&oe=625BCEB5',
+            follower : '1.2k'
+        },
+        {
+            name : 'DucHoan',
+            nameFB : 'Huỳnh Đức Hoan',
+            image : 'https://scontent.fsgn8-1.fna.fbcdn.net/v/t1.30497-1/143086968_2856368904622192_1959732218791162458_n.png?stp=cp0_dst-png_p80x80&_nc_cat=1&ccb=1-5&_nc_sid=7206a8&_nc_ohc=iuMIcxiCMkcAX_TVYh4&_nc_oc=AQnCMwFO0ikM1T3PNmT6hLfYsZgH-UFncWKfNhVaUwjq4DeJjL3Zz5o9N1VoxVT46V_F5s1RY-Ndwrkb3kv6fw1r&_nc_ht=scontent.fsgn8-1.fna&oh=00_AT8o3TOeWVcpPpS4Gy7NagZtopzLFPdCkkGCAzsGaaMdEQ&oe=627B5DF8',
+            follower : '108'
+        },
+        {
+            name : 'CamVan',
+            nameFB : 'Phan Thị Cẩm Vân',
+            image : 'https://scontent.fsgn13-2.fna.fbcdn.net/v/t39.30808-6/273154334_1123664431736763_6121942889354663811_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=BoFOVA5QuwIAX-KiXcQ&tn=98Qe8qL2dr5GlQT0&_nc_ht=scontent.fsgn13-2.fna&oh=00_AT8FeFwFTaLe6n_2eXdstYnWoCRVcEtpZZNsA2y4eGBazw&oe=625CDBAA',
+            follower : '145'
+        },
+        {
+            name : 'Tường Vi',
+            nameFB : 'Tường Vi',
+            image : 'https://scontent-sin6-1.xx.fbcdn.net/v/t39.30808-6/272152926_1240913986401147_8867493523089750699_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=9Nz4bVKM5joAX8fhbRi&_nc_ht=scontent-sin6-1.xx&oh=00_AT_PmiSFopbNLfgeXZxQVCC1nETPN56gDmF5MNinf4vlsQ&oe=625C53AC',
+            follower : '1.5k'
+        },
+        {
+            name : 'DucHung',
+            nameFB : 'Huỳnh Đức Hùng',
+            image : 'https://scontent-sin6-4.xx.fbcdn.net/v/t1.6435-9/52696062_101541554333212_6443151805353295872_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=iVYxj2aTG4MAX9KnVR1&_nc_ht=scontent-sin6-4.xx&oh=00_AT91XhpTsxpNb7NguhkEdM6FjBuqzXxj45JWgs4OlLsxbQ&oe=627DBD8C',
+            follower : '500'
+        },
+        {
+            name : 'Tường Vi',
+            nameFB : 'Tường Vi',
+            image : 'https://scontent-sin6-1.xx.fbcdn.net/v/t39.30808-6/272152926_1240913986401147_8867493523089750699_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=9Nz4bVKM5joAX8fhbRi&_nc_ht=scontent-sin6-1.xx&oh=00_AT_PmiSFopbNLfgeXZxQVCC1nETPN56gDmF5MNinf4vlsQ&oe=625C53AC',
+            follower : '1.5k'
+        },
+        {
+            name : 'DucHung',
+            nameFB : 'Huỳnh Đức Hùng',
+            image : 'https://scontent-sin6-4.xx.fbcdn.net/v/t1.6435-9/52696062_101541554333212_6443151805353295872_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=iVYxj2aTG4MAX9KnVR1&_nc_ht=scontent-sin6-4.xx&oh=00_AT91XhpTsxpNb7NguhkEdM6FjBuqzXxj45JWgs4OlLsxbQ&oe=627DBD8C',
+            follower : '500'
         }
     ]
     return (
@@ -101,8 +175,8 @@ export default function Activitys() {
                 <View style = {styles.ActivityMonth}>
                     <Text style = {styles.TextMonth}>This Month</Text>
                     {arrayActivityMonth.map(item =>(
-                        item.status === false ?
-                        // If Status false
+                        item.status === 'follow' ?
+                        // If Status follow
                         <View style = {styles.MonthBody}>
                             <Image source={{uri : item.image}} style = {styles.AvartarMonth} imageStyle={{ borderRadius: 50/2 }}/>
                             <Text style = {styles.TextActivityMonth}>{item.content}
@@ -112,8 +186,8 @@ export default function Activitys() {
                                 <Text style = {styles.Follow}>Follow</Text>
                             </View>
                         </View> 
-                        : 
-                        // If status true
+                        : item.status === 'add' ?
+                        // If status add
                         <View style = {styles.MonthBody}>
                             <Image source={{uri : item.image}} style = {styles.AvartarMonth} imageStyle={{ borderRadius: 50/2 }}/>
                             <Text style = {styles.TextActivityMonthRequest}>{item.content}
@@ -127,8 +201,41 @@ export default function Activitys() {
                                     <Text style = {styles.DeleteRequest}>Delete</Text>
                                 </View>
                             </View>
-                    </View>
+                        </View>
+                        :
+                        // If status post
+                        <View style = {styles.MonthBody}>
+                            <Image source={{uri : item.image}} style = {styles.AvartarMonth} imageStyle={{ borderRadius: 50/2 }}/>
+                            <Text style = {styles.TextActivityMonth}>{item.content}
+                                <Text style = {styles.TextTimeMonth}> {item.time}</Text>
+                            </Text>
+                            <Image source = {{uri : item.image}} style = {styles.ImageRespone}/>
+                        </View> 
                     ))}
+                </View>
+                {/* Suggestions for you */}
+                <View style = {styles.Suggestion}>
+                    <Text style = {styles.TextSuggestion}>Suggestions for you</Text>
+                    {arraySuggestion.map(item =>(
+                        <View style = {styles.SuggestBody}>
+                                <Image source={{uri : item.image}} style = {styles.AvartarSuggest} imageStyle={{ borderRadius: 50/2 }}/>
+                                <View style = {styles.UserSearch}>
+                                    <Text style = {styles.NameUser}>{item.name}</Text>
+                                    <Text style = {styles.NameFB}>{item.nameFB}</Text>
+                                    <Text style = {styles.NameFB}>Have {item.follower} followers</Text>
+                                </View>
+                                <View style = {{flexDirection : 'row',marginTop : '5%'}}>
+                                    <View style = {{width : 70, height : 28, backgroundColor : '#1d94d8',borderRadius : 5,marginTop : '8%',marginLeft : '7%'}}>
+                                        <Text style = {styles.FollowSuggest}>Follow</Text>
+                                    </View>
+                                    <AntDesign name = "close" size={15} color = "rgb(248, 248, 242)" style ={styles.IconClose} />
+                                </View>
+                        </View>
+                    ))}
+                </View>
+                {/* See all suggestions */}
+                <View style = {styles.SeeAll}>
+                    <Text style = {styles.TextSeeAll} onPress = {() => {navigation.navigate('Discovers')}}>See all suggestions</Text>
                 </View>
             </ScrollView>
             
@@ -285,5 +392,62 @@ const styles = StyleSheet.create({
         fontSize: 15,
         marginLeft: '18%',
         marginTop: '4%',
+    },
+    ImageRespone: {
+        width : 50,
+        height : 50,
+        marginLeft: '9%',
+        marginTop: '5%',
+    },
+    Suggestion: {
+        marginTop: '5%',
+    },
+    TextSuggestion: {
+        color: 'white',
+        fontSize: 18,
+        fontWeight: 'bold',
+        marginLeft: '5%',
+    },
+    SuggestBody: {
+        flexDirection : 'row',
+        marginLeft: '5%',
+    },
+    AvartarSuggest: {
+        height: 50,
+        width: 50,
+        borderRadius: 50/2,
+        marginTop: '5%',
+    },
+    FollowSuggest: {
+        color: 'white',
+        fontSize: 15,
+        marginLeft: '18%',
+        marginTop: '4%',
+    },
+    IconClose: {
+        marginLeft : '8%',
+        marginTop : '10%',
+    },
+    UserSearch : {
+        width : '45%',
+        marginLeft : '10%',
+        marginTop : '5%',
+    },
+    NameUser : {
+        color : 'white',
+        fontSize : 14,
+    },
+    NameFB : {
+        color : '#8e8e8e',
+        fontSize : 13,
+    },
+    SeeAll : {
+        marginTop : '5%',
+        marginLeft : '5%',
+        marginBottom : '10%',
+    },
+    TextSeeAll : {
+        color : '#5ccfe6',
+        fontSize : 16,
     }
 });

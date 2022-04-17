@@ -190,6 +190,7 @@ const styles = StyleSheet.create({
         marginBottom : 10,
         fontStyle : 'italic',
         fontFamily : 'times new roman',
+        fontWeight : 'bold',
     },
     HeaderAppActionAdd : {
         marginLeft : '55%',

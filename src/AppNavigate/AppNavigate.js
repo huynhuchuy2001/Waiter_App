@@ -14,6 +14,7 @@ import SearchDetails from '../component/Search/SearchDetails';
 import SearchHistorys from '../component/Search/SearchHistory';
 import SearchResult from '../component/Search/SearchResult';
 import Activitys from '../component/Activity/Activity';
+import Discover from '../component/Activity/Discover';
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 export default function AppNavigate(){
@@ -28,6 +29,7 @@ export default function AppNavigate(){
             <Stack.Screen name="SearchDetails" component={SearchDetails} />
             <Stack.Screen name="SearchHistorys" component={SearchHistorys} />
             <Stack.Screen name="SearchResults" component={SearchResult} />
+            <Stack.Screen name="Discovers" component={Discover} />
           </Stack.Navigator>
         </NavigationContainer>
     );
@@ -75,10 +77,10 @@ export function TabPage() {
         }}
       />
       <Tab.Screen
-        name="Status"
+        name="Activity"
         component={Activitys}
         options={{
-          tabBarLabel: "Status",
+          tabBarLabel: "Activity",
           tabBarIcon: ({ color, size }) => (
             <Ionic name="heart-outline" color = {color} size={size} />
           ),

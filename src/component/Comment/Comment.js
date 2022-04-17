@@ -152,6 +152,7 @@ const styles = StyleSheet.create({
         marginLeft: 25,
         marginTop: 8,
         color: 'rgb(248, 248, 242)',
+        fontWeight: 'bold',
     },
     IconBack: {
         marginLeft: '2%',
