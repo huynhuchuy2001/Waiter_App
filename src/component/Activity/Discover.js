@@ -95,7 +95,7 @@ export default function DiscoverPeople() {
                         {arraySuggestion.map(item =>(
                             <View style = {styles.SuggestBody}>
                                     <Image source={{uri : item.image}} style = {styles.AvartarSuggest} imageStyle={{ borderRadius: 50/2 }}/>
-                                    <View style = {styles.UserSearch}>
+                                    <View style = {styles.UserSuggestion}>
                                         <Text style = {styles.NameUser}>{item.name}</Text>
                                         <Text style = {styles.NameFB}>{item.nameFB}</Text>
                                         <Text style = {styles.NameFB}>Have {item.follower} followers</Text>
@@ -115,7 +115,7 @@ export default function DiscoverPeople() {
                         {arraySuggestion.map(item =>(
                             <View style = {styles.SuggestBody}>
                                     <Image source={{uri : item.image}} style = {styles.AvartarSuggest} imageStyle={{ borderRadius: 50/2 }}/>
-                                    <View style = {styles.UserSearch}>
+                                    <View style = {styles.UserSuggestion}>
                                         <Text style = {styles.NameUser}>{item.name}</Text>
                                         <Text style = {styles.NameFB}>{item.nameFB}</Text>
                                         <Text style = {styles.NameFB}>Have {item.follower} followers</Text>
@@ -175,7 +175,7 @@ const styles = StyleSheet.create({
         marginLeft : '8%',
         marginTop : '10%',
     },
-    UserSearch : {
+    UserSuggestion : {
         width : '45%',
         marginLeft : '10%',
         marginTop : '5%',

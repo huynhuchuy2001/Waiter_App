@@ -161,8 +161,8 @@ const styles = StyleSheet.create({
 
     },
     IconSearch : {
-        marginLeft : '20%',
-        marginTop : '20%',
+        marginLeft : '25%',
+        marginTop : '25%',
     },
     RecentSearch : {
         width : '60%',

@@ -83,7 +83,7 @@ export default function Home () {
             <View style = {styles.HeaderApp}>
                 <Text style = {styles.HeaderAppText}>Waiter</Text>
                 <Octicons style = {styles.HeaderAppActionAdd} name="diff-added" size={30} color="white"/>
-                <AntDesign style = {styles.HeaderAppActionMessage} name="message1" size={30} color="white" />
+                <AntDesign style = {styles.HeaderAppActionMessage} name="message1" size={30} color="white" onPress={() => {navigation.navigate('Messages')}} />
             </View>
             <ScrollView style = {styles.Home} 
                 showsVerticalScrollIndicator={false}

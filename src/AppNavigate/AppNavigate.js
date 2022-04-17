@@ -15,6 +15,12 @@ import SearchHistorys from '../component/Search/SearchHistory';
 import SearchResult from '../component/Search/SearchResult';
 import Activitys from '../component/Activity/Activity';
 import Discover from '../component/Activity/Discover';
+import Message from '../component/Message/Message';
+import RequestMessage from '../component/Message/MessageRequest/RequestMessage';
+import HiddenRequest from '../component/Message/MessageRequest/HiddenRequest';
+import SearchMessage from '../component/Message/SearchMessage';
+import NewMessage from '../component/Message/NewMessage';
+import Calls from '../component/Message/Call';
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 export default function AppNavigate(){
@@ -30,6 +36,12 @@ export default function AppNavigate(){
             <Stack.Screen name="SearchHistorys" component={SearchHistorys} />
             <Stack.Screen name="SearchResults" component={SearchResult} />
             <Stack.Screen name="Discovers" component={Discover} />
+            <Stack.Screen name="Messages" component={Message} />
+            <Stack.Screen name="RequestMessages" component={RequestMessage} />
+            <Stack.Screen name="HiddenRequest" component={HiddenRequest} />
+            <Stack.Screen name="SearchMessage" component={SearchMessage} />
+            <Stack.Screen name="NewMessage" component={NewMessage} />
+            <Stack.Screen name="Calls" component={Calls} />
           </Stack.Navigator>
         </NavigationContainer>
     );
