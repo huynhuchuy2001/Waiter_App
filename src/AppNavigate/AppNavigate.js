@@ -21,6 +21,8 @@ import HiddenRequest from '../component/Message/MessageRequest/HiddenRequest';
 import SearchMessage from '../component/Message/SearchMessage';
 import NewMessage from '../component/Message/NewMessage';
 import Calls from '../component/Message/Call';
+import ChatMessage from '../component/Message/ChatMessage';
+import Profile from '../component/Account/Profile';
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 export default function AppNavigate(){
@@ -42,6 +44,7 @@ export default function AppNavigate(){
             <Stack.Screen name="SearchMessage" component={SearchMessage} />
             <Stack.Screen name="NewMessage" component={NewMessage} />
             <Stack.Screen name="Calls" component={Calls} />
+            <Stack.Screen name="ChatMessage" component={ChatMessage} />
           </Stack.Navigator>
         </NavigationContainer>
     );
@@ -100,7 +103,7 @@ export function TabPage() {
       />
       <Tab.Screen
         name="Profiles"
-        component={Home}
+        component={Profile}
         options={{
           tabBarLabel: "Tài khoản",
           tabBarIcon: ({ color, size }) => (

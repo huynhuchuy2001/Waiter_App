@@ -129,8 +129,8 @@ export default function Comment() {
                 </View>
                 <View style = {styles.FooterTextComment}>
                     <View style = {styles.FooterWidth}>
-                    <Image source={{uri : 'https://scontent.fsgn4-1.fna.fbcdn.net/v/t39.30808-6/274876629_2826541607639210_363529317853290439_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=zhn6GxH97wsAX9igMrU&_nc_ht=scontent.fsgn4-1.fna&oh=00_AT8CV-QY77nPfLu8se8Ba5bfAa8KH96jrUmxQJa0CXTW2A&oe=625BCEB5'}} style = {styles.AvatarTextComment}/>
-                    <TextInput style = {styles.TextInputComment} placeholder = "Add a comment..." placeholderTextColor="white"/>
+                        <Image source={{uri : 'https://scontent.fsgn4-1.fna.fbcdn.net/v/t39.30808-6/274876629_2826541607639210_363529317853290439_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=zhn6GxH97wsAX9igMrU&_nc_ht=scontent.fsgn4-1.fna&oh=00_AT8CV-QY77nPfLu8se8Ba5bfAa8KH96jrUmxQJa0CXTW2A&oe=625BCEB5'}} style = {styles.AvatarTextComment}/>
+                        <TextInput style = {styles.TextInputComment} placeholder = "Add a comment..." placeholderTextColor="white"/>
                     </View>
                     <Text style = {styles.TextSendComment}>Post</Text>
                 </View>
@@ -281,6 +281,7 @@ const styles = StyleSheet.create({
     },
     FooterTextComment: {
         flexDirection: 'row',
+        height : 'auto',
     },
     FooterWidth: {
         flexDirection: 'row',
@@ -288,6 +289,7 @@ const styles = StyleSheet.create({
         marginLeft: '1%',
         textAlign: 'justify',
         width: '70%',
+        height : 'auto',
     },
     AvatarTextComment: {
         height: 35,

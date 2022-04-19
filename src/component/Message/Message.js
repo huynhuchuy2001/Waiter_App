@@ -112,10 +112,10 @@ export default function Message() {
                     </View>
                     {arrayUserActive.map(item =>(
                             <View style = {styles.MessageBody}>
-                                    <Image source={{uri : item.image}} style = {styles.AvartarMessage} imageStyle={{ borderRadius: 50/2 }}/>
+                                    <Image source={{uri : item.image}} style = {styles.AvartarMessage} imageStyle={{ borderRadius: 50/2 }} />
                                     <View style = {styles.UserMessageInfor}>
-                                        <Text style = {styles.NameUser}>{item.name}</Text>
-                                        <Text style = {styles.MessageText}>{item.message}</Text>
+                                        <Text style = {styles.NameUser} onPress = {() => {navigation.navigate('ChatMessage')}}>{item.name}</Text>
+                                        <Text style = {styles.MessageText} onPress = {() => {navigation.navigate('ChatMessage')}}>{item.message}</Text>
                                     </View>
                                     <MaterialIcons name = "photo-camera" size={30} color = "rgb(248, 248, 242)" style ={styles.IconSendPhoto} />
                             </View>
@@ -246,7 +246,7 @@ const styles = StyleSheet.create({
         marginTop: '5%',
     },
     UserMessageInfor : {
-        width : '45%',
+        width : '60%',
         marginLeft : '8%',
         marginTop : '7%',
     },
@@ -259,7 +259,7 @@ const styles = StyleSheet.create({
         fontSize : 13,
     },
     IconSendPhoto : {
-        marginLeft : '20%',
+        marginLeft : '5%',
         marginTop : '8%',
     }
 });
