@@ -111,7 +111,7 @@ export default function NewMessage() {
             {/* Header Message */}
             <View style = {styles.HeaderNewMessage}>
                 <View style = {styles.HeaderMessage}>
-                    <AntDesign name = "arrowleft" size={25} color = "rgb(248, 248, 242)" style ={styles.IconBack} onPress = {() =>{navigation.navigate('Messages')}}/>
+                    <AntDesign name = "arrowleft" size={25} color = "rgb(248, 248, 242)" style ={styles.IconBack} onPress = {() =>{navigation.goBack()}}/>
                     <Text style = {styles.textMessage}>New message</Text>
                     <Text style = {styles.textChat}>Chat</Text>
                 </View>

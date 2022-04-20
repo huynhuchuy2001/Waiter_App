@@ -45,7 +45,7 @@ export default function SearchHistorys() {
         <View style = {styles.SearchHistorys}>
             {/* Header Search */}
             <View style = {styles.Search}>
-                <AntDesign name = "arrowleft" size={25} color = "rgb(248, 248, 242)" style ={styles.IconBack} onPress = {() =>{navigation.navigate('SearchDetails')}}/>
+                <AntDesign name = "arrowleft" size={25} color = "rgb(248, 248, 242)" style ={styles.IconBack} onPress = {() =>{navigation.goBack()}}/>
                 <Text style = {styles.TextSearchHistorys}>Search history</Text>
             </View>
             {/* Recent User Search */}

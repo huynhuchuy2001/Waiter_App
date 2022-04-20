@@ -94,7 +94,7 @@ export default function SearchMessage() {
         <View style = {styles.SearchDetails}>
             {/* Header Search */}
             <View style = {styles.Search}>
-                <AntDesign name = "arrowleft" size={25} color = "rgb(248, 248, 242)" style ={styles.IconBack} onPress = {() =>{navigation.navigate('Messages')}}/>
+                <AntDesign name = "arrowleft" size={25} color = "rgb(248, 248, 242)" style ={styles.IconBack} onPress = {() =>{navigation.goBack()}}/>
                 <TextInput placeholder='Search' placeholderTextColor="#8e8e8e" style = {styles.SearchText}/>
             </View>
             {/* Search user send message */}

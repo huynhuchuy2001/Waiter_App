@@ -23,6 +23,14 @@ import NewMessage from '../component/Message/NewMessage';
 import Calls from '../component/Message/Call';
 import ChatMessage from '../component/Message/ChatMessage';
 import Profile from '../component/Account/Profile';
+import EditProfile from '../component/Account/EditProfile/EditProfile';
+import EditName from '../component/Account/EditProfile/EditName';
+import EditUserName from '../component/Account/EditProfile/EditUserName';
+import EditPronouns from '../component/Account/EditProfile/EditPronouns';
+import EditBio from '../component/Account/EditProfile/EditBio';
+import EditInformations from '../component/Account/InformationSetting/Infomation';
+import EditEmail from '../component/Account/InformationSetting/EditEmail';
+import EditPhoneNumber from '../component/Account/InformationSetting/EditPhoneNumber';
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 export default function AppNavigate(){
@@ -45,6 +53,14 @@ export default function AppNavigate(){
             <Stack.Screen name="NewMessage" component={NewMessage} />
             <Stack.Screen name="Calls" component={Calls} />
             <Stack.Screen name="ChatMessage" component={ChatMessage} />
+            <Stack.Screen name="EditProfile" component={EditProfile} />
+            <Stack.Screen name="EditName" component={EditName} />
+            <Stack.Screen name="EditUserName" component={EditUserName} />
+            <Stack.Screen name="EditPronouns" component={EditPronouns} />
+            <Stack.Screen name="EditBio" component={EditBio} />
+            <Stack.Screen name="EditInformations" component={EditInformations} />
+            <Stack.Screen name="EditEmail" component={EditEmail} />
+            <Stack.Screen name="EditPhoneNumber" component={EditPhoneNumber} />
           </Stack.Navigator>
         </NavigationContainer>
     );

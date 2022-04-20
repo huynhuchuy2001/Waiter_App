@@ -6,7 +6,7 @@ import Octicons from 'react-native-vector-icons/Octicons';
 import Feather from 'react-native-vector-icons/Feather';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import Fontisto from 'react-native-vector-icons/Fontisto';
-import { Text,Button, View, StyleSheet, TextInput,Image,ScrollView,ImageBackground } from 'react-native';
+import { Text,Button, View, StyleSheet, TextInput,Image,ScrollView,ImageBackground,Pressable } from 'react-native';
 import { useNavigation } from "@react-navigation/native";
 export default function Profile() {
     const navigation = useNavigation();
@@ -85,21 +85,23 @@ export default function Profile() {
             icon : 'user',
             name : 'Add your name',
             text : 'Add your full name so your friends know it is you.',
-            textbutton : 'Edit name'
+            textbutton : 'Edit name',
+            link : 'EditProfile'
 
         },
         {
             icon : 'user-check',
             name : 'Add profile photo',
             text : 'Choose a profile photo to make your profile stand out.',
-            textbutton : 'Edit photo'
+            textbutton : 'Edit photo',
+            link : 'EditProfile'
         },
         {
             icon : 'users',
             name : 'Find people to follow',
             text : 'Follow people to get updates from them.',
-            textbutton : 'Find more'
-
+            textbutton : 'Find more',
+            link : 'Discovers'
         }
     ]
     return (
@@ -136,7 +138,7 @@ export default function Profile() {
                 <View style = {{flexDirection : 'row'}}>
                     <View style = {styles.EditProfile}>
                         <View style = {styles.BoderEditProfile}>
-                            <Text style = {styles.TextEditProfile}>Edit Profile</Text>
+                            <Text style = {styles.TextEditProfile} onPress = {() => {navigation.navigate('EditProfile')}}>Edit Profile</Text>
                         </View>
                     </View>
                     <View style = {styles.Add}>
@@ -149,7 +151,7 @@ export default function Profile() {
                 <View style = {styles.Discover}>
                     <View style = {styles.TitleDiscover}>
                         <Text style = {styles.TextTitleDiscover}>Discover People</Text>
-                        <Text style = {styles.TextSeeAllDiscover}>See all</Text>
+                        <Text style = {styles.TextSeeAllDiscover} onPress = {() => {navigation.navigate('Discovers')}}>See all</Text>
                     </View>
                     <View style = {styles.ListDiscover}>
                         <ScrollView horizontal showsHorizontalScrollIndicator={false}>
@@ -226,9 +228,11 @@ export default function Profile() {
                                     </View>
                                     <Text style = {styles.TextNameComplete}>Add bio</Text>
                                     <Text style = {styles.TextStatusComplete}>Tell your follower a little bit about yourself.</Text>
-                                    <View style = {styles.FollowComplete}>
-                                        <Text style = {styles.TextFollowComplete}>Add bio</Text>
-                                    </View>
+                                    <Pressable onPress = {() => {navigation.navigate('EditBio')}}>
+                                        <View style = {styles.FollowComplete}>
+                                            <Text style = {styles.TextFollowComplete}>Add bio</Text>
+                                        </View>
+                                    </Pressable>
                                 </View>
                             </View>
                             {/* Do Complete */}
@@ -247,11 +251,13 @@ export default function Profile() {
                                         </View>
                                         <Text style = {styles.TextNameComplete}>{item.name}</Text>
                                         <Text style = {styles.TextStatusComplete}>{item.text}</Text>
-                                        <View style = {{width : 100, height : 28, backgroundColor : 'white',borderRadius : 5,marginTop : '2%', marginLeft : '25%',}}>
-                                            <View style = {{width : 98, height : 26, backgroundColor : 'black',borderRadius : 5,marginTop : 1,marginLeft : 1}}>
-                                                <Text style = {styles.Request}>{item.textbutton}</Text>
+                                        <Pressable onPress = {() => {navigation.navigate(item.link)}}>
+                                            <View style = {{width : 100, height : 28, backgroundColor : 'white',borderRadius : 5,marginTop : '2%', marginLeft : '25%',}}>
+                                                <View style = {{width : 98, height : 26, backgroundColor : 'black',borderRadius : 5,marginTop : 1,marginLeft : 1}}>
+                                                    <Text style = {styles.Request}>{item.textbutton}</Text>
+                                                </View>
                                             </View>
-                                        </View>
+                                        </Pressable>
                                     </View>
                                 </View>
                             ))}
@@ -636,6 +642,8 @@ const styles = StyleSheet.create({
         fontSize : 15,
         textAlign : 'center',
         height : '20%',
+        width : '90%',
+        marginLeft : '5%',
     },
     FollowComplete: {
         backgroundColor : '#087cbf',

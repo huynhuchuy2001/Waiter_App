@@ -141,7 +141,7 @@ export default function Calls() {
         <View style = {styles.CallScreen}>
             {/* Header Message */}
             <View style = {styles.HeaderCall}>
-                <AntDesign name = "arrowleft" size={25} color = "rgb(248, 248, 242)" style ={styles.IconBack} onPress = {() =>{navigation.navigate('Messages')}}/>
+                <AntDesign name = "arrowleft" size={25} color = "rgb(248, 248, 242)" style ={styles.IconBack} onPress = {() =>{navigation.goBack()}}/>
                 <Text style = {styles.textCall}>Calls</Text>
             </View>
             <ScrollView showsVerticalScrollIndicator = {false}>

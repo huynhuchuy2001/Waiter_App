@@ -88,7 +88,7 @@ export default function SearchResult() {
             {/* Header Search */}
             <View style = {styles.HeaderSearch}>
                 <View style = {styles.Search}>
-                    <AntDesign name = "arrowleft" size={25} color = "rgb(248, 248, 242)" style ={styles.IconBack} onPress = {() =>{navigation.navigate('SearchDetails')}}/>
+                    <AntDesign name = "arrowleft" size={25} color = "rgb(248, 248, 242)" style ={styles.IconBack} onPress = {() =>{navigation.goBack()}}/>
                     <View style = {styles.SearchForm}>
                         <AntDesign name = "search1" size={20} color = "#8e8e8e" style = {{marginTop : 5, marginLeft : 10}}/>
                         <TextInput value={textSearch} style = {styles.SearchText}/>

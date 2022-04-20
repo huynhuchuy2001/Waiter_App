@@ -35,7 +35,7 @@ export default function SearchDetails() {
         <View style = {styles.SearchDetails}>
             {/* Header Search */}
             <View style = {styles.Search}>
-                <AntDesign name = "arrowleft" size={25} color = "rgb(248, 248, 242)" style ={styles.IconBack} onPress = {() =>{navigation.navigate('Search')}}/>
+                <AntDesign name = "arrowleft" size={25} color = "rgb(248, 248, 242)" style ={styles.IconBack} onPress = {() =>{navigation.goBack()}}/>
                 <View style = {styles.SearchForm}>
                     <TextInput placeholder='Search' placeholderTextColor="white" style = {styles.SearchText}/>
                 </View>

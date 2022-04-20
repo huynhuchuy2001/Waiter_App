@@ -69,7 +69,7 @@ export default function Comment() {
     return (
         <View style = {styles.CommentScreen}>
             <View style = {styles.HeaderComment}>
-                <AntDesign name = "arrowleft" size={25} color = "rgb(248, 248, 242)" style ={styles.IconBack} onPress = {(e) =>{navigation.navigate('Waiter')}}></AntDesign>
+                <AntDesign name = "arrowleft" size={25} color = "rgb(248, 248, 242)" style ={styles.IconBack} onPress = {(e) =>{navigation.goBack()}}></AntDesign>
                 <Text style = {styles.textComment}>Comment</Text>
                 <EvilIcons name = "sc-telegram" size={35} color = "rgb(248, 248, 242)" style ={styles.IconChat}></EvilIcons>
             </View>

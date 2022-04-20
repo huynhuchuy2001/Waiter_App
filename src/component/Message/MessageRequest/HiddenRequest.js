@@ -11,7 +11,7 @@ export default function HiddenRequest() {
     return(
         <View style = {styles.HiddenRequest}>
             <View style = {styles.HeaderHiddenRequest}>
-                <AntDesign name = "arrowleft" size={25} color = "rgb(248, 248, 242)" style ={styles.IconBack} onPress = {(e) =>{navigation.navigate('RequestMessages')}}></AntDesign>
+                <AntDesign name = "arrowleft" size={25} color = "rgb(248, 248, 242)" style ={styles.IconBack} onPress = {(e) =>{navigation.goBack()}}></AntDesign>
                 <Text style = {styles.textHiddenRequest}>Hidden requests</Text>
             </View>
             {/* Message */}

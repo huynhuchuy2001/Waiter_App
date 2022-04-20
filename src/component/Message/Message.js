@@ -63,7 +63,7 @@ export default function Message() {
         <View style = {styles.MessageScreen}>
             {/* Header Message */}
             <View style = {styles.HeaderMessage}>
-                <AntDesign name = "arrowleft" size={25} color = "rgb(248, 248, 242)" style ={styles.IconBack} onPress = {() =>{navigation.navigate('Home')}}/>
+                <AntDesign name = "arrowleft" size={25} color = "rgb(248, 248, 242)" style ={styles.IconBack} onPress = {() =>{navigation.goBack()}}/>
                 <Text style = {styles.textMessage}>{name}</Text>
                 <AntDesign name = "down" size={15} color = "rgb(248, 248, 242)" style ={styles.IconDown}/>
                 <MaterialCommunityIcons name = "video-plus-outline" size={35} color = "rgb(248, 248, 242)" style ={styles.IconVideo} onPress = {() => {navigation.navigate('Calls')}}/>

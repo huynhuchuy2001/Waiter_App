@@ -85,7 +85,7 @@ export default function DiscoverPeople() {
     return(
         <View style = {styles.DiscoverScreen}>
             <View style = {styles.HeaderDiscover}>
-                <AntDesign name = "arrowleft" size={25} color = "rgb(248, 248, 242)" style ={styles.IconBack} onPress = {(e) =>{navigation.navigate('Activity')}}></AntDesign>
+                <AntDesign name = "arrowleft" size={25} color = "rgb(248, 248, 242)" style ={styles.IconBack} onPress = {(e) =>{navigation.goBack()}}></AntDesign>
                 <Text style = {styles.textDiscover}>Discover People</Text>
             </View>
             <ScrollView showsVerticalScrollIndicator={false}>

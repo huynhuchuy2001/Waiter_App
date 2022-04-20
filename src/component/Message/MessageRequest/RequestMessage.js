@@ -11,7 +11,7 @@ export default function RequestMessage() {
     return(
         <View style = {styles.RequestMessage}>
             <View style = {styles.HeaderRequestMessage}>
-                <AntDesign name = "arrowleft" size={25} color = "rgb(248, 248, 242)" style ={styles.IconBack} onPress = {(e) =>{navigation.navigate('Messages')}}></AntDesign>
+                <AntDesign name = "arrowleft" size={25} color = "rgb(248, 248, 242)" style ={styles.IconBack} onPress = {(e) =>{navigation.goBack()}}></AntDesign>
                 <Text style = {styles.textRequestMessage}>Message requests</Text>
             </View>
             {/* Message */}
