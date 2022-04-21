@@ -31,6 +31,9 @@ import EditBio from '../component/Account/EditProfile/EditBio';
 import EditInformations from '../component/Account/InformationSetting/Infomation';
 import EditEmail from '../component/Account/InformationSetting/EditEmail';
 import EditPhoneNumber from '../component/Account/InformationSetting/EditPhoneNumber';
+import RequestFollows from '../component/Activity/RequestFollow';
+import RequestFollowDetails from '../component/Activity/RequestFollowDetail';
+import Follower from '../component/Activity/Follower';
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 export default function AppNavigate(){
@@ -61,6 +64,9 @@ export default function AppNavigate(){
             <Stack.Screen name="EditInformations" component={EditInformations} />
             <Stack.Screen name="EditEmail" component={EditEmail} />
             <Stack.Screen name="EditPhoneNumber" component={EditPhoneNumber} />
+            <Stack.Screen name="RequestFollows" component={RequestFollows} />
+            <Stack.Screen name="RequestFollowDetails" component={RequestFollowDetails} />
+            <Stack.Screen name="Follower" component={Follower} />
           </Stack.Navigator>
         </NavigationContainer>
     );

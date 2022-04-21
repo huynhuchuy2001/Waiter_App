@@ -4,7 +4,7 @@ import EvilIcons from 'react-native-vector-icons/EvilIcons';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import Fontisto from 'react-native-vector-icons/Fontisto';
-import { Text,Button, View, StyleSheet, TextInput,Image,ScrollView,ImageBackground } from 'react-native';
+import { Text,Button, View, StyleSheet, TextInput,Image,ScrollView,ImageBackground ,Pressable} from 'react-native';
 import { useNavigation } from "@react-navigation/native";
 export default function DiscoverPeople() {
     const navigation = useNavigation();
@@ -94,12 +94,16 @@ export default function DiscoverPeople() {
                         <Text style = {styles.TextSuggestion}>New Suggestions</Text>
                         {arraySuggestion.map(item =>(
                             <View style = {styles.SuggestBody}>
+                                <Pressable onPress={() => navigation.navigate('Follower')} style = {{marginTop: '5%'}}>
                                     <Image source={{uri : item.image}} style = {styles.AvartarSuggest} imageStyle={{ borderRadius: 50/2 }}/>
-                                    <View style = {styles.UserSuggestion}>
+                                </Pressable>
+                                <Pressable onPress={() => navigation.navigate('Follower')} style = {{ width : '45%', marginLeft : '5%', marginTop : '5%'}}>
+                                    <View style = {styles.UserSuggestions}>
                                         <Text style = {styles.NameUser}>{item.name}</Text>
                                         <Text style = {styles.NameFB}>{item.nameFB}</Text>
                                         <Text style = {styles.NameFB}>Have {item.follower} followers</Text>
                                     </View>
+                                </Pressable>
                                     <View style = {{flexDirection : 'row',marginTop : '5%'}}>
                                         <View style = {{width : 70, height : 28, backgroundColor : '#1d94d8',borderRadius : 5,marginTop : '8%',marginLeft : '7%'}}>
                                             <Text style = {styles.FollowSuggest}>Follow</Text>

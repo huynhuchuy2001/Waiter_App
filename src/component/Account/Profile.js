@@ -143,7 +143,7 @@ export default function Profile() {
                     </View>
                     <View style = {styles.Add}>
                         <View style = {styles.BoderAdd}>
-                            <FontAwesome name = "user-plus" size={20} color = "rgb(248, 248, 242)" style ={styles.IconAddUser}/>
+                            <Ionicons name = "md-person-add-sharp" size={20} color = "rgb(248, 248, 242)" style ={styles.IconAddUser}/>
                         </View>
                     </View>
                 </View>
