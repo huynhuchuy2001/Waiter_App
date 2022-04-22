@@ -34,6 +34,7 @@ import EditPhoneNumber from '../component/Account/InformationSetting/EditPhoneNu
 import RequestFollows from '../component/Activity/RequestFollow';
 import RequestFollowDetails from '../component/Activity/RequestFollowDetail';
 import Follower from '../component/Activity/Follower';
+import VideoShorts from '../component/VideoShort/VideoShort';
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 export default function AppNavigate(){
@@ -105,7 +106,7 @@ export function TabPage() {
       />
       <Tab.Screen
         name="Shortcut"
-        component={Home}
+        component={VideoShorts}
         options={{
           tabBarLabel: "Shortcut",
           tabBarIcon: ({ color, size }) => (

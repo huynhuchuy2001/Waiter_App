@@ -1,6 +1,6 @@
 import * as React from 'react';
 import AntDesign from 'react-native-vector-icons/AntDesign';
-import EvilIcons from 'react-native-vector-icons/EvilIcons';
+import Feather from 'react-native-vector-icons/Feather';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import Fontisto from 'react-native-vector-icons/Fontisto';
@@ -71,7 +71,7 @@ export default function Comment() {
             <View style = {styles.HeaderComment}>
                 <AntDesign name = "arrowleft" size={25} color = "rgb(248, 248, 242)" style ={styles.IconBack} onPress = {(e) =>{navigation.goBack()}}></AntDesign>
                 <Text style = {styles.textComment}>Comment</Text>
-                <EvilIcons name = "sc-telegram" size={35} color = "rgb(248, 248, 242)" style ={styles.IconChat}></EvilIcons>
+                <Feather name = "send" size={25} color = "rgb(248, 248, 242)" style ={styles.IconChat}></Feather>
             </View>
             {/* User Infor Post */}
             <ScrollView showsVerticalScrollIndicator={false}>
