@@ -5,10 +5,12 @@ import FontAwesome from "react-native-vector-icons/FontAwesome";
 import Feather from "react-native-vector-icons/Feather";
 import Ionicons from "react-native-vector-icons/Ionicons";
 import Entypo from "react-native-vector-icons/Entypo";
-import { Text,Button, View, StyleSheet, TextInput,Image,ScrollView,SafeAreaView,Dimensions} from 'react-native';
+import { Text,Button, View, StyleSheet, TextInput,Image,ScrollView,SafeAreaView,Dimensions,Pressable} from 'react-native';
 import Video from 'react-native-video';
+import { useNavigation } from "@react-navigation/native";
 import {SwiperFlatList} from 'react-native-swiper-flatlist';
 export default function VideoShorts (){ 
+    const navigation = useNavigation();
     const [currIndex, setIndex] = useState({})
     const data = [
         {
@@ -150,13 +152,15 @@ export default function VideoShorts (){
                     </View>
                     {/* Action Video Short Cut */}
                     <View style = {styles.ActionPost}>
-                        <View style = {styles.userPost}>
-                            <Image source={{uri : item.image}} style = {styles.UserPostImage}/>
-                            <Text style = {styles.UserPostName}>{item.name}</Text>
-                            <View style = {styles.backCover}>
-                                <Text style = {styles.Follow}>Follow</Text>
+                        <Pressable onPress = {() => {navigation.navigate('Follower')}} style = {{width: '85%',marginLeft: '5%'}}>
+                            <View style = {styles.userPost}>
+                                <Image source={{uri : item.image}} style = {styles.UserPostImage}/>
+                                <Text style = {styles.UserPostName}>{item.name}</Text>
+                                <View style = {styles.backCover}>
+                                    <Text style = {styles.Follow}>Follow</Text>
+                                </View>
                             </View>
-                        </View>
+                        </Pressable>
                         <Ionicons name = "ellipsis-vertical" size={20} color = "white" />
                     </View>
                     {/* Content Video Short Cut */}
@@ -169,9 +173,11 @@ export default function VideoShorts (){
                                 <Text style = {styles.TextUserWatch}>{item.watch} people</Text>
                             </View>
                         </View>
-                        <View style = {styles.ContentPostRight}>
-                            <Image source={{uri : 'https://scontent.fsgn4-1.fna.fbcdn.net/v/t39.30808-6/274876629_2826541607639210_363529317853290439_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=zhn6GxH97wsAX9igMrU&_nc_ht=scontent.fsgn4-1.fna&oh=00_AT8CV-QY77nPfLu8se8Ba5bfAa8KH96jrUmxQJa0CXTW2A&oe=625BCEB5'}} style = {styles.AudioImage}/>
-                        </View>
+                        <Pressable onPress={ () => {navigation.navigate('Audio')}}>
+                            <View style = {styles.ContentPostRight}>
+                                <Image source={{uri : 'https://scontent.fsgn4-1.fna.fbcdn.net/v/t39.30808-6/274876629_2826541607639210_363529317853290439_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=zhn6GxH97wsAX9igMrU&_nc_ht=scontent.fsgn4-1.fna&oh=00_AT8CV-QY77nPfLu8se8Ba5bfAa8KH96jrUmxQJa0CXTW2A&oe=625BCEB5'}} style = {styles.AudioImage}/>
+                            </View>
+                        </Pressable>
                     </View>
                 </View>
             </View>
@@ -240,8 +246,7 @@ const styles = StyleSheet.create({
     },
     userPost: {
         flexDirection: 'row',
-        width: '85%',
-        marginLeft: '5%',
+
     },
     UserPostImage: {
         width: 30,

@@ -158,12 +158,14 @@ export default function Profile() {
                             {arrayDiscover.map(item => (
                                 <View style = {styles.ListDiscoverItem}>
                                     <View style = {styles.ListDiscoverItemBorder}>
-                                        <View style = {{flexDirection : 'row'}}>
-                                            <Image source={{uri : item.image}} style = {styles.DiscoverImage}/>
-                                            <AntDesign name = "close" size={20} color = "#8e8e8e" style ={styles.IconClose} />
-                                        </View>
-                                        <Text style = {styles.TextNameDiscover}>{item.name}</Text>
-                                        <Text style = {styles.TextStatusDiscover}>{item.follow}</Text>
+                                        <Pressable onPress = {() => {navigation.navigate('Follower')}}>
+                                            <View style = {{flexDirection : 'row'}}>
+                                                <Image source={{uri : item.image}} style = {styles.DiscoverImage}/>
+                                                <AntDesign name = "close" size={20} color = "#8e8e8e" style ={styles.IconClose} />
+                                            </View>
+                                            <Text style = {styles.TextNameDiscover}>{item.name}</Text>
+                                            <Text style = {styles.TextStatusDiscover}>{item.follow}</Text>
+                                        </Pressable>
                                         <View style = {styles.FollowDiscover}>
                                             <Text style = {styles.TextFollowDiscover}>Follow</Text>
                                         </View>

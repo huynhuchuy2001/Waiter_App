@@ -35,6 +35,7 @@ import RequestFollows from '../component/Activity/RequestFollow';
 import RequestFollowDetails from '../component/Activity/RequestFollowDetail';
 import Follower from '../component/Activity/Follower';
 import VideoShorts from '../component/VideoShort/VideoShort';
+import Audios from '../component/VideoShort/Audio';
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 export default function AppNavigate(){
@@ -68,6 +69,7 @@ export default function AppNavigate(){
             <Stack.Screen name="RequestFollows" component={RequestFollows} />
             <Stack.Screen name="RequestFollowDetails" component={RequestFollowDetails} />
             <Stack.Screen name="Follower" component={Follower} />
+            <Stack.Screen name="Audio" component={Audios} />
           </Stack.Navigator>
         </NavigationContainer>
     );
