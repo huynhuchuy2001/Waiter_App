@@ -162,16 +162,18 @@ export default function Activitys() {
                 </Pressable>
                 {/* Activity This Week */}
                 <View style = {styles.ActivityWeek}>
-                    <Text style = {styles.TextWeek}>This Week</Text>
-                    <View style = {styles.WeekBody}>
-                        <View style = {styles.BackgroundMap}>
-                            <AntDesign name="exclamationcircleo" size={25} color="red" style = {{marginLeft : '25%',marginTop : '23%'}}/>
+                    <Pressable onPress={() => {navigation.navigate('LoginActivity')}}>
+                        <Text style = {styles.TextWeek}>This Week</Text>
+                        <View style = {styles.WeekBody}>
+                            <View style = {styles.BackgroundMap}>
+                                <AntDesign name="exclamationcircleo" size={25} color="red" style = {{marginLeft : '25%',marginTop : '23%'}}/>
+                            </View>
+                            <Text style = {styles.TextActivityWeek}>An unrecognized Windows PC just logged in near Bình Long, Bình Phước, Việt Nam, VN
+                                <Text style = {styles.TextTime}> 1h</Text>
+                            </Text>
+                            <Image source = {{uri : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu7nUfa8q8sGXEKRycMfPbHnVTOIeqK7Ix0w&usqp=CAU'}} style = {styles.ImageMap}/>
                         </View>
-                        <Text style = {styles.TextActivityWeek}>An unrecognized Windows PC just logged in near Bình Long, Bình Phước, Việt Nam, VN
-                            <Text style = {styles.TextTime}> 1h</Text>
-                        </Text>
-                        <Image source = {{uri : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu7nUfa8q8sGXEKRycMfPbHnVTOIeqK7Ix0w&usqp=CAU'}} style = {styles.ImageMap}/>
-                    </View>
+                    </Pressable>
                 </View>
                 {/* Activity This Month */}
                 <View style = {styles.ActivityMonth}>
@@ -179,31 +181,35 @@ export default function Activitys() {
                     {arrayActivityMonth.map(item =>(
                         item.status === 'follow' ?
                         // If Status follow
-                        <View style = {styles.MonthBody}>
-                            <Image source={{uri : item.image}} style = {styles.AvartarMonth} imageStyle={{ borderRadius: 50/2 }}/>
-                            <Text style = {styles.TextActivityMonth}>{item.content}
-                                <Text style = {styles.TextTimeMonth}> {item.time}</Text>
-                            </Text>
-                            <View style = {{width : 70, height : 28, backgroundColor : '#1d94d8',borderRadius : 5,marginTop : '8%',marginLeft : '5%'}}>
-                                <Text style = {styles.Follow}>Follow</Text>
-                            </View>
-                        </View> 
+                        <Pressable onPress={() => {navigation.navigate('Follower')}}>
+                            <View style = {styles.MonthBody}>
+                                <Image source={{uri : item.image}} style = {styles.AvartarMonth} imageStyle={{ borderRadius: 50/2 }}/>
+                                <Text style = {styles.TextActivityMonth}>{item.content}
+                                    <Text style = {styles.TextTimeMonth}> {item.time}</Text>
+                                </Text>
+                                <View style = {{width : 70, height : 28, backgroundColor : '#1d94d8',borderRadius : 5,marginTop : '8%',marginLeft : '5%'}}>
+                                    <Text style = {styles.Follow}>Follow</Text>
+                                </View>
+                            </View> 
+                        </Pressable>
                         : item.status === 'add' ?
                         // If status add
-                        <View style = {styles.MonthBody}>
-                            <Image source={{uri : item.image}} style = {styles.AvartarMonth} imageStyle={{ borderRadius: 50/2 }}/>
-                            <Text style = {styles.TextActivityMonthRequest}>{item.content}
-                                <Text style = {styles.TextTimeMonthRequest}> {item.time}</Text>
-                            </Text>
-                            <View style = {{width : 70, height : 28, backgroundColor : '#1d94d8',borderRadius : 5,marginTop : '8%'}}>
-                                <Text style = {styles.ConfirmRequest}>Confirm</Text>
-                            </View>
-                            <View style = {{width : 70, height : 28, backgroundColor : 'white',borderRadius : 5,marginTop : '8%', marginLeft : '2%'}}>
-                                <View style = {{width : 68, height : 25, backgroundColor : 'black',borderRadius : 5,marginTop : '2%',marginLeft : '1%'}}>
-                                    <Text style = {styles.DeleteRequest}>Delete</Text>
+                        <Pressable onPress={() => {navigation.navigate('RequestFollowDetails')}}>
+                            <View style = {styles.MonthBody}>
+                                <Image source={{uri : item.image}} style = {styles.AvartarMonth} imageStyle={{ borderRadius: 50/2 }}/>
+                                <Text style = {styles.TextActivityMonthRequest}>{item.content}
+                                    <Text style = {styles.TextTimeMonthRequest}> {item.time}</Text>
+                                </Text>
+                                <View style = {{width : 70, height : 28, backgroundColor : '#1d94d8',borderRadius : 5,marginTop : '8%'}}>
+                                    <Text style = {styles.ConfirmRequest}>Confirm</Text>
+                                </View>
+                                <View style = {{width : 70, height : 28, backgroundColor : 'white',borderRadius : 5,marginTop : '8%', marginLeft : '2%'}}>
+                                    <View style = {{width : 68, height : 25, backgroundColor : 'black',borderRadius : 5,marginTop : '2%',marginLeft : '1%'}}>
+                                        <Text style = {styles.DeleteRequest}>Delete</Text>
+                                    </View>
                                 </View>
                             </View>
-                        </View>
+                        </Pressable>
                         :
                         // If status post
                         <View style = {styles.MonthBody}>

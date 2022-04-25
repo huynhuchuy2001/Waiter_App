@@ -5,14 +5,14 @@ import { useNavigation } from "@react-navigation/native";
 export default function EditName() {
     const navigation = useNavigation();
     return(
-        <View style={styles.EditProfilecontainer}>
-            {/* Header Edit Profile */}
-            <View style={styles.HeaderEditProfile}>
+        <View style={styles.EditNamecontainer}>
+            {/* Header Edit Name */}
+            <View style={styles.HeaderEditName}>
                 <AntDesign name="close" size={30} color="white" onPress={() => navigation.goBack()} style ={{marginTop : '2%',marginLeft : '2%'}}/>
-                <Text style={styles.HeaderEditProfileText}>Name</Text>
+                <Text style={styles.HeaderEditNameText}>Name</Text>
                 <AntDesign name="check" size={30} color="#087cbf" style ={{marginTop : '2%',marginLeft : '60%'}}/>
             </View>
-            <View style={styles.EditProfileBody}>
+            <View style={styles.EditNameBody}>
                 {/* Edit Name */}
                 <View style={styles.EditName}>
                     <Text style={styles.EditNameText}>Name</Text>
@@ -25,21 +25,21 @@ export default function EditName() {
     )
 };
 const styles = StyleSheet.create({
-    EditProfilecontainer: {
+    EditNamecontainer: {
         backgroundColor: 'black',
     },
-    HeaderEditProfile: {
+    HeaderEditName: {
         backgroundColor: 'black',
         flexDirection: 'row',
         height: 50,
     },
-    HeaderEditProfileText: {
+    HeaderEditNameText: {
         color: 'white',
         fontSize: 22,
         marginTop: '2%',
         marginLeft: '5%',
     },
-    EditProfileBody: {
+    EditNameBody: {
         backgroundColor: 'black',
         height: '100%',
     },

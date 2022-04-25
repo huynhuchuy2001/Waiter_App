@@ -3,6 +3,7 @@ import Icon from 'react-native-vector-icons/Ionicons';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import AntDesign from 'react-native-vector-icons/AntDesign';
+import Feather from 'react-native-vector-icons/Feather';
 import Octicons from 'react-native-vector-icons/Octicons';
 import { Text,Button, View, StyleSheet, TextInput,Image,ScrollView,ImageBackground } from 'react-native';
 import { useNavigation } from "@react-navigation/native";
@@ -138,10 +139,10 @@ export default function Home () {
                                     <Icon name="heart-outline" size={25} color="white" />
                                 </View>
                                 <View style = {styles.IconAction}>
-                                    <FontAwesome name="comment-o" size={25} color="white" />
+                                    <FontAwesome name="comment-o" size={25} color="white" onPress={() => {navigation.navigate('Comment')}}/>
                                 </View>
                                 <View style = {styles.IconAction}>
-                                    <Icon name="share-outline" size={25} color="white" />
+                                    <Feather name="send" size={25} color="white" />
                                 </View>
                                 <View style = {styles.IconActionSave}>
                                     <MaterialIcons name="save-alt" size={25} color="white" />
