@@ -1,14 +1,16 @@
-import * as React from 'react';
+import React, {useState} from 'react';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import Octicons from 'react-native-vector-icons/Octicons';
 import Feather from 'react-native-vector-icons/Feather';
+import Entypo from 'react-native-vector-icons/Entypo';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import Fontisto from 'react-native-vector-icons/Fontisto';
-import { Text,Button, View, StyleSheet, TextInput,Image,ScrollView,ImageBackground,Pressable } from 'react-native';
+import { Text,Button, View, StyleSheet, TextInput,Image,ScrollView,ImageBackground,Pressable,Modal } from 'react-native';
 import { useNavigation } from "@react-navigation/native";
 export default function Profile() {
+    const [modalAddVisible, setModalAddVisible] = useState(false);
     const navigation = useNavigation();
     let name = 'hdh.huyyyy';
     var arrayDiscover = [
@@ -106,11 +108,57 @@ export default function Profile() {
     ]
     return (
         <View style = {styles.ProfileScreen}>
+            <Modal
+                animationType="slide"
+                transparent={true}
+                visible={modalAddVisible}
+                onRequestClose={() => {
+                setModalVisible(!modalAddVisible);
+                }}
+            >
+                <View style={styles.BottomView}>
+                    <View style={styles.modalBottomView}>
+                        <View style = {styles.modalBottomBoder}/>
+                        {/* Account */}
+                        <View style = {styles.modalBottomActionAccount}>
+                            <View style = {styles.modalBottomAccount}>
+                                <Image style = {styles.modalBottomAccountImage} source={{uri : 'https://scontent.fsgn4-1.fna.fbcdn.net/v/t39.30808-6/274876629_2826541607639210_363529317853290439_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=zhn6GxH97wsAX9igMrU&_nc_ht=scontent.fsgn4-1.fna&oh=00_AT8CV-QY77nPfLu8se8Ba5bfAa8KH96jrUmxQJa0CXTW2A&oe=625BCEB5'}}/>
+                                <Text style = {styles.modalBottomAccountName}>hdh.huyyyy</Text>
+                                <View style = {styles.modalBottomAccountAction}>
+                                    <View style = {styles.IconDot}/>
+                                </View>
+                            </View>
+                        </View>
+                        {/* Add Account */}
+                        <View style = {styles.modalBottomActionAddAccount}>
+                            <View style = {styles.modalBottomAddAccount}>
+                                <View style = {styles.modalBottomAccountBorder}>
+                                    <AntDesign style = {styles.modalBottomAccountIcon} name="plus" size={30} color="white"/>
+                                </View>
+                                <Text style = {styles.modalBottomAddAccountName}>Add account</Text>
+                            </View>
+                        </View>
+                        {/* Close */}
+                        <Pressable onPress={() => {setModalAddVisible(!modalAddVisible)}}>
+                            <View style = {styles.modalBottomActionClose}>
+                                <View style = {styles.modalBottomCloseView}>
+                                    <View style = {styles.modalBottomCloseBorder}>
+                                        <AntDesign style = {styles.modalBottomCloseIcon} name="close" size={30} color="white"/>
+                                    </View>
+                                    <Text style = {styles.modalBottomClose}>Close</Text>
+                                </View>
+                            </View>
+                        </Pressable>
+                    </View>
+                </View>
+            </Modal>
             {/* Header Profile */}
             <View style = {styles.HeaderProfile}>
-                <Fontisto name = "locked" size={20} color = "rgb(248, 248, 242)" style ={styles.IconLock} onPress = {() =>{navigation.navigate('Home')}}/>
-                <Text style = {styles.textProfile}>{name}</Text>
-                <AntDesign name = "down" size={15} color = "rgb(248, 248, 242)" style ={styles.IconDown}/>
+                <Pressable  onPress={() => {setModalAddVisible(true)}} style = {{flexDirection : 'row' ,marginTop : '1%' , marginLeft : '2%', width : '70%'}}>
+                    <Fontisto name = "locked" size={20} color = "rgb(248, 248, 242)" style ={styles.IconLock} onPress = {() =>{navigation.navigate('Home')}}/>
+                    <Text style = {styles.textProfile}>{name}</Text>
+                    <AntDesign name = "down" size={15} color = "rgb(248, 248, 242)" style ={styles.IconDown}/>
+                </Pressable>
                 <Octicons name = "diff-added" size={27} color = "rgb(248, 248, 242)" style ={styles.IconAdd} onPress = {() =>{navigation.navigate('NewProfile')}}/>
                 <Ionicons name = "menu" size={35} color = "rgb(248, 248, 242)" style ={styles.IconMenu} onPress = {() => {navigation.navigate('Calls')}}/>
             </View>
@@ -282,7 +330,7 @@ const styles = StyleSheet.create({
     },
     textProfile: {
         fontSize: 22,
-        marginLeft: '3%',
+        marginLeft: '5%',
         marginTop: '3%',
         color: 'rgb(248, 248, 242)',
         fontWeight: 'bold',
@@ -293,20 +341,20 @@ const styles = StyleSheet.create({
         textAlign : 'center',
     },
     IconLock: {
-        marginLeft: '2%',
-        marginTop: '4%',
+        marginLeft: '5%',
+        marginTop: '5%',
     },
     IconDown: {
         marginLeft : '1%',
-        marginTop : '5%',
+        marginTop : '6%',
     },
     IconMenu: {
-        marginTop : '2%',
+        marginTop : '3%',
         marginLeft : '5%',
     },
     IconAdd: {
-        marginTop : '3%',
-        marginLeft : '35%',
+        marginTop : '4%',
+        marginLeft : '5%',
     },
     Profile: {
         marginTop : '5%',
@@ -682,5 +730,108 @@ const styles = StyleSheet.create({
         width : 20,
         height : 20,
         borderRadius : 20/2,
-    }
+    },
+    BottomView : {
+        top: '70%', 
+    },
+    modalBottomView: {
+        backgroundColor: "#272c33",
+        borderRadius: 20,
+        height : 225,
+    },
+    modalBottomBoder: {
+        marginTop : '3%',
+        width : '10%',
+        marginLeft : '45%',
+        borderBottomColor: "white",
+        borderBottomWidth: 6,
+        borderBottomEndRadius: 10,
+        borderBottomStartRadius: 10,
+        borderTopLeftRadius: 10,
+        borderTopRightRadius: 10,
+    },
+    modalBottomActionAccount : {
+        marginTop : '2%',
+        marginLeft : '2%',
+    },
+    modalBottomAccount : {
+        flexDirection : 'row',
+    },
+    modalBottomAccountImage : {
+        width : 50,
+        height : 50,
+        borderRadius: 50/2,
+    },
+    modalBottomAccountName : {
+        width : '70%',
+        marginLeft : '5%',
+        color : 'white',
+        fontSize : 18,
+        marginTop : '4%',
+    },
+    modalBottomAccountAction : {
+        width : 25,
+        height : 25,
+        borderRadius: 25/2,
+        backgroundColor : '#087cbf',
+        marginTop : '4%',
+    },
+    IconDot : {
+        width : 10,
+        height : 10,
+        borderRadius : 10/2,
+        backgroundColor : 'black',
+        marginTop : '30%',
+        marginLeft : '30%',
+    },
+    modalBottomAddAccountName : {
+        marginLeft : '5%',
+        color : 'white',
+        fontSize : 18,
+        marginTop : '4%',
+    },
+    modalBottomActionAddAccount : {
+        marginTop : '2%',
+        marginLeft : '2%',
+    },
+    modalBottomAddAccount : {
+        flexDirection : 'row',
+        marginTop : '2%',
+    },
+    modalBottomAccountBorder : {
+        width : 50,
+        height : 50,
+        borderRadius: 50/2,
+        borderColor: '#8e8e8e',
+        borderWidth: 1,
+    },
+    modalBottomAccountIcon : {
+        marginLeft : '18%',
+        marginTop : '18%',
+    },
+    modalBottomActionClose: {
+        marginTop : '2%',
+        marginLeft : '2%',
+    },
+    modalBottomCloseView: {
+        flexDirection : 'row',
+        marginTop : '2%',
+    },
+    modalBottomCloseBorder : {
+        width : 50,
+        height : 50,
+        borderRadius: 50/2,
+        borderColor: '#8e8e8e',
+        borderWidth: 1,
+    },
+    modalBottomCloseIcon : {
+        marginLeft : '18%',
+        marginTop : '18%',
+    },
+    modalBottomClose : {
+        marginLeft : '5%',
+        color : 'white',
+        fontSize : 18,
+        marginTop : '4%',
+    },
 });
