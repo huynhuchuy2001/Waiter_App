@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React,{useState} from 'react';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
@@ -6,10 +6,11 @@ import Octicons from 'react-native-vector-icons/Octicons';
 import Feather from 'react-native-vector-icons/Feather';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import Fontisto from 'react-native-vector-icons/Fontisto';
-import { Text,Button, View, StyleSheet, TextInput,Image,ScrollView,ImageBackground,Pressable } from 'react-native';
+import { Text,Button, View, StyleSheet, TextInput,Image,ScrollView,Modal,Pressable } from 'react-native';
 import { useNavigation } from "@react-navigation/native";
 export default function Follower() {
     const navigation = useNavigation();
+    const [modalEditVisible, setModalEditVisible] = useState(false);
     let name = 'hdh.huyyyy';
     var friend = {
         name: 'hdh.huyyyy',
@@ -73,11 +74,38 @@ export default function Follower() {
     ];
     return (
         <View style = {styles.ProfileScreen}>
+            {/* Open Modal Report, Hide, link */}
+            <Modal
+                animationType="slide"
+                transparent={true}
+                visible={modalEditVisible}
+                onRequestClose={() => {
+                setModalVisible(!modalEditVisible);
+                }}
+            >
+                <View style={styles.BottomView}>
+                    <View style={styles.modalBottomView}>
+                        <View style = {styles.modalBottomBoder}/>
+                        {/* Title */}
+                        <View style = {styles.modalBottomTitle}>
+                            <Text style = {styles.modalBottomTitleReport}>Report...</Text>
+                            <Text style = {styles.modalBottomTitleBlock}>Block</Text>
+                            <Text style = {styles.modalBottomTitleRestrict}>Restrict</Text>
+                            <Text style = {styles.modalBottomTitleHide}>Hide your story</Text>
+                            <Text style = {styles.modalBottomTitleCopy}>Copy profile URL</Text>
+                            <Text style = {styles.modalBottomTitleShare}>Share This profile</Text>
+                            <Pressable onPress={() => {setModalEditVisible(!modalEditVisible)}}>
+                                <Text style = {styles.modalBottomTitleClose}>Close</Text>
+                            </Pressable>
+                        </View>
+                    </View>
+                </View>
+            </Modal>
             {/* Header Profile */}
             <View style = {styles.HeaderProfile}>
                 <AntDesign name = "arrowleft" size={30} color = "rgb(248, 248, 242)" style ={styles.IconLock} onPress = {() =>{navigation.goBack()}}/>
                 <Text style = {styles.textProfile}>{name}</Text>
-                <Ionicons name = "ellipsis-vertical" size={20} color = "white" style ={styles.IconMenu} />
+                <Ionicons name = "ellipsis-vertical" size={20} color = "white" style ={styles.IconMenu} onPress = {() => {setModalEditVisible(true)}}/>
             </View>
             {/* Profile */}
             <ScrollView showsVerticalScrollIndicator={false}>
@@ -439,5 +467,69 @@ const styles = StyleSheet.create({
         width : '33.333333%',
         height : 120,
         marginLeft : 3
-    }
+    },
+    BottomView : {
+        top: '57%', 
+    },
+    modalBottomView: {
+        backgroundColor: "#272c33",
+        borderRadius: 20,
+        height : 330,
+    },
+    modalBottomBoder: {
+        marginTop : '3%',
+        width : '10%',
+        marginLeft : '45%',
+        borderBottomColor: "white",
+        borderBottomWidth: 6,
+        borderBottomEndRadius: 10,
+        borderBottomStartRadius: 10,
+        borderTopLeftRadius: 10,
+        borderTopRightRadius: 10,
+    },
+    modalBottomTitle : {
+        marginTop : '2%',
+        marginLeft : '2%',
+    },
+    modalBottomTitleReport : {
+        color : 'white',
+        fontSize : 18,
+        marginLeft : '2%',
+    },
+    modalBottomTitleBlock: {
+        marginTop : '5%',
+        color : 'white',
+        fontSize : 18,
+        marginLeft : '2%',
+    },
+    modalBottomTitleRestrict: {
+        marginTop : '5%',
+        color : 'white',
+        fontSize : 18,
+        marginLeft : '2%',
+    },
+    modalBottomTitleHide: {
+        marginTop : '5%',
+        color : 'white',
+        fontSize : 18,
+        marginLeft : '2%',
+    },
+    modalBottomTitleCopy: {
+        marginTop : '5%',
+        color : 'white',
+        fontSize : 18,
+        marginLeft : '2%',
+    },
+    modalBottomTitleShare : {
+        marginTop : '5%',
+        color : 'white',
+        fontSize : 18,
+        marginLeft : '2%',
+    },
+    modalBottomTitleClose : {
+        marginTop : '5%',
+        color : 'white',
+        fontSize : 18,
+        marginLeft : '2%',
+    },
 });

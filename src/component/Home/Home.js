@@ -390,7 +390,7 @@ export default function Home () {
                                     <Feather name="send" size={25} color="white" onPress={() => {setModalSendVisible(true)}}/>
                                 </View>
                                 <View style = {styles.IconActionSave}>
-                                    <MaterialIcons name="save-alt" size={25} color="white" />
+                                    <FontAwesome name="bookmark-o" size={25} color="white" />
                                 </View>
                             </View>
                             {/* Like, Content and SeeMore Comment*/}

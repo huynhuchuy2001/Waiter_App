@@ -5,12 +5,15 @@ import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import Octicons from 'react-native-vector-icons/Octicons';
 import Feather from 'react-native-vector-icons/Feather';
 import Entypo from 'react-native-vector-icons/Entypo';
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import Fontisto from 'react-native-vector-icons/Fontisto';
 import { Text,Button, View, StyleSheet, TextInput,Image,ScrollView,ImageBackground,Pressable,Modal } from 'react-native';
 import { useNavigation } from "@react-navigation/native";
 export default function Profile() {
     const [modalAddVisible, setModalAddVisible] = useState(false);
+    const [modalEditVisible, setModalEditVisible] = useState(false);
+    const [modalSettingVisible, setModalSettingVisible] = useState(false);
     const navigation = useNavigation();
     let name = 'hdh.huyyyy';
     var arrayDiscover = [
@@ -108,6 +111,7 @@ export default function Profile() {
     ]
     return (
         <View style = {styles.ProfileScreen}>
+            {/* Modal Account */}
             <Modal
                 animationType="slide"
                 transparent={true}
@@ -152,6 +156,112 @@ export default function Profile() {
                     </View>
                 </View>
             </Modal>
+            {/* Modal Add Post */}
+            <Modal
+                animationType="slide"
+                transparent={true}
+                visible={modalEditVisible}
+                onRequestClose={() => {
+                setModalVisible(!modalEditVisible);
+                }}
+            >
+                <View style={styles.BottomViewCreate}>
+                    <View style={styles.modalBottomViewCreate}>
+                        <View style = {styles.modalBottomBoder}/>
+                        {/* Title */}
+                        <View style = {styles.modalBottomActionCreatePost}>
+                            <Text style = {styles.modalBottomActionCreatePostText}>Create</Text>
+                        </View>
+                        <View style = {styles.modalBottomTitle}>
+                            <View style = {{flexDirection : 'row', marginLeft : '3%'}}>
+                                <AntDesign name="table" size={30} color="white"/>
+                                <Text style = {styles.modalBottomTitlePost}>Post</Text>
+                            </View>
+                            <View style = {{flexDirection : 'row', marginLeft : '2%', marginTop : '3%'}}>
+                                <MaterialCommunityIcons name="video-plus" size={40} color="white"/>
+                                <Text style = {styles.modalBottomTitleReel}>Reel</Text>
+                            </View>
+                            <View style = {{flexDirection : 'row', marginLeft : '3%', marginTop : '3%'}}>
+                                <MaterialIcons name='add-to-queue' size={35} color="white"/>
+                                <Text style = {styles.modalBottomTitleStory}>Story</Text>
+                            </View>
+                            <View style = {{flexDirection : 'row', marginLeft : '2%', marginTop : '3%'}}>
+                                <MaterialIcons name='add-circle-outline' size={40} color="white"/>
+                                <Text style = {styles.modalBottomTitleStoryHighlight}>Story Highlight</Text>
+                            </View>
+                            <View style = {{flexDirection : 'row', marginLeft : '3%', marginTop : '3%'}}>
+                                <MaterialIcons name='live-tv' size={35} color="white"/>
+                                <Text style = {styles.modalBottomTitleLive}>Live</Text>
+                            </View>
+                            <View style = {{flexDirection : 'row', marginLeft : '3%', marginTop : '3%'}}>
+                                <MaterialIcons name='menu-book' size={35} color="white"/>
+                                <Text style = {styles.modalBottomTitleGuide}>Guide</Text>
+                            </View>
+                            <Pressable onPress={() => {setModalEditVisible(!modalEditVisible)}}>
+                                <View style = {{flexDirection : 'row', marginLeft : '3%', marginTop : '3%'}}>
+                                    <AntDesign name="closecircleo" size={35} color="white"/>
+                                    <Text style = {styles.modalBottomTitleClose}>Close</Text>
+                                </View>
+                            </Pressable>
+                        </View>
+                    </View>
+                </View>
+            </Modal>
+            {/* Modal Setting */}
+            <Modal
+                animationType="slide"
+                transparent={true}
+                visible={modalSettingVisible}
+                onRequestClose={() => {
+                setModalVisible(!modalSettingVisible);
+                }}
+            >
+                <View style={styles.BottomViewCreate}>
+                    <View style={styles.modalBottomViewCreate}>
+                        <View style = {styles.modalBottomBoder}/>
+                        <View style = {styles.modalBottomTitle}>
+                            <View style = {{flexDirection : 'row', marginLeft : '3%'}}>
+                                <AntDesign name="setting" size={30} color="white"/>
+                                <Text style = {styles.modalBottomTitlePost}>Settings</Text>
+                            </View>
+                            <View style = {{flexDirection : 'row', marginLeft : '3%', marginTop : '3%'}}>
+                                <FontAwesome name="history" size={30} color="white"/>
+                                <Text style = {styles.modalBottomTitleReel}>Archive</Text>
+                            </View>
+                            <View style = {{flexDirection : 'row', marginLeft : '3%', marginTop : '3%'}}>
+                                <MaterialCommunityIcons name='progress-clock' size={30} color="white"/>
+                                <Text style = {styles.modalBottomTitleStory}>Your activity</Text>
+                            </View>
+                            <View style = {{flexDirection : 'row', marginLeft : '3%', marginTop : '3%'}}>
+                                <MaterialCommunityIcons name='qrcode-scan' size={30} color="white"/>
+                                <Text style = {styles.modalBottomTitleStoryHighlight}>QR code</Text>
+                            </View>
+                            <View style = {{flexDirection : 'row', marginLeft : '4%', marginTop : '4%'}}>
+                                <FontAwesome name='bookmark-o' size={30} color="white"/>
+                                <Text style = {styles.modalBottomTitleLive}>Saved</Text>
+                            </View>
+                            <View style = {{flexDirection : 'row', marginLeft : '3%', marginTop : '3%'}}>
+                                <MaterialCommunityIcons name='format-list-bulleted-triangle' size={30} color="white"/>
+                                <Text style = {styles.modalBottomTitleGuide}>Close Friends</Text>
+                            </View>
+                            <View style = {{flexDirection : 'row', marginLeft : '3%', marginTop : '3%'}}>
+                                <FontAwesome name='star-o' size={30} color="white"/>
+                                <Text style = {styles.modalBottomTitleFavorite}>Favorite</Text>
+                            </View>
+                            <View style = {{flexDirection : 'row', marginLeft : '3%', marginTop : '3%'}}>
+                                <MaterialCommunityIcons name='hand-heart' size={30} color="white"/>
+                                <Text style = {styles.modalBottomTitleCovid}>COVID-19 Information Center</Text>
+                            </View>
+                            <Pressable onPress={() => {setModalSettingVisible(!modalSettingVisible)}}>
+                                <View style = {{flexDirection : 'row', marginLeft : '3%', marginTop : '3%'}}>
+                                    <AntDesign name="closecircleo" size={30} color="white"/>
+                                    <Text style = {styles.modalBottomTitleClose}>Close</Text>
+                                </View>
+                            </Pressable>
+                        </View>
+                    </View>
+                </View>
+            </Modal>
             {/* Header Profile */}
             <View style = {styles.HeaderProfile}>
                 <Pressable  onPress={() => {setModalAddVisible(true)}} style = {{flexDirection : 'row' ,marginTop : '1%' , marginLeft : '2%', width : '70%'}}>
@@ -159,8 +269,8 @@ export default function Profile() {
                     <Text style = {styles.textProfile}>{name}</Text>
                     <AntDesign name = "down" size={15} color = "rgb(248, 248, 242)" style ={styles.IconDown}/>
                 </Pressable>
-                <Octicons name = "diff-added" size={27} color = "rgb(248, 248, 242)" style ={styles.IconAdd} onPress = {() =>{navigation.navigate('NewProfile')}}/>
-                <Ionicons name = "menu" size={35} color = "rgb(248, 248, 242)" style ={styles.IconMenu} onPress = {() => {navigation.navigate('Calls')}}/>
+                <Octicons name = "diff-added" size={27} color = "rgb(248, 248, 242)" style ={styles.IconAdd} onPress = {() =>{setModalEditVisible(true)}}/>
+                <Ionicons name = "menu" size={35} color = "rgb(248, 248, 242)" style ={styles.IconMenu} onPress = {() => {setModalSettingVisible(true)}}/>
             </View>
             {/* Profile */}
             <ScrollView showsVerticalScrollIndicator={false}>
@@ -259,8 +369,8 @@ export default function Profile() {
                         <MaterialCommunityIcons name='card-account-details-star-outline' size={30} color = "rgb(248, 248, 242)" style ={styles.IconAccount}/>
                     </View>
                     <Text style = {styles.TextTitleProfile}>Profile</Text>
-                    <Text style = {styles.TextMessagePost}>When you share photo and videos, they'll appear on your profile.</Text>
-                    <Text style = {styles.TextfirstPost}>Share your first photo or video</Text>
+                    <Text style = {styles.TextMessagePost}>When you Guide photo and videos, they'll appear on your profile.</Text>
+                    <Text style = {styles.TextfirstPost}>Guide your first photo or video</Text>
                 </View>
                 {/* Complete your profile */}
                 <View style = {styles.CompleteProfile}>
@@ -833,5 +943,95 @@ const styles = StyleSheet.create({
         color : 'white',
         fontSize : 18,
         marginTop : '4%',
+    },
+    BottomViewCreate : {
+        top: '45%', 
+    },
+    modalBottomViewCreate: {
+        backgroundColor: "#272c33",
+        borderRadius: 20,
+        height : 420,
+    },
+    modalBottomBoder: {
+        marginTop : '3%',
+        width : '10%',
+        marginLeft : '45%',
+        borderBottomColor: "white",
+        borderBottomWidth: 6,
+        borderBottomEndRadius: 10,
+        borderBottomStartRadius: 10,
+        borderTopLeftRadius: 10,
+        borderTopRightRadius: 10,
+    },
+    modalBottomTitle : {
+        marginTop : '2%',
+        marginLeft : '2%',
+    },
+    modalBottomTitlePost : {
+        color : 'white',
+        fontSize : 18,
+        marginLeft : '4%',
+        marginTop : '1%',
+    },
+    modalBottomTitleReel: {
+        marginTop : '1%',
+        color : 'white',
+        fontSize : 18,
+        marginLeft : '5%',
+    },
+    modalBottomTitleStory: {
+        marginTop : '1%',
+        color : 'white',
+        fontSize : 18,
+        marginLeft : '4%',
+    },
+    modalBottomTitleStoryHighlight: {
+        marginTop : '1%',
+        color : 'white',
+        fontSize : 18,
+        marginLeft : '4%',
+    },
+    modalBottomTitleLive: {
+        marginTop : '1%',
+        color : 'white',
+        fontSize : 18,
+        marginLeft : '6%',
+    },
+    modalBottomTitleGuide : {
+        marginTop : '1%',
+        color : 'white',
+        fontSize : 18,
+        marginLeft : '4%',
+    },
+    modalBottomTitleFavorite : {
+        marginTop : '1%',
+        color : 'white',
+        fontSize : 18,
+        marginLeft : '5%',
+    },
+    modalBottomTitleCovid : {
+        marginTop : '1%',
+        color : 'white',
+        fontSize : 18,
+        marginLeft : '4%',
+    },
+    modalBottomTitleClose : {
+        marginTop : '1%',
+        color : 'white',
+        fontSize : 18,
+        marginLeft : '4%',
+    },
+    modalBottomActionCreatePost: {
+        flexDirection : 'row',
+        marginTop : '3%',
+        borderBottomColor: "#8e8e8e",
+        borderBottomWidth: 1,
+    },
+    modalBottomActionCreatePostText : {
+        width : '20%',
+        marginLeft : '40%',
+        color : 'white',
+        fontSize : 20,
+        marginBottom : '2%',
     },
 });
