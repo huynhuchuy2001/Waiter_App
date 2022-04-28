@@ -38,6 +38,13 @@ import VideoShorts from '../component/VideoShort/VideoShort';
 import Audios from '../component/VideoShort/Audio';
 import LoginActivity from '../component/Activity/LoginActivity';
 import EditPassword from '../component/Account/EditProfile/EditPassword';
+import MessageControl from '../component/Message/MessageRequest/MessageControl';
+import FollowerOnWaiter from '../component/Message/MessageRequest/FollowerOnWaiter';
+import PeopleFacebook from '../component/Message/MessageRequest/PeopleOnFacebook';
+import OrthersOnWaiter from '../component/Message/MessageRequest/OrtherOnWaiter';
+import AddGroups from '../component/Message/MessageRequest/AddGroup';
+import HidenWord from '../component/Message/MessageRequest/HidenWord';
+import ManageList from '../component/Message/MessageRequest/ManageList';
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 export default function AppNavigate(){
@@ -58,6 +65,13 @@ export default function AppNavigate(){
             <Stack.Screen name="HiddenRequest" component={HiddenRequest} />
             <Stack.Screen name="SearchMessage" component={SearchMessage} />
             <Stack.Screen name="NewMessage" component={NewMessage} />
+            <Stack.Screen name="MessageControl" component={MessageControl} />
+            <Stack.Screen name="FollowerOnWaiter" component={FollowerOnWaiter} />
+            <Stack.Screen name="PeopleFacebook" component={PeopleFacebook} />
+            <Stack.Screen name="OrthersOnWaiter" component={OrthersOnWaiter} />
+            <Stack.Screen name="AddGroups" component={AddGroups} />
+            <Stack.Screen name="HidenWord" component={HidenWord} />
+            <Stack.Screen name="ManageList" component={ManageList} />
             <Stack.Screen name="Calls" component={Calls} />
             <Stack.Screen name="ChatMessage" component={ChatMessage} />
             <Stack.Screen name="EditProfile" component={EditProfile} />

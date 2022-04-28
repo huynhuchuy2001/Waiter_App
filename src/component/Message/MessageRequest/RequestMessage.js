@@ -1,9 +1,6 @@
 import * as React from 'react';
 import AntDesign from 'react-native-vector-icons/AntDesign';
-import Ionicons from 'react-native-vector-icons/Ionicons';
-import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import Feather from 'react-native-vector-icons/Feather';
-import Fontisto from 'react-native-vector-icons/Fontisto';
 import { Text,Button, View, StyleSheet, TextInput,Image,ScrollView,ImageBackground } from 'react-native';
 import { useNavigation } from "@react-navigation/native";
 export default function RequestMessage() {
@@ -19,7 +16,7 @@ export default function RequestMessage() {
                 <View style = {{borderBottomColor: "#414360",borderBottomWidth: 1}}>
                     <View style = {styles.TitleMessage}>
                         <Text style = {styles.textTitleMessage}>Open a chat to get more info about who's messaging you. They won't know you've seen it util you accept.</Text>
-                        <Text style = {styles.ManagerMessage}>Decide who can message you.</Text>
+                        <Text style = {styles.ManagerMessage} onPress = {() => {navigation.navigate('MessageControl')}}>Decide who can message you.</Text>
                     </View>
                 </View>
                 {/* Show hidden Requests here */}

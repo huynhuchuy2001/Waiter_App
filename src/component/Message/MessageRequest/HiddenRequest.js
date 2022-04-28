@@ -23,7 +23,7 @@ export default function HiddenRequest() {
                 <View style = {styles.ConfirmMessage}>
                     <Text style = {styles.textConfirmMessage}>No hidden requests</Text>
                     <Text style = {styles.textConfirmMessageAgain}>Message requests that may be offesive or unwanted will appear here.</Text>
-                    <Text style = {styles.ManagerMessage}>Manage Hidden Words preferences</Text>
+                    <Text style = {styles.ManagerMessage} onPress = {() => {navigation.navigate('HidenWord')}}>Manage Hidden Words preferences</Text>
                 </View>
             </ScrollView>
         </View>
