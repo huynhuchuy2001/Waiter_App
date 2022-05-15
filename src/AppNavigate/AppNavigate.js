@@ -45,6 +45,9 @@ import OrthersOnWaiter from '../component/Message/MessageRequest/OrtherOnWaiter'
 import AddGroups from '../component/Message/MessageRequest/AddGroup';
 import HidenWord from '../component/Message/MessageRequest/HidenWord';
 import ManageList from '../component/Message/MessageRequest/ManageList';
+import Follow from '../component/Setting/ActionSetting/Follow';
+import Setting from '../component/Setting/Setting';
+import Notifications from '../component/Setting/ActionSetting/Notifications';
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 export default function AppNavigate(){
@@ -88,6 +91,9 @@ export default function AppNavigate(){
             <Stack.Screen name="Audio" component={Audios} />
             <Stack.Screen name="LoginActivity" component={LoginActivity} />
             <Stack.Screen name="EditPassword" component={EditPassword} />
+            <Stack.Screen name="Setting" component={Setting} />
+            <Stack.Screen name="Follow" component={Follow} />
+            <Stack.Screen name="Notifications" component={Notifications} />
           </Stack.Navigator>
         </NavigationContainer>
     );

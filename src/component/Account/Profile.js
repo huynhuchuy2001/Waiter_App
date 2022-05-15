@@ -220,10 +220,12 @@ export default function Profile() {
                     <View style={styles.modalBottomViewCreate}>
                         <View style = {styles.modalBottomBoder}/>
                         <View style = {styles.modalBottomTitle}>
-                            <View style = {{flexDirection : 'row', marginLeft : '3%'}}>
-                                <AntDesign name="setting" size={30} color="white"/>
-                                <Text style = {styles.modalBottomTitlePost}>Settings</Text>
-                            </View>
+                            <Pressable onPress={() => {navigation.navigate('Setting')}}>
+                                <View style = {{flexDirection : 'row', marginLeft : '3%'}}>
+                                    <AntDesign name="setting" size={30} color="white"/>
+                                    <Text style = {styles.modalBottomTitlePost}>Settings</Text>
+                                </View>
+                            </Pressable>
                             <View style = {{flexDirection : 'row', marginLeft : '3%', marginTop : '3%'}}>
                                 <FontAwesome name="history" size={30} color="white"/>
                                 <Text style = {styles.modalBottomTitleReel}>Archive</Text>
