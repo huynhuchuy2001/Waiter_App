@@ -37,20 +37,26 @@ export default function Setting() {
                             </View>
                         </Pressable>
                         {/* Privacy */}
-                        <View style = {styles.Privacy}>
-                            <Feather name="lock" size={25} color="white" style = {styles.IconLock}/>
-                            <Text style = {styles.PrivacyText}>Privacy</Text>
-                        </View>
+                        <Pressable  onPress = {() =>{navigation.navigate('Privacy')}}>
+                            <View style = {styles.Privacy}>
+                                <Feather name="lock" size={25} color="white" style = {styles.IconLock}/>
+                                <Text style = {styles.PrivacyText}>Privacy</Text>
+                            </View>
+                        </Pressable>
                         {/* Security */}
-                        <View style = {styles.Security}>
-                            <Ionicons name="shield-checkmark-outline" size={25} color="white" style = {styles.IconSecure}/>
-                            <Text style = {styles.SecurityText}>Security</Text>
-                        </View>
+                        <Pressable  onPress = {() =>{navigation.navigate('Security')}}>
+                            <View style = {styles.Security}>
+                                <Ionicons name="shield-checkmark-outline" size={25} color="white" style = {styles.IconSecure}/>
+                                <Text style = {styles.SecurityText}>Security</Text>
+                            </View>
+                        </Pressable>
                         {/* Ads */}
-                        <View style = {styles.Ads}>
-                            <AntDesign name="notification" size={25} color="white" style = {styles.IconAds}/>
-                            <Text style = {styles.AdsText}>Ads</Text>
-                        </View>
+                        <Pressable  onPress = {() =>{navigation.navigate('Ads')}}>
+                            <View style = {styles.Ads}>
+                                <AntDesign name="notification" size={25} color="white" style = {styles.IconAds}/>
+                                <Text style = {styles.AdsText}>Ads</Text>
+                            </View>
+                        </Pressable>
                         {/* Account */}
                         <View style = {styles.Account}>
                             <AntDesign name="user" size={25} color="white" style = {styles.IconAccount}/>

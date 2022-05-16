@@ -48,6 +48,9 @@ import ManageList from '../component/Message/MessageRequest/ManageList';
 import Follow from '../component/Setting/ActionSetting/Follow';
 import Setting from '../component/Setting/Setting';
 import Notifications from '../component/Setting/ActionSetting/Notifications';
+import Privacy from '../component/Setting/ActionSetting/Privacy';
+import Security from '../component/Setting/ActionSetting/Security';
+import Ads from '../component/Setting/ActionSetting/Ads';
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 export default function AppNavigate(){
@@ -94,6 +97,9 @@ export default function AppNavigate(){
             <Stack.Screen name="Setting" component={Setting} />
             <Stack.Screen name="Follow" component={Follow} />
             <Stack.Screen name="Notifications" component={Notifications} />
+            <Stack.Screen name="Privacy" component={Privacy} />
+            <Stack.Screen name="Security" component={Security} />
+            <Stack.Screen name="Ads" component={Ads} />
           </Stack.Navigator>
         </NavigationContainer>
     );
