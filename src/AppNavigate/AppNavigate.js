@@ -51,6 +51,8 @@ import Notifications from '../component/Setting/ActionSetting/Notifications';
 import Privacy from '../component/Setting/ActionSetting/Privacy';
 import Security from '../component/Setting/ActionSetting/Security';
 import Ads from '../component/Setting/ActionSetting/Ads';
+import Account from '../component/Setting/ActionSetting/Account';
+import Saved from '../component/Setting/ActionSetting/Account/Saved';
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 export default function AppNavigate(){
@@ -100,6 +102,8 @@ export default function AppNavigate(){
             <Stack.Screen name="Privacy" component={Privacy} />
             <Stack.Screen name="Security" component={Security} />
             <Stack.Screen name="Ads" component={Ads} />
+            <Stack.Screen name="Account" component={Account} />
+            <Stack.Screen name="Saved" component={Saved} />
           </Stack.Navigator>
         </NavigationContainer>
     );

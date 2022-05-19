@@ -58,10 +58,12 @@ export default function Setting() {
                             </View>
                         </Pressable>
                         {/* Account */}
-                        <View style = {styles.Account}>
-                            <AntDesign name="user" size={25} color="white" style = {styles.IconAccount}/>
-                            <Text style = {styles.AccountText}>Account</Text>
-                        </View>
+                        <Pressable  onPress = {() =>{navigation.navigate('Account')}}>
+                            <View style = {styles.Account}>
+                                <AntDesign name="user" size={25} color="white" style = {styles.IconAccount}/>
+                                <Text style = {styles.AccountText}>Account</Text>
+                            </View>
+                        </Pressable>
                         {/* Help */}
                         <View style = {styles.Help}>
                             <Ionicons name="help-buoy" size={25} color="white" style = {styles.IconHelp}/>
