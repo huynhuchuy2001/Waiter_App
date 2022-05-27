@@ -17,7 +17,7 @@ export default function Account() {
                 {/* Saved */}
                 <Text style = {styles.textAction} onPress = {() => {navigation.navigate('Saved')}}>Saved</Text>
                 {/* Close friend */}
-                <Text style = {styles.textAction}>Close Friends</Text>
+                <Text style = {styles.textAction} onPress = {() => {navigation.navigate('CloseFriend')}}>Close Friends</Text>
                 {/* Account Status */}
                 <Text style = {styles.textAction}>Account Status</Text>
                 {/* Avatar */}

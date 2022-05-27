@@ -53,6 +53,8 @@ import Security from '../component/Setting/ActionSetting/Security';
 import Ads from '../component/Setting/ActionSetting/Ads';
 import Account from '../component/Setting/ActionSetting/Account';
 import Saved from '../component/Setting/ActionSetting/Account/Saved';
+import Theme from '../component/Setting/theme/Theme';
+import CloseFriend from '../component/Setting/ActionSetting/Account/CloseFriend';
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 export default function AppNavigate(){
@@ -104,6 +106,8 @@ export default function AppNavigate(){
             <Stack.Screen name="Ads" component={Ads} />
             <Stack.Screen name="Account" component={Account} />
             <Stack.Screen name="Saved" component={Saved} />
+            <Stack.Screen name="Theme" component={Theme} />
+            <Stack.Screen name="CloseFriend" component={CloseFriend} />
           </Stack.Navigator>
         </NavigationContainer>
     );

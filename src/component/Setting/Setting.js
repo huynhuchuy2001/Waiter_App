@@ -75,10 +75,12 @@ export default function Setting() {
                             <Text style = {styles.AboutText}>About</Text>
                         </View>
                         {/* Theme */}
-                        <View style = {styles.Theme}>
-                            <Ionicons name="color-palette-outline" size={25} color="white" style = {styles.IconTheme}/>
-                            <Text style = {styles.ThemeText}>Theme</Text>
-                        </View>
+                        <Pressable  onPress = {() =>{navigation.navigate('Theme')}}>
+                            <View style = {styles.Theme}>
+                                <Ionicons name="color-palette-outline" size={25} color="white" style = {styles.IconTheme}/>
+                                <Text style = {styles.ThemeText}>Theme</Text>
+                            </View>
+                        </Pressable>
                         {/* Account Center */}
                         <View style = {styles.AccountCenter}>
                             <Feather name="facebook" size={25} color="white" style = {styles.IconAccountCenter}/>
