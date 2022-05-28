@@ -19,13 +19,13 @@ export default function Account() {
                 {/* Close friend */}
                 <Text style = {styles.textAction} onPress = {() => {navigation.navigate('CloseFriend')}}>Close Friends</Text>
                 {/* Account Status */}
-                <Text style = {styles.textAction}>Account Status</Text>
+                <Text style = {styles.textAction} onPress = {() => {navigation.navigate('AccountStatus')}}>Account Status</Text>
                 {/* Avatar */}
                 <Text style = {styles.textAction}>Avatar</Text>
                 {/* Language */}
                 <Text style = {styles.textAction}>Language</Text>
                 {/* Captions */}
-                <Text style = {styles.textAction}>Captions</Text>
+                <Text style = {styles.textAction} onPress = {() => {navigation.navigate('Captions')}}>Captions</Text>
                 {/* Browser setting */}
                 <Text style = {styles.textAction}>Browser settings</Text>
                 {/* Sensitive content control */}
