@@ -3,18 +3,18 @@ import AntDesign from 'react-native-vector-icons/AntDesign';
 import Entypo from 'react-native-vector-icons/Entypo';
 import { Text, View, StyleSheet, Pressable, TextInput ,Image,Switch} from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-export default function Captions() {
+export default function Syncing() {
     const [isEnabled, setIsEnabled] = useState(false);
     const toggleSwitch = () => setIsEnabled(previousState => !previousState);
     const navigation = useNavigation();
     return( 
-        <View style = {styles.Captions}>
-            <View style = {styles.HeaderCaptions}>
+        <View style = {styles.Syncing}>
+            <View style = {styles.HeaderSyncing}>
                 <AntDesign name = "arrowleft" size={25} color = "rgb(248, 248, 242)" style ={styles.IconBack} onPress = {(e) =>{navigation.goBack()}}></AntDesign>
-                <Text style = {styles.textCaptions}>Captions</Text>
+                <Text style = {styles.textSyncing}>Contacts Syncing</Text>
             </View>
-            <View style = {styles.CaptionsAction}>
-                <Text style = {styles.textCaptionsAction}>Captions</Text>
+            <View style = {styles.SyncingAction}>
+                <Text style = {styles.textSyncingAction}>Connect contacts</Text>
                 <Switch
                     trackColor={{ false: "#767577", true: "#81b0ff" }}
                     thumbColor={isEnabled ? "#f5dd4b" : "#f4f3f4"}
@@ -23,25 +23,21 @@ export default function Captions() {
                     value={isEnabled}
                 />
             </View>
-            <Text style = {styles.textTitleCaptions}>Video post you watch will show auto-generated captions.<Text style = {{color : 'white'}}> Learn more.</Text></Text>
-            <View style = {styles.CaptionsAction}>
-                <Text style = {styles.Language}>Language</Text>
-                <Text style = {styles.textLanguage}>English (auto-generated)</Text>
-            </View>
+            <Text style = {styles.textTitleSyncing}>To help people connect on Waiter, your contacts are periodically synced and stored on our severs. You choose which ones to follow. <Text style = {{color : '#3b64e9'}}>Learn More.</Text></Text>
         </View>
     );
 }
 const styles = StyleSheet.create({
-    Captions: {
+    Syncing: {
         flex: 1,
         backgroundColor: 'black',
     },
-    HeaderCaptions: {
+    HeaderSyncing: {
         flexDirection: 'row',
         marginTop : '2%',
         marginLeft : '2%',
     },
-    textCaptions: {
+    textSyncing: {
         color : 'white',
         fontSize : 22,
         fontWeight : 'bold',
@@ -51,32 +47,22 @@ const styles = StyleSheet.create({
         marginTop : '1%',
         marginLeft : '2%',
     },
-    CaptionsAction: {
+    SyncingAction: {
         flexDirection: 'row',
         marginTop : '5%',
         marginLeft : '2%',
     },
-    textCaptionsAction: {
+    textSyncingAction: {
         width : '85%',
         color : 'white',
         fontSize : 18,
         marginLeft : '3%',
     },
-    textTitleCaptions: {
-        width : '100%',
-        marginTop : '3%',
+    textTitleSyncing: {
+        width : '90%',
+        marginTop : '5%',
         marginLeft : '5%',
         color : '#8e8e8e',
-        fontSize : 17,
-    },
-    Language: {
-        color : 'white',
-        fontSize : 17,
-        marginLeft : '3%',
-    },
-    textLanguage: {
-        color : '#8e8e8e',
-        fontSize : 17,
-        marginLeft : '30%',
+        fontSize : 15,
     },
 });

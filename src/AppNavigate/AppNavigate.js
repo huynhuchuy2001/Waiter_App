@@ -57,6 +57,9 @@ import Theme from '../component/Setting/theme/Theme';
 import CloseFriend from '../component/Setting/ActionSetting/Account/CloseFriend';
 import AccountStatus from '../component/Setting/ActionSetting/Account/AccountStatus';
 import Captions from '../component/Setting/ActionSetting/Account/Captions';
+import BrowserSettings from '../component/Setting/ActionSetting/Account/Browser';
+import SensitiveContent from '../component/Setting/ActionSetting/Account/SensitiveContent';
+import Syncing from '../component/Setting/ActionSetting/Account/ContactSyncing';
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 export default function AppNavigate(){
@@ -112,6 +115,9 @@ export default function AppNavigate(){
             <Stack.Screen name="CloseFriend" component={CloseFriend} />
             <Stack.Screen name="AccountStatus" component={AccountStatus} />
             <Stack.Screen name="Captions" component={Captions} />
+            <Stack.Screen name="BrowserSettings" component={BrowserSettings} />
+            <Stack.Screen name="SensitiveContent" component={SensitiveContent} />
+            <Stack.Screen name="Syncing" component={Syncing} />
           </Stack.Navigator>
         </NavigationContainer>
     );

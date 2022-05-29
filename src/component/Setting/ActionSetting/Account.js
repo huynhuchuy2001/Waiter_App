@@ -27,11 +27,11 @@ export default function Account() {
                 {/* Captions */}
                 <Text style = {styles.textAction} onPress = {() => {navigation.navigate('Captions')}}>Captions</Text>
                 {/* Browser setting */}
-                <Text style = {styles.textAction}>Browser settings</Text>
+                <Text style = {styles.textAction} onPress = {() => {navigation.navigate('BrowserSettings')}}>Browser settings</Text>
                 {/* Sensitive content control */}
-                <Text style = {styles.textAction}>Sensitive content control</Text>
+                <Text style = {styles.textAction} onPress = {() => {navigation.navigate('SensitiveContent')}}>Sensitive content control</Text>
                 {/* Contacts syncing */}
-                <Text style = {styles.textAction}>Contacts syncing</Text>
+                <Text style = {styles.textAction} onPress = {() => {navigation.navigate('Syncing')}}>Contacts syncing</Text>
                 {/* Sharing to other apps */}
                 <Text style = {styles.textAction}>Sharing to other apps</Text>
                 {/* Cellular data use */}
