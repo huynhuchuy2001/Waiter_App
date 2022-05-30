@@ -33,11 +33,11 @@ export default function Account() {
                 {/* Contacts syncing */}
                 <Text style = {styles.textAction} onPress = {() => {navigation.navigate('Syncing')}}>Contacts syncing</Text>
                 {/* Sharing to other apps */}
-                <Text style = {styles.textAction}>Sharing to other apps</Text>
+                <Text style = {styles.textAction} onPress = {() => {navigation.navigate('Sharing')}}>Sharing to other apps</Text>
                 {/* Cellular data use */}
-                <Text style = {styles.textAction}>Cellular data use</Text>
+                <Text style = {styles.textAction} onPress = {() => {navigation.navigate('Cellular')}}>Cellular data use</Text>
                 {/* Original posts */}
-                <Text style = {styles.textAction}>Original posts</Text>
+                <Text style = {styles.textAction} onPress = {() => {navigation.navigate('OriginalPost')}}>Original posts</Text>
                 {/* Request verificaion */}
                 <Text style = {styles.textAction}>Request verificaion</Text>
                 {/* Review activity */}

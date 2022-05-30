@@ -60,6 +60,9 @@ import Captions from '../component/Setting/ActionSetting/Account/Captions';
 import BrowserSettings from '../component/Setting/ActionSetting/Account/Browser';
 import SensitiveContent from '../component/Setting/ActionSetting/Account/SensitiveContent';
 import Syncing from '../component/Setting/ActionSetting/Account/ContactSyncing';
+import Sharing from '../component/Setting/ActionSetting/Account/Sharing';
+import Cellular from '../component/Setting/ActionSetting/Account/Cellular';
+import OriginalPost from '../component/Setting/ActionSetting/Account/OriginalPost';
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 export default function AppNavigate(){
@@ -118,6 +121,9 @@ export default function AppNavigate(){
             <Stack.Screen name="BrowserSettings" component={BrowserSettings} />
             <Stack.Screen name="SensitiveContent" component={SensitiveContent} />
             <Stack.Screen name="Syncing" component={Syncing} />
+            <Stack.Screen name="Sharing" component={Sharing} />
+            <Stack.Screen name="Cellular" component={Cellular} />
+            <Stack.Screen name="OriginalPost" component={OriginalPost} />
           </Stack.Navigator>
         </NavigationContainer>
     );
