@@ -63,6 +63,7 @@ import Syncing from '../component/Setting/ActionSetting/Account/ContactSyncing';
 import Sharing from '../component/Setting/ActionSetting/Account/Sharing';
 import Cellular from '../component/Setting/ActionSetting/Account/Cellular';
 import OriginalPost from '../component/Setting/ActionSetting/Account/OriginalPost';
+import RequestVerification from '../component/Setting/ActionSetting/Account/RequestVerification';
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 export default function AppNavigate(){
@@ -124,6 +125,7 @@ export default function AppNavigate(){
             <Stack.Screen name="Sharing" component={Sharing} />
             <Stack.Screen name="Cellular" component={Cellular} />
             <Stack.Screen name="OriginalPost" component={OriginalPost} />
+            <Stack.Screen name="RequestVerification" component={RequestVerification} />
           </Stack.Navigator>
         </NavigationContainer>
     );

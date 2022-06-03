@@ -39,7 +39,7 @@ export default function Account() {
                 {/* Original posts */}
                 <Text style = {styles.textAction} onPress = {() => {navigation.navigate('OriginalPost')}}>Original posts</Text>
                 {/* Request verificaion */}
-                <Text style = {styles.textAction}>Request verificaion</Text>
+                <Text style = {styles.textAction} onPress = {() =>{navigation.navigate('RequestVerification')}}>Request verificaion</Text>
                 {/* Review activity */}
                 <Text style = {styles.textAction}>Review activity</Text>
                 {/* Branded content */}
