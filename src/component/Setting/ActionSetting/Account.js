@@ -41,9 +41,9 @@ export default function Account() {
                 {/* Request verificaion */}
                 <Text style = {styles.textAction} onPress = {() =>{navigation.navigate('RequestVerification')}}>Request verificaion</Text>
                 {/* Review activity */}
-                <Text style = {styles.textAction}>Review activity</Text>
+                <Text style = {styles.textAction} onPress = {() => {navigation.navigate('ReviewActivity')}}>Review activity</Text>
                 {/* Branded content */}
-                <Text style = {styles.textAction}>Branded content</Text>
+                <Text style = {styles.textAction} onPress = {() => {navigation.navigate('BrandContent')}}>Branded content</Text>
                 {/* Switch to professional account */}
                 <Text style = {styles.textActionAccount}>Switch to professional account</Text>
                 {/* Add new professional account */}

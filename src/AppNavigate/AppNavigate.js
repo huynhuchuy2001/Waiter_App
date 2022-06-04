@@ -64,6 +64,8 @@ import Sharing from '../component/Setting/ActionSetting/Account/Sharing';
 import Cellular from '../component/Setting/ActionSetting/Account/Cellular';
 import OriginalPost from '../component/Setting/ActionSetting/Account/OriginalPost';
 import RequestVerification from '../component/Setting/ActionSetting/Account/RequestVerification';
+import ReviewActivity from '../component/Setting/ActionSetting/Account/ReviewActivity';
+import BrandContent from '../component/Setting/ActionSetting/Account/BrandContent';
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 export default function AppNavigate(){
@@ -126,6 +128,8 @@ export default function AppNavigate(){
             <Stack.Screen name="Cellular" component={Cellular} />
             <Stack.Screen name="OriginalPost" component={OriginalPost} />
             <Stack.Screen name="RequestVerification" component={RequestVerification} />
+            <Stack.Screen name="ReviewActivity" component={ReviewActivity} />
+            <Stack.Screen name="BrandContent" component={BrandContent} />
           </Stack.Navigator>
         </NavigationContainer>
     );
