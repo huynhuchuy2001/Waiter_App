@@ -37,76 +37,76 @@ export default function VideoShorts (){
             watch : 10,
             content : 'Hãy yêu theo một cách tự nhiên'
         },
-        {
-            name : 'vituong91',
-            image : 'https://scontent-sin6-1.xx.fbcdn.net/v/t39.30808-6/272152926_1240913986401147_8867493523089750699_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=9Nz4bVKM5joAX8fhbRi&_nc_ht=scontent-sin6-1.xx&oh=00_AT_PmiSFopbNLfgeXZxQVCC1nETPN56gDmF5MNinf4vlsQ&oe=625C53AC',
-            url : 'https://v16-webapp.tiktok.com/0c6ff0849a9e115d9d5d69d43ee3c16d/6262fd66/video/tos/maliva/tos-maliva-ve-0068c799-us/16368ba567684dcb9fae11ce10866b62/?a=1988&br=2606&bt=1303&cd=0%7C0%7C0%7C0&ch=0&cr=0&cs=0&dr=0&ds=3&er=&ft=eXd.6Hk_Myq8ZxzeNwe2N3VQml7Gb&l=20220422130857010245154099011AF40C&lr=tiktok_m&mime_type=video_mp4&net=0&pl=0&qs=0&rc=M3VvNjY6Zmw5PDMzZzczNEApZWg8Z2Q5NztoN2Y4O2hlZGdzcGVpcjQwYWNgLS1kMS9zczIyMGEyYV4yYC9gLi1gMi86Yw%3D%3D&vl=&vr=',
-            singer : 'Soobin',
-            namemusic : 'Vẫn nhớ',
-            thumb : 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/BigBuckBunny.jpg',
-            watch : 7,
-            content : 'Nhớ những ngày đầu đời'
-        },
-        {
-            name : 'truonghd85',
-            image : 'https://scontent.fsgn4-1.fna.fbcdn.net/v/t39.30808-6/272991438_1571607939871527_6579089651911998367_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=0yrT4Ddm2MEAX-BaOkp&_nc_ht=scontent.fsgn4-1.fna&oh=00_AT_t-lukzFdRL8IOBAJ_ihyv62ElheSLCGkGcsXQtNP0cw&oe=625FA506',
-            url : 'https://v16-webapp.tiktok.com/ff15ca3e278dc457e6a171ce0aae6fec/6262fd8b/video/tos/useast2a/tos-useast2a-pve-0037-aiso/dec81cce7b914fbd836b49c62119a078/?a=1988&br=2544&bt=1272&cd=0%7C0%7C1%7C0&ch=0&cr=0&cs=0&cv=1&dr=0&ds=3&er=&ft=eXd.6Hk_Myq8ZxzeNwe2N3VQml7Gb&l=20220422130857010245154099011AF40C&lr=tiktok_m&mime_type=video_mp4&net=0&pl=0&qs=11&rc=anl1NTU6ZnE4PDMzZjgzM0ApN2Q2aDw0NDw6Nzw5ZjU8OWcyZWNrcjQwLzJgLS1kL2NzczEyYTVeLjUyNTMwMGNhNDI6Yw%3D%3D&vl=&vr=',
-            singer : 'Soobin',
-            namemusic : 'Vẫn nhớ',
-            thumb : 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/BigBuckBunny.jpg',
-            watch : 7,
-            content : 'Nhớ những ngày đầu đời'
-        },
-        {
-            name : 'truongsinhhh',
-            image : 'https://scontent.fsgn3-1.fna.fbcdn.net/v/t39.30808-1/185526923_1334442560290882_6475410094091613892_n.jpg?stp=dst-jpg_p320x320&_nc_cat=104&ccb=1-5&_nc_sid=7206a8&_nc_ohc=vh-1deZnVFMAX-CL9Rq&_nc_ht=scontent.fsgn3-1.fna&oh=00_AT-tUjdRuwBIzRTh5a6EpMZUvZ7ZX1DykLCmSP9J1TROCw&oe=626076E4',
-            url : 'https://v16-webapp.tiktok.com/51c48f0744b15f524f11473592efed37/6263012c/video/tos/useast2a/tos-useast2a-pve-0037-aiso/cdf2f4371ed34f53aa74387869090200/?a=1988&br=1418&bt=709&cd=0%7C0%7C1%7C0&ch=0&cr=0&cs=0&cv=1&dr=0&ds=3&er=&ft=eXd.6Hk_Myq8ZMJeNwe2Ntkhml7Gb&l=20220422132501010245010181011CEE36&lr=tiktok_m&mime_type=video_mp4&net=0&pl=0&qs=11&rc=anN3eWU6ZjR1PDMzZjgzM0ApZTZkNzhkNTw3Nzw6aGhkZmdkNWUycjRfNF9gLS1kL2Nzc181LjQuNF9fXzYuYzYyXl46Yw%3D%3D&vl=&vr=',
-            singer : 'Soobin',
-            namemusic : 'Vẫn nhớ',
-            thumb : 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/BigBuckBunny.jpg',
-            watch : 7,
-            content : 'Nhớ những ngày đầu đời'
-        },
-        {
-            name : 'truongmai85',
-            image : 'https://scontent.fsgn13-2.fna.fbcdn.net/v/t39.30808-1/274723232_2095406903969072_7504427080082865401_n.jpg?stp=dst-jpg_p320x320&_nc_cat=106&ccb=1-5&_nc_sid=7206a8&_nc_ohc=mF8bPnwU1TwAX_TZXOy&_nc_ht=scontent.fsgn13-2.fna&oh=00_AT_fPpbhcpaFDxDX31d_ZQp0YtkBgupf58VrAqWoqi8CnA&oe=6260E6D5',
-            url : 'https://v16-webapp.tiktok.com/86bac5d900d945f2e8e45f4ff4ed37a7/62630129/video/tos/useast2a/tos-useast2a-pve-0037-aiso/2e4deac6e3194cd290b5aede556682d7/?a=1988&br=4150&bt=2075&cd=0%7C0%7C1%7C0&ch=0&cr=0&cs=0&cv=1&dr=0&ds=3&er=&ft=eXd.6Hk_Myq8ZMJeNwe2Ntkhml7Gb&l=20220422132501010245010181011CEE36&lr=tiktok_m&mime_type=video_mp4&net=0&pl=0&qs=0&rc=Mzd3Z2Q6ZnBmOjMzZjgzM0ApZzk7OWQ5ZDxpNzk8ZzQ0N2czZWUtcjQwMGdgLS1kL2Nzcy4xMTQzLjQ2Ll4uNmFiMzE6Yw%3D%3D&vl=&vr=',
-            singer : 'Soobin',
-            namemusic : 'Vẫn nhớ',
-            thumb : 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/BigBuckBunny.jpg',
-            watch : 7,
-            content : 'Nhớ những ngày đầu đời'
-        },
-        {
-            name : 'duchung',
-            image : 'https://scontent-sin6-4.xx.fbcdn.net/v/t1.6435-9/52696062_101541554333212_6443151805353295872_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=iVYxj2aTG4MAX9KnVR1&_nc_ht=scontent-sin6-4.xx&oh=00_AT91XhpTsxpNb7NguhkEdM6FjBuqzXxj45JWgs4OlLsxbQ&oe=627DBD8C',
-            url : 'https://v16-webapp.tiktok.com/41c0792431b954e5bc5b0704ed86402e/6263021e/video/tos/useast2a/tos-useast2a-pve-0037-aiso/2632f6f2d2734abfa5dd8ed626f46da0/?a=1988&br=1564&bt=782&cd=0%7C0%7C1%7C0&ch=0&cr=0&cs=0&cv=1&dr=0&ds=3&er=&ft=eXd.6Hk_Myq8ZS-eNwe2NbTQml7Gb&l=20220422132926010251004172151C6607&lr=tiktok_m&mime_type=video_mp4&net=0&pl=0&qs=0&rc=amk8Ozc6ZmQzNzMzZjgzM0ApZWQ5NjhnNzs8N2Y1OTU7NGdqMmlzcjRvcDRgLS1kL2Nzcy1fXjExNl9gLjMxXzA0YTQ6Yw%3D%3D&vl=&vr=',
-            singer : 'Soobin',
-            namemusic : 'Vẫn nhớ',
-            thumb : 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/BigBuckBunny.jpg',
-            watch : 7,
-            content : 'Nhớ những ngày đầu đời'
-        },
-        {
-            name : 'cvan77',
-            image : 'https://scontent.fsgn13-2.fna.fbcdn.net/v/t39.30808-6/273154334_1123664431736763_6121942889354663811_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=BoFOVA5QuwIAX-KiXcQ&tn=98Qe8qL2dr5GlQT0&_nc_ht=scontent.fsgn13-2.fna&oh=00_AT8FeFwFTaLe6n_2eXdstYnWoCRVcEtpZZNsA2y4eGBazw&oe=625CDBAA',
-            url : 'https://v16-webapp.tiktok.com/931e0fce4bf07dc130d2e9ea6efa9ecc/62630223/video/tos/useast2a/tos-useast2a-pve-0037-aiso/3385619a803849a5adb8e6c2b65c6b1c/?a=1988&br=5684&bt=2842&cd=0%7C0%7C1%7C0&ch=0&cr=0&cs=0&cv=1&dr=0&ds=3&er=&ft=eXd.6Hk_Myq8ZS-eNwe2NbTQml7Gb&l=20220422132926010251004172151C6607&lr=tiktok_m&mime_type=video_mp4&net=0&pl=0&qs=0&rc=ampuNTs6Zjh5NjMzZjgzM0ApNDs7ODQ5ZmQzNzU2Mzk5OmdgYGlhcjRvLnNgLS1kL2Nzcy1iXzExYmAxNDA0Li4vLmE6Yw%3D%3D&vl=&vr=',
-            singer : 'Soobin',
-            namemusic : 'Vẫn nhớ',
-            thumb : 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/BigBuckBunny.jpg',
-            watch : 7,
-            content : 'Nhớ những ngày đầu đời'
-        },
-        {
-            name : 'hdh.hoan',
-            image : 'https://scontent.fsgn3-1.fna.fbcdn.net/v/t1.6435-9/122192711_697566607532271_2285775074524737085_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=e3f864&_nc_ohc=EbgVXCseho4AX_YlDU0&_nc_ht=scontent.fsgn3-1.fna&oh=00_AT9cqUejp0kkoKRQY2mJrD3w-qMD1dBsDtD48v9vQOj6DQ&oe=62888240',
-            url : 'https://v16-webapp.tiktok.com/292da3b789975617280be3c4d9ca814c/62630222/video/tos/useast2a/tos-useast2a-pve-0037c001-aiso/2ef7d34810724068ae3ff4cf5d6af042/?a=1988&br=4024&bt=2012&cd=0%7C0%7C1%7C0&ch=0&cr=0&cs=0&cv=1&dr=0&ds=3&er=&ft=eXd.6Hk_Myq8ZS-eNwe2NbTQml7Gb&l=20220422132926010251004172151C6607&lr=tiktok_m&mime_type=video_mp4&net=0&pl=0&qs=11&rc=amt5ZWk6Znh4OzMzZjgzM0ApZDdkOTc8NTw0N2Q0NjQ2ZmdyYy9ycjQwXjVgLS1kL2Nzcy42Y2AyLy8wMzJjYjVgNGE6Yw%3D%3D&vl=&vr=',
-            singer : 'Soobin',
-            namemusic : 'Vẫn nhớ',
-            thumb : 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/BigBuckBunny.jpg',
-            watch : 7,
-            content : 'Nhớ những ngày đầu đời'
-        }
+        // {
+        //     name : 'vituong91',
+        //     image : 'https://scontent-sin6-1.xx.fbcdn.net/v/t39.30808-6/272152926_1240913986401147_8867493523089750699_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=9Nz4bVKM5joAX8fhbRi&_nc_ht=scontent-sin6-1.xx&oh=00_AT_PmiSFopbNLfgeXZxQVCC1nETPN56gDmF5MNinf4vlsQ&oe=625C53AC',
+        //     url : 'https://v16-webapp.tiktok.com/0c6ff0849a9e115d9d5d69d43ee3c16d/6262fd66/video/tos/maliva/tos-maliva-ve-0068c799-us/16368ba567684dcb9fae11ce10866b62/?a=1988&br=2606&bt=1303&cd=0%7C0%7C0%7C0&ch=0&cr=0&cs=0&dr=0&ds=3&er=&ft=eXd.6Hk_Myq8ZxzeNwe2N3VQml7Gb&l=20220422130857010245154099011AF40C&lr=tiktok_m&mime_type=video_mp4&net=0&pl=0&qs=0&rc=M3VvNjY6Zmw5PDMzZzczNEApZWg8Z2Q5NztoN2Y4O2hlZGdzcGVpcjQwYWNgLS1kMS9zczIyMGEyYV4yYC9gLi1gMi86Yw%3D%3D&vl=&vr=',
+        //     singer : 'Soobin',
+        //     namemusic : 'Vẫn nhớ',
+        //     thumb : 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/BigBuckBunny.jpg',
+        //     watch : 7,
+        //     content : 'Nhớ những ngày đầu đời'
+        // },
+        // {
+        //     name : 'truonghd85',
+        //     image : 'https://scontent.fsgn4-1.fna.fbcdn.net/v/t39.30808-6/272991438_1571607939871527_6579089651911998367_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=0yrT4Ddm2MEAX-BaOkp&_nc_ht=scontent.fsgn4-1.fna&oh=00_AT_t-lukzFdRL8IOBAJ_ihyv62ElheSLCGkGcsXQtNP0cw&oe=625FA506',
+        //     url : 'https://v16-webapp.tiktok.com/ff15ca3e278dc457e6a171ce0aae6fec/6262fd8b/video/tos/useast2a/tos-useast2a-pve-0037-aiso/dec81cce7b914fbd836b49c62119a078/?a=1988&br=2544&bt=1272&cd=0%7C0%7C1%7C0&ch=0&cr=0&cs=0&cv=1&dr=0&ds=3&er=&ft=eXd.6Hk_Myq8ZxzeNwe2N3VQml7Gb&l=20220422130857010245154099011AF40C&lr=tiktok_m&mime_type=video_mp4&net=0&pl=0&qs=11&rc=anl1NTU6ZnE4PDMzZjgzM0ApN2Q2aDw0NDw6Nzw5ZjU8OWcyZWNrcjQwLzJgLS1kL2NzczEyYTVeLjUyNTMwMGNhNDI6Yw%3D%3D&vl=&vr=',
+        //     singer : 'Soobin',
+        //     namemusic : 'Vẫn nhớ',
+        //     thumb : 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/BigBuckBunny.jpg',
+        //     watch : 7,
+        //     content : 'Nhớ những ngày đầu đời'
+        // },
+        // {
+        //     name : 'truongsinhhh',
+        //     image : 'https://scontent.fsgn3-1.fna.fbcdn.net/v/t39.30808-1/185526923_1334442560290882_6475410094091613892_n.jpg?stp=dst-jpg_p320x320&_nc_cat=104&ccb=1-5&_nc_sid=7206a8&_nc_ohc=vh-1deZnVFMAX-CL9Rq&_nc_ht=scontent.fsgn3-1.fna&oh=00_AT-tUjdRuwBIzRTh5a6EpMZUvZ7ZX1DykLCmSP9J1TROCw&oe=626076E4',
+        //     url : 'https://v16-webapp.tiktok.com/51c48f0744b15f524f11473592efed37/6263012c/video/tos/useast2a/tos-useast2a-pve-0037-aiso/cdf2f4371ed34f53aa74387869090200/?a=1988&br=1418&bt=709&cd=0%7C0%7C1%7C0&ch=0&cr=0&cs=0&cv=1&dr=0&ds=3&er=&ft=eXd.6Hk_Myq8ZMJeNwe2Ntkhml7Gb&l=20220422132501010245010181011CEE36&lr=tiktok_m&mime_type=video_mp4&net=0&pl=0&qs=11&rc=anN3eWU6ZjR1PDMzZjgzM0ApZTZkNzhkNTw3Nzw6aGhkZmdkNWUycjRfNF9gLS1kL2Nzc181LjQuNF9fXzYuYzYyXl46Yw%3D%3D&vl=&vr=',
+        //     singer : 'Soobin',
+        //     namemusic : 'Vẫn nhớ',
+        //     thumb : 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/BigBuckBunny.jpg',
+        //     watch : 7,
+        //     content : 'Nhớ những ngày đầu đời'
+        // },
+        // {
+        //     name : 'truongmai85',
+        //     image : 'https://scontent.fsgn13-2.fna.fbcdn.net/v/t39.30808-1/274723232_2095406903969072_7504427080082865401_n.jpg?stp=dst-jpg_p320x320&_nc_cat=106&ccb=1-5&_nc_sid=7206a8&_nc_ohc=mF8bPnwU1TwAX_TZXOy&_nc_ht=scontent.fsgn13-2.fna&oh=00_AT_fPpbhcpaFDxDX31d_ZQp0YtkBgupf58VrAqWoqi8CnA&oe=6260E6D5',
+        //     url : 'https://v16-webapp.tiktok.com/86bac5d900d945f2e8e45f4ff4ed37a7/62630129/video/tos/useast2a/tos-useast2a-pve-0037-aiso/2e4deac6e3194cd290b5aede556682d7/?a=1988&br=4150&bt=2075&cd=0%7C0%7C1%7C0&ch=0&cr=0&cs=0&cv=1&dr=0&ds=3&er=&ft=eXd.6Hk_Myq8ZMJeNwe2Ntkhml7Gb&l=20220422132501010245010181011CEE36&lr=tiktok_m&mime_type=video_mp4&net=0&pl=0&qs=0&rc=Mzd3Z2Q6ZnBmOjMzZjgzM0ApZzk7OWQ5ZDxpNzk8ZzQ0N2czZWUtcjQwMGdgLS1kL2Nzcy4xMTQzLjQ2Ll4uNmFiMzE6Yw%3D%3D&vl=&vr=',
+        //     singer : 'Soobin',
+        //     namemusic : 'Vẫn nhớ',
+        //     thumb : 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/BigBuckBunny.jpg',
+        //     watch : 7,
+        //     content : 'Nhớ những ngày đầu đời'
+        // },
+        // {
+        //     name : 'duchung',
+        //     image : 'https://scontent-sin6-4.xx.fbcdn.net/v/t1.6435-9/52696062_101541554333212_6443151805353295872_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=iVYxj2aTG4MAX9KnVR1&_nc_ht=scontent-sin6-4.xx&oh=00_AT91XhpTsxpNb7NguhkEdM6FjBuqzXxj45JWgs4OlLsxbQ&oe=627DBD8C',
+        //     url : 'https://v16-webapp.tiktok.com/41c0792431b954e5bc5b0704ed86402e/6263021e/video/tos/useast2a/tos-useast2a-pve-0037-aiso/2632f6f2d2734abfa5dd8ed626f46da0/?a=1988&br=1564&bt=782&cd=0%7C0%7C1%7C0&ch=0&cr=0&cs=0&cv=1&dr=0&ds=3&er=&ft=eXd.6Hk_Myq8ZS-eNwe2NbTQml7Gb&l=20220422132926010251004172151C6607&lr=tiktok_m&mime_type=video_mp4&net=0&pl=0&qs=0&rc=amk8Ozc6ZmQzNzMzZjgzM0ApZWQ5NjhnNzs8N2Y1OTU7NGdqMmlzcjRvcDRgLS1kL2Nzcy1fXjExNl9gLjMxXzA0YTQ6Yw%3D%3D&vl=&vr=',
+        //     singer : 'Soobin',
+        //     namemusic : 'Vẫn nhớ',
+        //     thumb : 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/BigBuckBunny.jpg',
+        //     watch : 7,
+        //     content : 'Nhớ những ngày đầu đời'
+        // },
+        // {
+        //     name : 'cvan77',
+        //     image : 'https://scontent.fsgn13-2.fna.fbcdn.net/v/t39.30808-6/273154334_1123664431736763_6121942889354663811_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=BoFOVA5QuwIAX-KiXcQ&tn=98Qe8qL2dr5GlQT0&_nc_ht=scontent.fsgn13-2.fna&oh=00_AT8FeFwFTaLe6n_2eXdstYnWoCRVcEtpZZNsA2y4eGBazw&oe=625CDBAA',
+        //     url : 'https://v16-webapp.tiktok.com/931e0fce4bf07dc130d2e9ea6efa9ecc/62630223/video/tos/useast2a/tos-useast2a-pve-0037-aiso/3385619a803849a5adb8e6c2b65c6b1c/?a=1988&br=5684&bt=2842&cd=0%7C0%7C1%7C0&ch=0&cr=0&cs=0&cv=1&dr=0&ds=3&er=&ft=eXd.6Hk_Myq8ZS-eNwe2NbTQml7Gb&l=20220422132926010251004172151C6607&lr=tiktok_m&mime_type=video_mp4&net=0&pl=0&qs=0&rc=ampuNTs6Zjh5NjMzZjgzM0ApNDs7ODQ5ZmQzNzU2Mzk5OmdgYGlhcjRvLnNgLS1kL2Nzcy1iXzExYmAxNDA0Li4vLmE6Yw%3D%3D&vl=&vr=',
+        //     singer : 'Soobin',
+        //     namemusic : 'Vẫn nhớ',
+        //     thumb : 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/BigBuckBunny.jpg',
+        //     watch : 7,
+        //     content : 'Nhớ những ngày đầu đời'
+        // },
+        // {
+        //     name : 'hdh.hoan',
+        //     image : 'https://scontent.fsgn3-1.fna.fbcdn.net/v/t1.6435-9/122192711_697566607532271_2285775074524737085_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=e3f864&_nc_ohc=EbgVXCseho4AX_YlDU0&_nc_ht=scontent.fsgn3-1.fna&oh=00_AT9cqUejp0kkoKRQY2mJrD3w-qMD1dBsDtD48v9vQOj6DQ&oe=62888240',
+        //     url : 'https://v16-webapp.tiktok.com/292da3b789975617280be3c4d9ca814c/62630222/video/tos/useast2a/tos-useast2a-pve-0037c001-aiso/2ef7d34810724068ae3ff4cf5d6af042/?a=1988&br=4024&bt=2012&cd=0%7C0%7C1%7C0&ch=0&cr=0&cs=0&cv=1&dr=0&ds=3&er=&ft=eXd.6Hk_Myq8ZS-eNwe2NbTQml7Gb&l=20220422132926010251004172151C6607&lr=tiktok_m&mime_type=video_mp4&net=0&pl=0&qs=11&rc=amt5ZWk6Znh4OzMzZjgzM0ApZDdkOTc8NTw0N2Q0NjQ2ZmdyYy9ycjQwXjVgLS1kL2Nzcy42Y2AyLy8wMzJjYjVgNGE6Yw%3D%3D&vl=&vr=',
+        //     singer : 'Soobin',
+        //     namemusic : 'Vẫn nhớ',
+        //     thumb : 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/BigBuckBunny.jpg',
+        //     watch : 7,
+        //     content : 'Nhớ những ngày đầu đời'
+        // }
     ]
     var arraySendMessage = [
         {

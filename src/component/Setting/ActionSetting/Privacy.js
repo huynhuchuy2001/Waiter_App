@@ -42,11 +42,11 @@ export default function Privacy() {
                 <View style = {styles.Interactions}>
                     <Text style = {styles.textInteractions}>Interactions</Text>
                     {/* Limits */}
-                    <View style = {styles.Limits}>
+                    <Pressable style = {styles.Limits} onPress = {() => navigation.navigate('Limits')}>
                         <MaterialCommunityIcons name = "message-alert-outline" size={25} color = "rgb(248, 248, 242)" style ={{marginTop : 2}}></MaterialCommunityIcons>
                         <Text style = {styles.textLimit}>Limits</Text>
                         <Text style = {styles.textOff}>Off</Text>
-                    </View>
+                    </Pressable>
                     {/* HidenWords */}
                     <View style = {styles.HidenWords}>
                         <Ionicons name = "eye-off-outline" size={25} color = "rgb(248, 248, 242)" style ={{marginTop : 1}}></Ionicons>
