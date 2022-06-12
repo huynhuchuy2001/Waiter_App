@@ -67,6 +67,7 @@ import RequestVerification from '../component/Setting/ActionSetting/Account/Requ
 import ReviewActivity from '../component/Setting/ActionSetting/Account/ReviewActivity';
 import BrandContent from '../component/Setting/ActionSetting/Account/BrandContent';
 import Limits from '../component/Setting/ActionSetting/privacy/Limits';
+import Helps from '../component/Setting/ActionSetting/Help';
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 export default function AppNavigate(){
@@ -132,6 +133,7 @@ export default function AppNavigate(){
             <Stack.Screen name="ReviewActivity" component={ReviewActivity} />
             <Stack.Screen name="BrandContent" component={BrandContent} />
             <Stack.Screen name="Limits" component={Limits} />
+            <Stack.Screen name="Helps" component={Helps} />
           </Stack.Navigator>
         </NavigationContainer>
     );

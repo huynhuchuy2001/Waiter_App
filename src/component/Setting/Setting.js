@@ -65,10 +65,12 @@ export default function Setting() {
                             </View>
                         </Pressable>
                         {/* Help */}
-                        <View style = {styles.Help}>
-                            <Ionicons name="help-buoy" size={25} color="white" style = {styles.IconHelp}/>
-                            <Text style = {styles.HelpText}>Help</Text>
-                        </View>
+                        <Pressable  onPress = {() =>{navigation.navigate('Helps')}}>
+                            <View style = {styles.Help}>
+                                <Ionicons name="help-buoy" size={25} color="white" style = {styles.IconHelp}/>
+                                <Text style = {styles.HelpText}>Help</Text>
+                            </View>
+                        </Pressable>
                         {/* About */}
                         <View style = {styles.About}>
                             <Ionicons name="information-circle-outline" size={25} color="white" style = {styles.IconAbout}/>
