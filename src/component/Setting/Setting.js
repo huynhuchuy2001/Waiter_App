@@ -72,10 +72,12 @@ export default function Setting() {
                             </View>
                         </Pressable>
                         {/* About */}
-                        <View style = {styles.About}>
-                            <Ionicons name="information-circle-outline" size={25} color="white" style = {styles.IconAbout}/>
-                            <Text style = {styles.AboutText}>About</Text>
-                        </View>
+                        <Pressable  onPress = {() =>{navigation.navigate('Abouts')}}>
+                            <View style = {styles.About}>
+                                <Ionicons name="information-circle-outline" size={25} color="white" style = {styles.IconAbout}/>
+                                <Text style = {styles.AboutText}>About</Text>
+                            </View>
+                        </Pressable>
                         {/* Theme */}
                         <Pressable  onPress = {() =>{navigation.navigate('Theme')}}>
                             <View style = {styles.Theme}>

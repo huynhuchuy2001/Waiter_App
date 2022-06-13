@@ -68,6 +68,11 @@ import ReviewActivity from '../component/Setting/ActionSetting/Account/ReviewAct
 import BrandContent from '../component/Setting/ActionSetting/Account/BrandContent';
 import Limits from '../component/Setting/ActionSetting/privacy/Limits';
 import Helps from '../component/Setting/ActionSetting/Help';
+import PrivacySecurity from '../component/Setting/ActionSetting/help/PrivacySecurity';
+import SupportRequest from '../component/Setting/ActionSetting/help/SupportRequest';
+import Reports from '../component/Setting/ActionSetting/help/Reports';
+import Violations from '../component/Setting/ActionSetting/help/Violations';
+import Abouts from '../component/Setting/ActionSetting/About';
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 export default function AppNavigate(){
@@ -134,6 +139,11 @@ export default function AppNavigate(){
             <Stack.Screen name="BrandContent" component={BrandContent} />
             <Stack.Screen name="Limits" component={Limits} />
             <Stack.Screen name="Helps" component={Helps} />
+            <Stack.Screen name="PrivacySecurity" component={PrivacySecurity} />
+            <Stack.Screen name="SupportRequest" component={SupportRequest} />
+            <Stack.Screen name="Reports" component={Reports} />
+            <Stack.Screen name="Violations" component={Violations} />
+            <Stack.Screen name="Abouts" component={Abouts} />
           </Stack.Navigator>
         </NavigationContainer>
     );

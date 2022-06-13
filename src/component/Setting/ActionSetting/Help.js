@@ -2,10 +2,6 @@ import React,{useState} from 'react';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import { Text, View, StyleSheet, Pressable, TextInput,Modal, Image,Alert } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import { ScrollView } from 'react-native-gesture-handler';
-import Fontisto from 'react-native-vector-icons/Fontisto';
-import Feather from 'react-native-vector-icons/Feather';
-import Ionicons from 'react-native-vector-icons/Ionicons';
 export default function Helps() {
     const navigation = useNavigation();
     const [modalVisible, setModalVisible] = useState(false);
@@ -49,15 +45,19 @@ export default function Helps() {
                 <AntDesign name="right" size={20} color="white" style = {styles.IconRight}/>
             </View>
             {/* Privacy and Security */}
-            <View style = {styles.HelpsAction}>
-                <Text style = {styles.textHelpsAction}>Privacy and Security Help</Text>
-                <AntDesign name="right" size={20} color="white" style = {styles.IconRight}/>
-            </View>
+            <Pressable onPress={() => {navigation.navigate('PrivacySecurity')}}>
+                <View style = {styles.HelpsAction}>
+                    <Text style = {styles.textHelpsAction}>Privacy and Security Help</Text>
+                    <AntDesign name="right" size={20} color="white" style = {styles.IconRight}/>
+                </View>
+            </Pressable>
             {/* Support Request */}
-            <View style = {styles.HelpsAction}>
-                <Text style = {styles.textHelpsAction}>Support Requests</Text>
-                <AntDesign name="right" size={20} color="white" style = {styles.IconRight}/>
-            </View>
+            <Pressable onPress={() => {navigation.navigate('SupportRequest')}}>
+                <View style = {styles.HelpsAction}>
+                    <Text style = {styles.textHelpsAction}>Support Requests</Text>
+                    <AntDesign name="right" size={20} color="white" style = {styles.IconRight}/>
+                </View>
+            </Pressable>
         </View>
     );
 }
