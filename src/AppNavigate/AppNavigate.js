@@ -73,6 +73,7 @@ import SupportRequest from '../component/Setting/ActionSetting/help/SupportReque
 import Reports from '../component/Setting/ActionSetting/help/Reports';
 import Violations from '../component/Setting/ActionSetting/help/Violations';
 import Abouts from '../component/Setting/ActionSetting/About';
+import ArchiveStory from '../component/archive/StoriesAchive';
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 export default function AppNavigate(){
@@ -144,6 +145,7 @@ export default function AppNavigate(){
             <Stack.Screen name="Reports" component={Reports} />
             <Stack.Screen name="Violations" component={Violations} />
             <Stack.Screen name="Abouts" component={Abouts} />
+            <Stack.Screen name="ArchiveStory" component={ArchiveStory} />
           </Stack.Navigator>
         </NavigationContainer>
     );

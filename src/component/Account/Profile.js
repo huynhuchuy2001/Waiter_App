@@ -174,32 +174,32 @@ export default function Profile() {
                         </View>
                         <View style = {styles.modalBottomTitle}>
                             <View style = {{flexDirection : 'row', marginLeft : '3%'}}>
-                                <AntDesign name="table" size={30} color="white"/>
+                                <AntDesign name="table" size={30} color="white" style = {{width : '10%'}}/>
                                 <Text style = {styles.modalBottomTitlePost}>Post</Text>
                             </View>
                             <View style = {{flexDirection : 'row', marginLeft : '2%', marginTop : '3%'}}>
-                                <MaterialCommunityIcons name="video-plus" size={40} color="white"/>
+                                <MaterialCommunityIcons name="video-plus" size={40} color="white" style = {{width : '11%'}}/>
                                 <Text style = {styles.modalBottomTitleReel}>Reel</Text>
                             </View>
                             <View style = {{flexDirection : 'row', marginLeft : '3%', marginTop : '3%'}}>
-                                <MaterialIcons name='add-to-queue' size={35} color="white"/>
+                                <MaterialIcons name='add-to-queue' size={35} color="white" style = {{width : '10%'}}/>
                                 <Text style = {styles.modalBottomTitleStory}>Story</Text>
                             </View>
                             <View style = {{flexDirection : 'row', marginLeft : '2%', marginTop : '3%'}}>
-                                <MaterialIcons name='add-circle-outline' size={40} color="white"/>
+                                <MaterialIcons name='add-circle-outline' size={40} color="white" style = {{width : '11%'}}/>
                                 <Text style = {styles.modalBottomTitleStoryHighlight}>Story Highlight</Text>
                             </View>
                             <View style = {{flexDirection : 'row', marginLeft : '3%', marginTop : '3%'}}>
-                                <MaterialIcons name='live-tv' size={35} color="white"/>
+                                <MaterialIcons name='live-tv' size={35} color="white" style = {{width : '10%'}}/>
                                 <Text style = {styles.modalBottomTitleLive}>Live</Text>
                             </View>
                             <View style = {{flexDirection : 'row', marginLeft : '3%', marginTop : '3%'}}>
-                                <MaterialIcons name='menu-book' size={35} color="white"/>
+                                <MaterialIcons name='menu-book' size={35} color="white" style = {{width : '10%'}}/>
                                 <Text style = {styles.modalBottomTitleGuide}>Guide</Text>
                             </View>
                             <Pressable onPress={() => {setModalEditVisible(!modalEditVisible)}}>
                                 <View style = {{flexDirection : 'row', marginLeft : '3%', marginTop : '3%'}}>
-                                    <AntDesign name="closecircleo" size={35} color="white"/>
+                                    <AntDesign name="closecircleo" size={35} color="white" style = {{width : '10%'}}/>
                                     <Text style = {styles.modalBottomTitleClose}>Close</Text>
                                 </View>
                             </Pressable>
@@ -222,41 +222,43 @@ export default function Profile() {
                         <View style = {styles.modalBottomTitle}>
                             <Pressable onPress={() => {navigation.navigate('Setting')}}>
                                 <View style = {{flexDirection : 'row', marginLeft : '3%'}}>
-                                    <AntDesign name="setting" size={30} color="white"/>
+                                    <AntDesign name="setting" size={30} color="white" style = {{width : '10%'}}/>
                                     <Text style = {styles.modalBottomTitlePost}>Settings</Text>
                                 </View>
                             </Pressable>
+                            <Pressable onPress={() => {navigation.navigate('ArchiveStory')}}>
+                                <View style = {{flexDirection : 'row', marginLeft : '3%', marginTop : '3%'}}>
+                                    <FontAwesome name="history" size={30} color="white" style = {{width : '10%'}}/>
+                                    <Text style = {styles.modalBottomTitleReel}>Archive</Text>
+                                </View>
+                            </Pressable>
                             <View style = {{flexDirection : 'row', marginLeft : '3%', marginTop : '3%'}}>
-                                <FontAwesome name="history" size={30} color="white"/>
-                                <Text style = {styles.modalBottomTitleReel}>Archive</Text>
-                            </View>
-                            <View style = {{flexDirection : 'row', marginLeft : '3%', marginTop : '3%'}}>
-                                <MaterialCommunityIcons name='progress-clock' size={30} color="white"/>
+                                <MaterialCommunityIcons name='progress-clock' size={30} color="white" style = {{width : '10%'}}/>
                                 <Text style = {styles.modalBottomTitleStory}>Your activity</Text>
                             </View>
                             <View style = {{flexDirection : 'row', marginLeft : '3%', marginTop : '3%'}}>
-                                <MaterialCommunityIcons name='qrcode-scan' size={30} color="white"/>
+                                <MaterialCommunityIcons name='qrcode-scan' size={30} color="white" style = {{width : '10%'}}/>
                                 <Text style = {styles.modalBottomTitleStoryHighlight}>QR code</Text>
                             </View>
                             <View style = {{flexDirection : 'row', marginLeft : '4%', marginTop : '4%'}}>
-                                <FontAwesome name='bookmark-o' size={30} color="white"/>
+                                <FontAwesome name='bookmark-o' size={30} color="white" style = {{width : '9%'}}/>
                                 <Text style = {styles.modalBottomTitleLive}>Saved</Text>
                             </View>
                             <View style = {{flexDirection : 'row', marginLeft : '3%', marginTop : '3%'}}>
-                                <MaterialCommunityIcons name='format-list-bulleted-triangle' size={30} color="white"/>
+                                <MaterialCommunityIcons name='format-list-bulleted-triangle' size={30} color="white" style = {{width : '10%'}}/>
                                 <Text style = {styles.modalBottomTitleGuide}>Close Friends</Text>
                             </View>
                             <View style = {{flexDirection : 'row', marginLeft : '3%', marginTop : '3%'}}>
-                                <FontAwesome name='star-o' size={30} color="white"/>
+                                <FontAwesome name='star-o' size={30} color="white" style = {{width : '10%'}}/>
                                 <Text style = {styles.modalBottomTitleFavorite}>Favorite</Text>
                             </View>
                             <View style = {{flexDirection : 'row', marginLeft : '3%', marginTop : '3%'}}>
-                                <MaterialCommunityIcons name='hand-heart' size={30} color="white"/>
+                                <MaterialCommunityIcons name='hand-heart' size={30} color="white" style = {{width : '10%'}}/>
                                 <Text style = {styles.modalBottomTitleCovid}>COVID-19 Information Center</Text>
                             </View>
                             <Pressable onPress={() => {setModalSettingVisible(!modalSettingVisible)}}>
                                 <View style = {{flexDirection : 'row', marginLeft : '3%', marginTop : '3%'}}>
-                                    <AntDesign name="closecircleo" size={30} color="white"/>
+                                    <AntDesign name="closecircleo" size={30} color="white" style = {{width : '10%'}}/>
                                     <Text style = {styles.modalBottomTitleClose}>Close</Text>
                                 </View>
                             </Pressable>
@@ -972,7 +974,7 @@ const styles = StyleSheet.create({
     modalBottomTitlePost : {
         color : 'white',
         fontSize : 18,
-        marginLeft : '4%',
+        marginLeft : '5%',
         marginTop : '1%',
     },
     modalBottomTitleReel: {
@@ -985,25 +987,25 @@ const styles = StyleSheet.create({
         marginTop : '1%',
         color : 'white',
         fontSize : 18,
-        marginLeft : '4%',
+        marginLeft : '5%',
     },
     modalBottomTitleStoryHighlight: {
         marginTop : '1%',
         color : 'white',
         fontSize : 18,
-        marginLeft : '4%',
+        marginLeft : '5%',
     },
     modalBottomTitleLive: {
         marginTop : '1%',
         color : 'white',
         fontSize : 18,
-        marginLeft : '6%',
+        marginLeft : '5%',
     },
     modalBottomTitleGuide : {
         marginTop : '1%',
         color : 'white',
         fontSize : 18,
-        marginLeft : '4%',
+        marginLeft : '5%',
     },
     modalBottomTitleFavorite : {
         marginTop : '1%',
@@ -1015,13 +1017,13 @@ const styles = StyleSheet.create({
         marginTop : '1%',
         color : 'white',
         fontSize : 18,
-        marginLeft : '4%',
+        marginLeft : '5%',
     },
     modalBottomTitleClose : {
         marginTop : '1%',
         color : 'white',
         fontSize : 18,
-        marginLeft : '4%',
+        marginLeft : '5%',
     },
     modalBottomActionCreatePost: {
         flexDirection : 'row',
