@@ -74,6 +74,9 @@ import Reports from '../component/Setting/ActionSetting/help/Reports';
 import Violations from '../component/Setting/ActionSetting/help/Violations';
 import Abouts from '../component/Setting/ActionSetting/About';
 import ArchiveStory from '../component/archive/StoriesAchive';
+import YourActivity from '../component/Account/activity/YourActivity';
+import PhotoAndVideo from '../component/Account/activity/PhotoAndVideo';
+import Interactions from '../component/Account/activity/Interactions';
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 export default function AppNavigate(){
@@ -146,6 +149,9 @@ export default function AppNavigate(){
             <Stack.Screen name="Violations" component={Violations} />
             <Stack.Screen name="Abouts" component={Abouts} />
             <Stack.Screen name="ArchiveStory" component={ArchiveStory} />
+            <Stack.Screen name="YourActivity" component={YourActivity} />
+            <Stack.Screen name="PhotoAndVideo" component={PhotoAndVideo} />
+            <Stack.Screen name="Interactions" component={Interactions} />
           </Stack.Navigator>
         </NavigationContainer>
     );

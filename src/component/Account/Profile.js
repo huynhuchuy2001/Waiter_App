@@ -232,10 +232,12 @@ export default function Profile() {
                                     <Text style = {styles.modalBottomTitleReel}>Archive</Text>
                                 </View>
                             </Pressable>
-                            <View style = {{flexDirection : 'row', marginLeft : '3%', marginTop : '3%'}}>
-                                <MaterialCommunityIcons name='progress-clock' size={30} color="white" style = {{width : '10%'}}/>
-                                <Text style = {styles.modalBottomTitleStory}>Your activity</Text>
-                            </View>
+                            <Pressable onPress={() => {navigation.navigate('YourActivity')}}>
+                                <View style = {{flexDirection : 'row', marginLeft : '3%', marginTop : '3%'}}>
+                                    <MaterialCommunityIcons name='progress-clock' size={30} color="white" style = {{width : '10%'}}/>
+                                    <Text style = {styles.modalBottomTitleStory}>Your activity</Text>
+                                </View>
+                            </Pressable>
                             <View style = {{flexDirection : 'row', marginLeft : '3%', marginTop : '3%'}}>
                                 <MaterialCommunityIcons name='qrcode-scan' size={30} color="white" style = {{width : '10%'}}/>
                                 <Text style = {styles.modalBottomTitleStoryHighlight}>QR code</Text>
