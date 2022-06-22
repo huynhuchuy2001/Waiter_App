@@ -77,6 +77,7 @@ import ArchiveStory from '../component/archive/StoriesAchive';
 import YourActivity from '../component/Account/activity/YourActivity';
 import PhotoAndVideo from '../component/Account/activity/PhotoAndVideo';
 import Interactions from '../component/Account/activity/Interactions';
+import AccountHistory from '../component/Account/activity/History';
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 export default function AppNavigate(){
@@ -152,6 +153,7 @@ export default function AppNavigate(){
             <Stack.Screen name="YourActivity" component={YourActivity} />
             <Stack.Screen name="PhotoAndVideo" component={PhotoAndVideo} />
             <Stack.Screen name="Interactions" component={Interactions} />
+            <Stack.Screen name ="AccountHistory" component={AccountHistory}/>
           </Stack.Navigator>
         </NavigationContainer>
     );

@@ -46,7 +46,7 @@ export default function YourActivity() {
                     <AntDesign name = "right" size={15} color = "#8e8e8e" style ={styles.IconRight}></AntDesign>
                 </Pressable>
                 {/* Account history */}
-                <Pressable style = {styles.AccountHistory}>
+                <Pressable style = {styles.AccountHistory} onPress = {() => { navigation.navigate("AccountHistory")}}>
                     <AntDesign name = "calendar" size={25} color = "rgb(248, 248, 242)" style ={styles.IconAccountHistory}></AntDesign>
                     <View style = {styles.TextAccountHistory}>
                         <Text style = {styles.textAccountHistory}>Account history</Text>
