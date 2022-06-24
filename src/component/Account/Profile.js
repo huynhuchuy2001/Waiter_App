@@ -238,10 +238,12 @@ export default function Profile() {
                                     <Text style = {styles.modalBottomTitleStory}>Your activity</Text>
                                 </View>
                             </Pressable>
-                            <View style = {{flexDirection : 'row', marginLeft : '3%', marginTop : '3%'}}>
-                                <MaterialCommunityIcons name='qrcode-scan' size={30} color="white" style = {{width : '10%'}}/>
-                                <Text style = {styles.modalBottomTitleStoryHighlight}>QR code</Text>
-                            </View>
+                            <Pressable onPress={() => {navigation.navigate('YourQrCode')}}>
+                                <View style = {{flexDirection : 'row', marginLeft : '3%', marginTop : '3%'}}>
+                                    <MaterialCommunityIcons name='qrcode-scan' size={30} color="white" style = {{width : '10%'}}/>
+                                    <Text style = {styles.modalBottomTitleStoryHighlight}>QR code</Text>
+                                </View>
+                            </Pressable>
                             <View style = {{flexDirection : 'row', marginLeft : '4%', marginTop : '4%'}}>
                                 <FontAwesome name='bookmark-o' size={30} color="white" style = {{width : '9%'}}/>
                                 <Text style = {styles.modalBottomTitleLive}>Saved</Text>

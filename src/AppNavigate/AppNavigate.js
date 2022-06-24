@@ -78,6 +78,8 @@ import YourActivity from '../component/Account/activity/YourActivity';
 import PhotoAndVideo from '../component/Account/activity/PhotoAndVideo';
 import Interactions from '../component/Account/activity/Interactions';
 import AccountHistory from '../component/Account/activity/History';
+import YourQrCode from '../component/Account/qrcode/YourQrCode';
+import ScanQrCode from '../component/Account/qrcode/ScanQRCode';
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 export default function AppNavigate(){
@@ -154,6 +156,8 @@ export default function AppNavigate(){
             <Stack.Screen name="PhotoAndVideo" component={PhotoAndVideo} />
             <Stack.Screen name="Interactions" component={Interactions} />
             <Stack.Screen name ="AccountHistory" component={AccountHistory}/>
+            <Stack.Screen name ="YourQrCode" component={YourQrCode}/>
+            <Stack.Screen name ="ScanQrCode" component={ScanQrCode}/>
           </Stack.Navigator>
         </NavigationContainer>
     );
