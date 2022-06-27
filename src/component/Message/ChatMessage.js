@@ -46,7 +46,7 @@ export default function ChatMessage() {
             {/* Header Message */}
             <View style = {styles.HeaderChatMessage}>
                 <AntDesign name = "arrowleft" size={25} color = "rgb(248, 248, 242)" style ={styles.IconBack} onPress = {() =>{navigation.goBack()}}/>
-                <Image source = {{uri: 'https://scontent.fsgn4-1.fna.fbcdn.net/v/t39.30808-6/274876629_2826541607639210_363529317853290439_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=zhn6GxH97wsAX9igMrU&_nc_ht=scontent.fsgn4-1.fna&oh=00_AT8CV-QY77nPfLu8se8Ba5bfAa8KH96jrUmxQJa0CXTW2A&oe=625BCEB5'}} style = {styles.Avatar}/>
+                <Image source = {{uri: 'https://scontent.fsgn4-1.fna.fbcdn.net/v/t39.30808-6/274876629_2826541607639210_363529317853290439_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=HdI0cCt0Q3wAX_5XJCE&_nc_ht=scontent.fsgn4-1.fna&oh=00_AT-EuusFTe6O_0EhmxL3lfl3fe-vR-9i-UVqvuXBFrKYiw&oe=62BCB4F5'}} style = {styles.Avatar}/>
                 <View style = {{marginLeft : '5%',width : '50%'}}>
                     <Text style = {styles.textChatMessage}>{name}</Text>
                     <Text style = {styles.textActive}>Active 2h ago</Text>
@@ -57,7 +57,7 @@ export default function ChatMessage() {
             {/* Infor Chat With Friend */}
             <ScrollView showsVerticalScrollIndicator={false}>
                 <View style = {styles.InforUser}>
-                <Image source = {{uri: 'https://scontent.fsgn4-1.fna.fbcdn.net/v/t39.30808-6/274876629_2826541607639210_363529317853290439_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=zhn6GxH97wsAX9igMrU&_nc_ht=scontent.fsgn4-1.fna&oh=00_AT8CV-QY77nPfLu8se8Ba5bfAa8KH96jrUmxQJa0CXTW2A&oe=625BCEB5'}} style = {styles.AvatarFriend}/>
+                <Image source = {{uri: 'https://scontent.fsgn4-1.fna.fbcdn.net/v/t39.30808-6/274876629_2826541607639210_363529317853290439_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=HdI0cCt0Q3wAX_5XJCE&_nc_ht=scontent.fsgn4-1.fna&oh=00_AT-EuusFTe6O_0EhmxL3lfl3fe-vR-9i-UVqvuXBFrKYiw&oe=62BCB4F5'}} style = {styles.AvatarFriend}/>
                     <Text style = {styles.textNameFb}>Huy Huỳnh</Text>
                     <Text style = {styles.textName}>hdh.huyyyy 
                         <Entypo name='dot-single' size={15} color='white' style = {{marginLeft : '10%'}}/> Waiter

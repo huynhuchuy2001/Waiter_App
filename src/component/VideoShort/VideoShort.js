@@ -19,7 +19,7 @@ export default function VideoShorts (){
     const data = [
         {
             name : 'hdh.huyyyy',
-            image : 'https://scontent.fsgn4-1.fna.fbcdn.net/v/t39.30808-6/274876629_2826541607639210_363529317853290439_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=zhn6GxH97wsAX9igMrU&_nc_ht=scontent.fsgn4-1.fna&oh=00_AT8CV-QY77nPfLu8se8Ba5bfAa8KH96jrUmxQJa0CXTW2A&oe=625BCEB5',
+            image : 'https://scontent.fsgn4-1.fna.fbcdn.net/v/t39.30808-6/274876629_2826541607639210_363529317853290439_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=HdI0cCt0Q3wAX_5XJCE&_nc_ht=scontent.fsgn4-1.fna&oh=00_AT-EuusFTe6O_0EhmxL3lfl3fe-vR-9i-UVqvuXBFrKYiw&oe=62BCB4F5',
             url : 'https://www.rmp-streaming.com/media/big-buck-bunny-360p.mp4',
             singer : 'HoaVinh',
             namemusic : 'Đừng quên tên anh',
@@ -29,8 +29,8 @@ export default function VideoShorts (){
         },
         {
             name : 'huyhuy01',
-            image : 'https://scontent.fsgn8-1.fna.fbcdn.net/v/t39.30808-6/218314327_2670798459880193_1753066056267794964_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=174925&_nc_ohc=whpw84OV5OMAX8hTvCg&_nc_ht=scontent.fsgn8-1.fna&oh=00_AT_v4ihHZH6FD_9-9l8RQuQSIrGOuTe9wBHCunAWfYN9xw&oe=626624CF',
-            url : 'https://v16-webapp.tiktok.com/94e6cc9640241bd95312347235b5e319/626300a5/video/tos/useast2a/tos-useast2a-ve-0068c003/9ba72d69e67343f9b78dc8c6afb403a9/?a=1988&br=2648&bt=1324&cd=0%7C0%7C1%7C0&ch=0&cr=0&cs=0&cv=1&dr=0&ds=3&er=&ft=eXd.6Hk_Myq8ZBWeNwe2NhfQml7Gb&l=20220422132238010245005098081BDA98&lr=tiktok_m&mime_type=video_mp4&net=0&pl=0&qs=0&rc=M2lyaTk6ZnNoNjMzNzczM0ApPDM6OGg3Zzw2NzVpPGhlM2ctbGctcjRnaG9gLS1kMTZzczQ1Mi42X2BiLS9jL2JgLjE6Yw%3D%3D&vl=&vr=',
+            image : 'https://scontent.fsgn4-1.fna.fbcdn.net/v/t39.30808-6/274876629_2826541607639210_363529317853290439_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=HdI0cCt0Q3wAX_5XJCE&_nc_ht=scontent.fsgn4-1.fna&oh=00_AT-EuusFTe6O_0EhmxL3lfl3fe-vR-9i-UVqvuXBFrKYiw&oe=62BCB4F5',
+            url : 'https://www.rmp-streaming.com/media/big-buck-bunny-360p.mp4',
             singer : 'Soobin',
             namemusic : 'Xin đừng lặng im',
             thumb : 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/BigBuckBunny.jpg',
@@ -349,11 +349,9 @@ export default function VideoShorts (){
                 <Video
                     source={{uri: item.url}} 
                     ref={VideoRef}    
-                    poster = {item.thumb}
                     posterResizeMode="cover"
                     repeat
-                    paused = {true}
-                    // paused={currIndex !== index}
+                    paused={currIndex !== index}
                     resizeMode="cover"                                  
                     onBuffer={onBuffer}                
                     onError={onError}               
@@ -402,7 +400,7 @@ export default function VideoShorts (){
                         </View>
                         <Pressable onPress={ () => {navigation.navigate('Audio')}}>
                             <View style = {styles.ContentPostRight}>
-                                <Image source={{uri : 'https://scontent.fsgn4-1.fna.fbcdn.net/v/t39.30808-6/274876629_2826541607639210_363529317853290439_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=zhn6GxH97wsAX9igMrU&_nc_ht=scontent.fsgn4-1.fna&oh=00_AT8CV-QY77nPfLu8se8Ba5bfAa8KH96jrUmxQJa0CXTW2A&oe=625BCEB5'}} style = {styles.AudioImage}/>
+                                <Image source={{uri : 'https://scontent.fsgn4-1.fna.fbcdn.net/v/t39.30808-6/274876629_2826541607639210_363529317853290439_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=HdI0cCt0Q3wAX_5XJCE&_nc_ht=scontent.fsgn4-1.fna&oh=00_AT-EuusFTe6O_0EhmxL3lfl3fe-vR-9i-UVqvuXBFrKYiw&oe=62BCB4F5'}} style = {styles.AudioImage}/>
                             </View>
                         </Pressable>
                     </View>

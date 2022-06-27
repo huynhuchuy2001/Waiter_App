@@ -20,68 +20,68 @@ export default function Profile() {
         {
             name : 'Đức Trường',
             follow : 'Follow you',
-            image : 'https://scontent.fsgn4-1.fna.fbcdn.net/v/t39.30808-6/272991438_1571607939871527_6579089651911998367_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=0yrT4Ddm2MEAX-BaOkp&_nc_ht=scontent.fsgn4-1.fna&oh=00_AT_t-lukzFdRL8IOBAJ_ihyv62ElheSLCGkGcsXQtNP0cw&oe=625FA506'
+            image : 'https://scontent.fsgn3-1.fna.fbcdn.net/v/t39.30808-6/247590695_2739368196356552_4837848715300811541_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=ad2b24&_nc_ohc=O5rdqerkV1kAX99U6eW&_nc_ht=scontent.fsgn3-1.fna&oh=00_AT_iyTSO0llTavFLmLYHK5pazeQvZpoqgkex2o_kLqDfkw&oe=62BDCB49'
         },
         {
             name : 'Trường Sinh',
             follow : 'Follow by hdh.huyyyy + 2 more',
-            image : 'https://scontent.fsgn3-1.fna.fbcdn.net/v/t39.30808-1/185526923_1334442560290882_6475410094091613892_n.jpg?stp=dst-jpg_p320x320&_nc_cat=104&ccb=1-5&_nc_sid=7206a8&_nc_ohc=vh-1deZnVFMAX-CL9Rq&_nc_ht=scontent.fsgn3-1.fna&oh=00_AT-tUjdRuwBIzRTh5a6EpMZUvZ7ZX1DykLCmSP9J1TROCw&oe=626076E4'
+            image : 'https://scontent.fsgn3-1.fna.fbcdn.net/v/t39.30808-1/185526923_1334442560290882_6475410094091613892_n.jpg?stp=dst-jpg_p320x320&_nc_cat=104&ccb=1-7&_nc_sid=7206a8&_nc_ohc=cDZxSfWtgPMAX9xiDIv&_nc_ht=scontent.fsgn3-1.fna&oh=00_AT8oX8iMQ8Gb8SdWphHsIknHNrAMjzM_zpVq8LgvZgRG6Q&oe=62BD68A4'
         },
         {
             name : 'Trường Mai',
             follow : 'Follow you',
-            image : 'https://scontent.fsgn13-2.fna.fbcdn.net/v/t39.30808-1/274723232_2095406903969072_7504427080082865401_n.jpg?stp=dst-jpg_p320x320&_nc_cat=106&ccb=1-5&_nc_sid=7206a8&_nc_ohc=mF8bPnwU1TwAX_TZXOy&_nc_ht=scontent.fsgn13-2.fna&oh=00_AT_fPpbhcpaFDxDX31d_ZQp0YtkBgupf58VrAqWoqi8CnA&oe=6260E6D5'
+            image : 'https://scontent.fsgn2-5.fna.fbcdn.net/v/t39.30808-6/274723232_2095406903969072_7504427080082865401_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=5dA0oNbONT8AX-9GLC-&_nc_ht=scontent.fsgn2-5.fna&oh=00_AT8YJCdvyyl6Bd-tmvO-ak3JVkC68PLT7p1LrYLiMbAaSw&oe=62BB2397'
         },
         {
             name : 'Đức Hùng',
             follow : 'Follow you',
-            image : 'https://scontent-sin6-4.xx.fbcdn.net/v/t1.6435-9/52696062_101541554333212_6443151805353295872_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=iVYxj2aTG4MAX9KnVR1&_nc_ht=scontent-sin6-4.xx&oh=00_AT91XhpTsxpNb7NguhkEdM6FjBuqzXxj45JWgs4OlLsxbQ&oe=627DBD8C'
+            image : 'https://scontent.fsgn4-1.fna.fbcdn.net/v/t1.6435-9/52696062_101541554333212_6443151805353295872_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=nsE_roCBRuAAX8lqdK2&_nc_ht=scontent.fsgn4-1.fna&oh=00_AT8XQ_z2rvZocGfVa2CI2E9PB4Tu5dAmJhe0gSGVVPFr9w&oe=62DCA98C'
         },
         {
             name : 'Tường Vi',
             follow : 'Follow by hdh.huyyyy + 10 more',
-            image : 'https://scontent-sin6-1.xx.fbcdn.net/v/t39.30808-6/272152926_1240913986401147_8867493523089750699_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=9Nz4bVKM5joAX8fhbRi&_nc_ht=scontent-sin6-1.xx&oh=00_AT_PmiSFopbNLfgeXZxQVCC1nETPN56gDmF5MNinf4vlsQ&oe=625C53AC'
+            image : 'https://scontent.fsgn8-2.fna.fbcdn.net/v/t39.30808-6/272152926_1240913986401147_8867493523089750699_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=174925&_nc_ohc=k4tjE6AyONAAX_oXSSb&_nc_ht=scontent.fsgn8-2.fna&oh=00_AT-mS1KADc7rqebiYp9MmKyhmMvZ5YSDf62ZBPSaIILbng&oe=62BD39EC'
         },
         {
             name : 'Huy Huỳnh',
             follow : 'Follow by hdh.huyyyy + 15 more',
-            image : 'https://scontent.fsgn4-1.fna.fbcdn.net/v/t39.30808-6/274876629_2826541607639210_363529317853290439_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=zhn6GxH97wsAX9igMrU&_nc_ht=scontent.fsgn4-1.fna&oh=00_AT8CV-QY77nPfLu8se8Ba5bfAa8KH96jrUmxQJa0CXTW2A&oe=625BCEB5'
+            image : 'https://scontent.fsgn4-1.fna.fbcdn.net/v/t39.30808-6/274876629_2826541607639210_363529317853290439_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=HdI0cCt0Q3wAX_5XJCE&_nc_ht=scontent.fsgn4-1.fna&oh=00_AT-EuusFTe6O_0EhmxL3lfl3fe-vR-9i-UVqvuXBFrKYiw&oe=62BCB4F5'
         },
         {
             name : 'Đức Hoan',
             follow : 'Follow by hdh.huyyyy + 99 more',
-            image : 'https://scontent.fsgn8-1.fna.fbcdn.net/v/t1.30497-1/143086968_2856368904622192_1959732218791162458_n.png?stp=cp0_dst-png_p80x80&_nc_cat=1&ccb=1-5&_nc_sid=7206a8&_nc_ohc=iuMIcxiCMkcAX_TVYh4&_nc_oc=AQnCMwFO0ikM1T3PNmT6hLfYsZgH-UFncWKfNhVaUwjq4DeJjL3Zz5o9N1VoxVT46V_F5s1RY-Ndwrkb3kv6fw1r&_nc_ht=scontent.fsgn8-1.fna&oh=00_AT8o3TOeWVcpPpS4Gy7NagZtopzLFPdCkkGCAzsGaaMdEQ&oe=627B5DF8'
+            image : 'https://scontent.fsgn3-1.fna.fbcdn.net/v/t1.6435-9/122192711_697566607532271_2285775074524737085_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=19026a&_nc_ohc=uS9n3QsAXAcAX9uqsmo&_nc_ht=scontent.fsgn3-1.fna&oh=00_AT804VS0UCyuZTH3AvDE4obV508Dux8mw4OLEZKZGcW0IA&oe=62DB90C0'
         },
         {
             name : 'Cẩm Vân',
             follow : 'Follow you',
-            image : 'https://scontent.fsgn13-2.fna.fbcdn.net/v/t39.30808-6/273154334_1123664431736763_6121942889354663811_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=BoFOVA5QuwIAX-KiXcQ&tn=98Qe8qL2dr5GlQT0&_nc_ht=scontent.fsgn13-2.fna&oh=00_AT8FeFwFTaLe6n_2eXdstYnWoCRVcEtpZZNsA2y4eGBazw&oe=625CDBAA'
+            image : 'https://scontent.fsgn13-3.fna.fbcdn.net/v/t39.30808-6/273154334_1123664431736763_6121942889354663811_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=5JKUGavtKnEAX87SRXD&tn=98Qe8qL2dr5GlQT0&_nc_ht=scontent.fsgn13-3.fna&oh=00_AT9dhMs9opTKaEEDkuZ5Xcc4gZ-fN_TTOrSyjwizQor48w&oe=62BDC1EA'
         }
     ]
     var story =  [
         {
-            name : 'sinh nhật',
-            image : 'https://scontent-hkg4-2.xx.fbcdn.net/v/t1.6435-9/203169376_2655017111458328_3182768188753841648_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=e3f864&_nc_ohc=7UW2vwziuJ8AX9ly0xq&_nc_ht=scontent-hkg4-2.xx&oh=00_AT_H7X0LPh0nxGEArZoHlqMQuJVDW4WmtKLldXAqznvPag&oe=6284937D'
+            name : 'tuổi trẻ',
+            image : 'https://scontent.fsgn13-2.fna.fbcdn.net/v/t1.6435-9/203169376_2655017111458328_3182768188753841648_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=e3f864&_nc_ohc=JAZqkH1SJbEAX9T2MBt&_nc_ht=scontent.fsgn13-2.fna&oh=00_AT-9fIClFq86OUplzgVqZxEu96nqOR9L1B-ur-wyPHsHPA&oe=62DB967D'
         },
         {
-            name : 'họp lớp 2021',
-            image : 'https://scontent.fsgn13-2.fna.fbcdn.net/v/t1.6435-9/149743843_1687058798167719_8691916275723497927_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=19026a&_nc_ohc=rsfPPZPuGnIAX8S8uG_&_nc_ht=scontent.fsgn13-2.fna&oh=00_AT8qD4BarpjKQpNSxekumcfye3op14oSeNI_ggIZcBk3sg&oe=62844162'
+            name : 'thanh xuân',
+            image : 'https://scontent.fsgn13-2.fna.fbcdn.net/v/t39.30808-6/285049384_2892974934329210_8740794401317439759_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=d_mjDycqV1EAX-dCW2G&_nc_ht=scontent.fsgn13-2.fna&oh=00_AT_T4_Wz-SbKvfl0AIMiZypFPJ-v_n-ypU7DqHeJ0RauxQ&oe=62BC507D'
         },
         {
             name : 'đà nẵng',
-            image : 'https://scontent.fsgn4-1.fna.fbcdn.net/v/t1.6435-9/67321730_2123799624580082_5696296506278019072_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=sfpIsH4_ay4AX_e-dro&_nc_ht=scontent.fsgn4-1.fna&oh=00_AT-pqEwAD3OaP2qS9Kweka_SwWTeajHVlGwttdARQuawqw&oe=62825FF3'
+            image : 'https://scontent.fsgn4-1.fna.fbcdn.net/v/t1.6435-9/67321730_2123799624580082_5696296506278019072_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=hBx55XKjiwIAX8zt2Kd&_nc_ht=scontent.fsgn4-1.fna&oh=00_AT-RDCqy5-GF8Bp06Sus2elZX526gmeFuSe9Gpgp5NL5wg&oe=62DD5773'
         },
         {
-            name : 'họp lớp 2020',
-            image : 'https://scontent.fsgn8-2.fna.fbcdn.net/v/t1.6435-9/83756523_1369587623248173_1039473847608279040_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=19026a&_nc_ohc=UIctjvc4EccAX-YBGF4&tn=98Qe8qL2dr5GlQT0&_nc_ht=scontent.fsgn8-2.fna&oh=00_AT8tikMxZbwiR7kMxVcCAW-kbG9aq42VlXaPTzSv4yLz2w&oe=62845B73'
+            name : 'họp lớp',
+            image : 'https://scontent.fsgn13-2.fna.fbcdn.net/v/t39.30808-6/273241477_1938622796344650_4709420617748794170_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=e3f864&_nc_ohc=fuKqPGg10iEAX91TYak&_nc_ht=scontent.fsgn13-2.fna&oh=00_AT-5DCAxNWoGpgV2neps94_8X7oZxmyWopo1lGl39qAd1A&oe=62BCD8CF'
         },
         {
             name : '<3',
-            image : 'https://scontent.fsgn13-1.fna.fbcdn.net/v/t39.30808-6/247590695_2739368196356552_4837848715300811541_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=ad2b24&_nc_ohc=KUVojC0nilEAX8atSM9&_nc_ht=scontent.fsgn13-1.fna&oh=00_AT8FWyCD63i4BrUPSG1qGydFxRZJz5SOIzb0VQQ3jGEl-Q&oe=6262D3C9'
+            image : 'https://scontent.fsgn8-2.fna.fbcdn.net/v/t1.6435-9/195257224_2643156072644432_4935552701988663558_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=174925&_nc_ohc=lsccBL_2wRwAX9PA-r0&_nc_ht=scontent.fsgn8-2.fna&oh=00_AT_bF2bRpQrThLKDFJpCCs4g1rYze0Y18UThrnE-xtPBtA&oe=62DEB4B0'
         },
         {
             name : 'xe đẹp hihi',
-            image : 'https://scontent.fsgn4-1.fna.fbcdn.net/v/t1.6435-9/91287930_2327614187531957_8274294280026062848_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=N4C3rzSOpiQAX-RIjxk&_nc_ht=scontent.fsgn4-1.fna&oh=00_AT9e8W_1PeTTW1TgsdvXLrunnR2gNEizHfj95yIkg3RYHQ&oe=628265A4'
+            image : 'https://scontent.fsgn4-1.fna.fbcdn.net/v/t1.6435-9/91316526_2327174210909288_4269537773892927488_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=A0ntQzEN-QcAX-m9xjP&_nc_ht=scontent.fsgn4-1.fna&oh=00_AT9BWK2a89MZ28QfeohyRvPD6OElMuelEmd-NsI76SvKrQ&oe=62DC8DBD'
         },
 
     ]

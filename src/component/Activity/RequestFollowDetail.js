@@ -15,46 +15,45 @@ export default function RequestFollowDetails() {
     var story =  [
         {
             name : 'tuổi trẻ',
-            image : 'https://scontent.fsgn8-1.fna.fbcdn.net/v/t39.30808-6/218314327_2670798459880193_1753066056267794964_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=174925&_nc_ohc=whpw84OV5OMAX8hTvCg&_nc_ht=scontent.fsgn8-1.fna&oh=00_AT_v4ihHZH6FD_9-9l8RQuQSIrGOuTe9wBHCunAWfYN9xw&oe=626624CF'
+            image : 'https://scontent.fsgn13-2.fna.fbcdn.net/v/t1.6435-9/203169376_2655017111458328_3182768188753841648_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=e3f864&_nc_ohc=JAZqkH1SJbEAX9T2MBt&_nc_ht=scontent.fsgn13-2.fna&oh=00_AT-9fIClFq86OUplzgVqZxEu96nqOR9L1B-ur-wyPHsHPA&oe=62DB967D'
         },
         {
             name : 'thanh xuân',
-            image : 'https://scontent.fsgn13-1.fna.fbcdn.net/v/t1.6435-9/48413416_2005537883072924_6727718849279426560_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=174925&_nc_ohc=5YRnW2zPk3gAX_tCpbz&_nc_ht=scontent.fsgn13-1.fna&oh=00_AT_eol3jETZKyYE7ilblzaU5RmWb66PxfhdyLx_jnAf8wA&oe=62867E05'
+            image : 'https://scontent.fsgn13-2.fna.fbcdn.net/v/t39.30808-6/285049384_2892974934329210_8740794401317439759_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=d_mjDycqV1EAX-dCW2G&_nc_ht=scontent.fsgn13-2.fna&oh=00_AT_T4_Wz-SbKvfl0AIMiZypFPJ-v_n-ypU7DqHeJ0RauxQ&oe=62BC507D'
         },
         {
             name : 'đà nẵng',
-            image : 'https://scontent.fsgn4-1.fna.fbcdn.net/v/t1.6435-9/67321730_2123799624580082_5696296506278019072_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=sfpIsH4_ay4AX_e-dro&_nc_ht=scontent.fsgn4-1.fna&oh=00_AT-pqEwAD3OaP2qS9Kweka_SwWTeajHVlGwttdARQuawqw&oe=62825FF3'
+            image : 'https://scontent.fsgn4-1.fna.fbcdn.net/v/t1.6435-9/67321730_2123799624580082_5696296506278019072_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=hBx55XKjiwIAX8zt2Kd&_nc_ht=scontent.fsgn4-1.fna&oh=00_AT-RDCqy5-GF8Bp06Sus2elZX526gmeFuSe9Gpgp5NL5wg&oe=62DD5773'
         },
         {
             name : 'họp lớp',
-            image : 'https://scontent.fsgn8-2.fna.fbcdn.net/v/t1.6435-9/83756523_1369587623248173_1039473847608279040_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=19026a&_nc_ohc=UIctjvc4EccAX-YBGF4&tn=98Qe8qL2dr5GlQT0&_nc_ht=scontent.fsgn8-2.fna&oh=00_AT8tikMxZbwiR7kMxVcCAW-kbG9aq42VlXaPTzSv4yLz2w&oe=62845B73'
+            image : 'https://scontent.fsgn13-2.fna.fbcdn.net/v/t39.30808-6/273241477_1938622796344650_4709420617748794170_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=e3f864&_nc_ohc=fuKqPGg10iEAX91TYak&_nc_ht=scontent.fsgn13-2.fna&oh=00_AT-5DCAxNWoGpgV2neps94_8X7oZxmyWopo1lGl39qAd1A&oe=62BCD8CF'
         },
         {
             name : '<3',
-            image : 'https://scontent.fsgn13-1.fna.fbcdn.net/v/t39.30808-6/247590695_2739368196356552_4837848715300811541_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=ad2b24&_nc_ohc=KUVojC0nilEAX8atSM9&_nc_ht=scontent.fsgn13-1.fna&oh=00_AT8FWyCD63i4BrUPSG1qGydFxRZJz5SOIzb0VQQ3jGEl-Q&oe=6262D3C9'
+            image : 'https://scontent.fsgn8-2.fna.fbcdn.net/v/t1.6435-9/195257224_2643156072644432_4935552701988663558_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=174925&_nc_ohc=lsccBL_2wRwAX9PA-r0&_nc_ht=scontent.fsgn8-2.fna&oh=00_AT_bF2bRpQrThLKDFJpCCs4g1rYze0Y18UThrnE-xtPBtA&oe=62DEB4B0'
         },
         {
             name : 'xe đẹp hihi',
-            image : 'https://scontent.fsgn4-1.fna.fbcdn.net/v/t1.6435-9/91287930_2327614187531957_8274294280026062848_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=N4C3rzSOpiQAX-RIjxk&_nc_ht=scontent.fsgn4-1.fna&oh=00_AT9e8W_1PeTTW1TgsdvXLrunnR2gNEizHfj95yIkg3RYHQ&oe=628265A4'
+            image : 'https://scontent.fsgn4-1.fna.fbcdn.net/v/t1.6435-9/91316526_2327174210909288_4269537773892927488_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=A0ntQzEN-QcAX-m9xjP&_nc_ht=scontent.fsgn4-1.fna&oh=00_AT9BWK2a89MZ28QfeohyRvPD6OElMuelEmd-NsI76SvKrQ&oe=62DC8DBD'
         },
 
     ]
     var arrayImage = [
         {
-            image1 : 'https://scontent.fsgn4-1.fna.fbcdn.net/v/t39.30808-6/274876629_2826541607639210_363529317853290439_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=zhn6GxH97wsAX9igMrU&_nc_ht=scontent.fsgn4-1.fna&oh=00_AT8CV-QY77nPfLu8se8Ba5bfAa8KH96jrUmxQJa0CXTW2A&oe=625BCEB5',
-            image2 : 'https://scontent.fsgn13-1.fna.fbcdn.net/v/t1.6435-9/48413416_2005537883072924_6727718849279426560_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=174925&_nc_ohc=5YRnW2zPk3gAX_tCpbz&_nc_ht=scontent.fsgn13-1.fna&oh=00_AT_eol3jETZKyYE7ilblzaU5RmWb66PxfhdyLx_jnAf8wA&oe=62867E05',
-            image3 : 'https://scontent.fsgn8-1.fna.fbcdn.net/v/t39.30808-6/218314327_2670798459880193_1753066056267794964_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=174925&_nc_ohc=whpw84OV5OMAX8hTvCg&_nc_ht=scontent.fsgn8-1.fna&oh=00_AT_v4ihHZH6FD_9-9l8RQuQSIrGOuTe9wBHCunAWfYN9xw&oe=626624CF'
+            image1 : 'https://scontent.fsgn4-1.fna.fbcdn.net/v/t39.30808-6/274876629_2826541607639210_363529317853290439_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=HdI0cCt0Q3wAX_5XJCE&_nc_ht=scontent.fsgn4-1.fna&oh=00_AT-EuusFTe6O_0EhmxL3lfl3fe-vR-9i-UVqvuXBFrKYiw&oe=62BCB4F5',
+            image2 : 'https://scontent.fsgn13-2.fna.fbcdn.net/v/t39.30808-6/274723232_2095406903969072_7504427080082865401_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=EsmoPEH_cXcAX93Nk7C&_nc_ht=scontent.fsgn13-2.fna&oh=00_AT_WQtH6UxmmJyYIrNZrOIN0p6-DnwuiGywVckLUbv7SuQ&oe=62BD1DD7',
+            image3 : 'https://scontent.fsgn13-2.fna.fbcdn.net/v/t39.30808-6/269688330_2385746111566438_4170126394801980165_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=y0Atite1IcEAX90zGu4&_nc_oc=AQkHB2NKoObp3yuSoV7lmesWyjeTNh0MklZp-JfuxZmX1byke2VeXvzjDmSeBWQdnaeyqzCmaeg95UjLMg4y846S&_nc_ht=scontent.fsgn13-2.fna&oh=00_AT8iGo-P-vpB1laU_1DAfq9zUxugYO7rsij2es-YCBiStQ&oe=62BD9E18'
         },
         {
-            image1 : 'https://scontent.fsgn3-1.fna.fbcdn.net/v/t1.18169-9/30264977_585959628436368_7848909215084726270_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=J8c9eFqeC5sAX8P9t4Q&_nc_ht=scontent.fsgn3-1.fna&oh=00_AT_aV4aDxzgwfQd92SGOhG1367VVPQ6SHCNBJZMM1eIQfw&oe=62880FF4',
-            image2 : 'https://scontent.fsgn8-1.fna.fbcdn.net/v/t1.18169-9/11063811_1431919687101416_4216505908966877621_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=174925&_nc_ohc=3H49bisXLw0AX_PFkAh&_nc_ht=scontent.fsgn8-1.fna&oh=00_AT_h46erjJ1ZyFehw_NQfuEyqLPw7dSP4bWATaH4D_b1gg&oe=6287B16D',
-            image3 : 'https://scontent.fsgn13-1.fna.fbcdn.net/v/t39.30808-6/247590695_2739368196356552_4837848715300811541_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=ad2b24&_nc_ohc=KUVojC0nilEAX-YgsO3&_nc_ht=scontent.fsgn13-1.fna&oh=00_AT88WHoBMpUpf7_0dFqRDeGfeScVtlg-neGXbqfU4Sco-w&oe=6266C849'
-
+            image1 : 'https://scontent.fsgn4-1.fna.fbcdn.net/v/t39.30808-6/274876629_2826541607639210_363529317853290439_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=HdI0cCt0Q3wAX_5XJCE&_nc_ht=scontent.fsgn4-1.fna&oh=00_AT-EuusFTe6O_0EhmxL3lfl3fe-vR-9i-UVqvuXBFrKYiw&oe=62BCB4F5',
+            image2 : 'https://scontent.fsgn13-2.fna.fbcdn.net/v/t39.30808-6/274723232_2095406903969072_7504427080082865401_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=EsmoPEH_cXcAX93Nk7C&_nc_ht=scontent.fsgn13-2.fna&oh=00_AT_WQtH6UxmmJyYIrNZrOIN0p6-DnwuiGywVckLUbv7SuQ&oe=62BD1DD7',
+            image3 : 'https://scontent.fsgn13-2.fna.fbcdn.net/v/t39.30808-6/269688330_2385746111566438_4170126394801980165_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=y0Atite1IcEAX90zGu4&_nc_oc=AQkHB2NKoObp3yuSoV7lmesWyjeTNh0MklZp-JfuxZmX1byke2VeXvzjDmSeBWQdnaeyqzCmaeg95UjLMg4y846S&_nc_ht=scontent.fsgn13-2.fna&oh=00_AT8iGo-P-vpB1laU_1DAfq9zUxugYO7rsij2es-YCBiStQ&oe=62BD9E18'
         },
         {
-            image1 : 'https://scontent.fsgn8-1.fna.fbcdn.net/v/t1.6435-9/109455554_2413659618927413_1815493526624920621_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=1gv2Q45ZetgAX8cwQrG&tn=98Qe8qL2dr5GlQT0&_nc_ht=scontent.fsgn8-1.fna&oh=00_AT-cLPJTeU0MGwNderR9im0ZKbeSg4xVm0IumK9rQ5TYlQ&oe=62875AFE',
-            image2 : 'https://scontent.fsgn13-2.fna.fbcdn.net/v/t1.6435-9/149743843_1687058798167719_8691916275723497927_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=19026a&_nc_ohc=rsfPPZPuGnIAX9DwCbV&_nc_ht=scontent.fsgn13-2.fna&oh=00_AT_Ua7WyGnqDM3Z_oD0nx9IN_zDXa2xYmUxgdrlogzVxlA&oe=628835E2',
-            image3 : 'https://scontent.fsgn13-2.fna.fbcdn.net/v/t1.6435-9/203169376_2655017111458328_3182768188753841648_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=e3f864&_nc_ohc=7UW2vwziuJ8AX9DahTm&_nc_ht=scontent.fsgn13-2.fna&oh=00_AT9LOeKB4nHxwyHmS5NGO-3p3noYky23jK3f7JG3AGtXRA&oe=6284937D'
+            image1 : 'https://scontent.fsgn4-1.fna.fbcdn.net/v/t39.30808-6/274876629_2826541607639210_363529317853290439_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=HdI0cCt0Q3wAX_5XJCE&_nc_ht=scontent.fsgn4-1.fna&oh=00_AT-EuusFTe6O_0EhmxL3lfl3fe-vR-9i-UVqvuXBFrKYiw&oe=62BCB4F5',
+            image2 : 'https://scontent.fsgn13-2.fna.fbcdn.net/v/t39.30808-6/274723232_2095406903969072_7504427080082865401_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=EsmoPEH_cXcAX93Nk7C&_nc_ht=scontent.fsgn13-2.fna&oh=00_AT_WQtH6UxmmJyYIrNZrOIN0p6-DnwuiGywVckLUbv7SuQ&oe=62BD1DD7',
+            image3 : 'https://scontent.fsgn13-2.fna.fbcdn.net/v/t39.30808-6/269688330_2385746111566438_4170126394801980165_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=y0Atite1IcEAX90zGu4&_nc_oc=AQkHB2NKoObp3yuSoV7lmesWyjeTNh0MklZp-JfuxZmX1byke2VeXvzjDmSeBWQdnaeyqzCmaeg95UjLMg4y846S&_nc_ht=scontent.fsgn13-2.fna&oh=00_AT8iGo-P-vpB1laU_1DAfq9zUxugYO7rsij2es-YCBiStQ&oe=62BD9E18'
         },
     ];
     var summary = [
@@ -123,7 +122,7 @@ export default function RequestFollowDetails() {
                 </View>
                 <View style = {styles.Profile}>
                     <View style = {{flexDirection : 'row'}}>
-                        <Image source={{uri : 'https://scontent.fsgn8-1.fna.fbcdn.net/v/t39.30808-6/218314327_2670798459880193_1753066056267794964_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=174925&_nc_ohc=whpw84OV5OMAX8hTvCg&_nc_ht=scontent.fsgn8-1.fna&oh=00_AT_v4ihHZH6FD_9-9l8RQuQSIrGOuTe9wBHCunAWfYN9xw&oe=626624CF'}} style = {styles.ProfileImage}/>
+                        <Image source={{uri : 'https://scontent.fsgn4-1.fna.fbcdn.net/v/t39.30808-6/274876629_2826541607639210_363529317853290439_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=HdI0cCt0Q3wAX_5XJCE&_nc_ht=scontent.fsgn4-1.fna&oh=00_AT-EuusFTe6O_0EhmxL3lfl3fe-vR-9i-UVqvuXBFrKYiw&oe=62BCB4F5'}} style = {styles.ProfileImage}/>
                         <View style = {styles.Posted}>
                             <Text style = {styles.NumberPost}>0</Text>
                             <Text style = {styles.TextPost}>Posts</Text>
@@ -169,7 +168,7 @@ export default function RequestFollowDetails() {
                             <View style = {styles.ListNewStory}>
                                 <View style = {styles.ListStoryBorder}>
                                     <View style = {styles.ListStoryBorder1}>
-                                        <Image source={{uri : 'https://scontent.fsgn4-1.fna.fbcdn.net/v/t39.30808-6/274876629_2826541607639210_363529317853290439_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=zhn6GxH97wsAX9igMrU&_nc_ht=scontent.fsgn4-1.fna&oh=00_AT8CV-QY77nPfLu8se8Ba5bfAa8KH96jrUmxQJa0CXTW2A&oe=625BCEB5'}} style = {styles.StoryImage}/>
+                                        <Image source={{uri : 'https://scontent.fsgn4-1.fna.fbcdn.net/v/t39.30808-6/274876629_2826541607639210_363529317853290439_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=HdI0cCt0Q3wAX_5XJCE&_nc_ht=scontent.fsgn4-1.fna&oh=00_AT-EuusFTe6O_0EhmxL3lfl3fe-vR-9i-UVqvuXBFrKYiw&oe=62BCB4F5'}} style = {styles.StoryImage}/>
                                     </View>
                                 </View>
                                 <Text style = {styles.TextStoryUser}>Vũng tàu</Text>
